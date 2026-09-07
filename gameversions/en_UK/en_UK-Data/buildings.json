@@ -1,0 +1,2488 @@
+{
+  "0": {
+    "caption": "Fire station",
+    "color": "#bb0000",
+    "coins": 30,
+    "credits": 100000,
+    "levelPrices": {
+      "credits": [10000, 50000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000],
+      "coins": [10, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+    },
+    "extensions": [
+      {
+        "caption": "Ambulance extension",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [5, 10],
+        "givesParkingLots": 0,
+        "isVehicleExtension": true
+      },
+      {
+        "caption": "Aviation firefighting Extension",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [75, 76, 77, 78],
+        "givesParkingLots": 0,
+        "isVehicleExtension": true
+      },
+      {
+        "caption": "Technical Rescue",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [73, 74],
+        "givesParkingLots": 0,
+        "isVehicleExtension": true
+      },
+      {
+        "caption": "Foam Extension",
+        "credits": 150000,
+        "coins": 15,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [35, 36, 37, 38],
+        "givesParkingLots": 0,
+        "isVehicleExtension": true
+      },
+      {
+        "caption": "Swap Body Parking Space",
+        "credits": 50000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Swap Body Parking Space",
+        "credits": 50000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Swap Body Parking Space",
+        "credits": 50000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Swap Body Parking Space",
+        "credits": 50000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Swap Body Parking Space",
+        "credits": 50000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Swap Body Parking Space",
+        "credits": 50000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Swap Body Parking Space",
+        "credits": 50000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Swap Body Parking Space",
+        "credits": 50000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Swap Body Parking Space",
+        "credits": 50000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Swap Body Parking Space",
+        "credits": 50000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Swap Body Parking Space",
+        "credits": 50000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Swap Body Parking Space",
+        "credits": 50000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Airfield Operations Extension",
+        "credits": 200000,
+        "coins": 25,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [79, 80, 81],
+        "givesParkingLots": 2,
+        "parkingLotReservations": [
+          [81, 81]
+        ],
+        "isVehicleExtension": true
+      },
+      {
+        "caption": "Water Damage Pump Extension",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [84],
+        "givesParkingLots": 2,
+        "parkingLotReservations": [
+          [84, 84]
+        ],
+        "isVehicleExtension": true
+      },
+      {
+        "caption": "Large Fire Station",
+        "credits": 1000000,
+        "coins": 50,
+        "duration": "7 Days",
+        "isVehicleExtension": true,
+        "givesParkingLots": 10,
+        "cannotDisable": true
+      }
+    ],
+    "storageUpgrades": {
+      "initial_containers": {
+        "caption": "Drones Initial",
+        "additionalStorage": 40,
+        "credits": 50000,
+        "coins": 15,
+        "duration": "5 Days"
+      },
+      "additional_containers_1": {
+        "caption": "Drones Additional",
+        "additionalStorage": 40,
+        "credits": 100000,
+        "coins": 15,
+        "duration": "3 Days",
+        "requiredStorageUpgrades": [
+          "initial_containers"
+        ]
+      }
+    },
+    "levelcost": [
+      "1. 10.000",
+      "2. 50.000",
+      "3.-24. 100.000"
+    ],
+    "maxBuildings": "No limit",
+    "maxLevel": 24,
+    "special": "From the 24th fire station onwards, the cost of building a new fire station increases according to the following formula: \u003Ccode\u003E100.000+200.000*LOG\u003Csub\u003E2\u003C/sub\u003E(Number of existing fire stations − 22)\u003C/code\u003E. The Coins price remains constant!",
+    "startPersonnel": 10,
+    "startVehicles": [
+      "Water Ladder",
+      "Light 4X4 Pump (L4P)"
+    ],
+    "schoolingTypes": [
+      "Fire Station"
+    ],
+    "schools": [1],
+    "startParkingLots": 1,
+    "icon": "fire-flame-curved"
+  },
+  "1": {
+    "caption": "Fire academy",
+    "color": "#992222",
+    "coins": 50,
+    "credits": 500000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [
+      {
+        "caption": "Additional classroom",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Days",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional classroom",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Days",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional classroom",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Days",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [],
+    "maxBuildings": "No limit",
+    "maxLevel": 0,
+    "special": "Finance Admins and admins can (expand) fire department schools with the help of credits from the association's funds. Alliance Educators and admins can start training courses at association fire- brigade schools.",
+    "startClassrooms": 1,
+    "school": "Fire",
+    "icon": "graduation-cap"
+  },
+  "2": {
+    "caption": "Ambulance station",
+    "color": "#ffa500",
+    "coins": 35,
+    "credits": 200000,
+    "levelPrices": {
+      "credits": [10000, 50000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000],
+      "coins": [10, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+    },
+    "extensions": [
+      {
+        "caption": "Mass Casualty Extension",
+        "credits": 150000,
+        "coins": 20,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [33, 34],
+        "givesParkingLots": 2,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [33],
+          [34]
+        ]
+      },
+      {
+        "caption": "Large Ambulance Station",
+        "credits": 1000000,
+        "coins": 50,
+        "duration": "7 Days",
+        "isVehicleExtension": true,
+        "givesParkingLots": 10,
+        "cannotDisable": true
+      },
+      {
+        "caption": "General Practitioner",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [95, 96],
+        "isVehicleExtension": true
+      }
+    ],
+    "levelcost": [
+      "1. 10.000",
+      "2. 50.000",
+      "3.-19. 100.000"
+    ],
+    "maxBuildings": "No limit",
+    "maxLevel": 19,
+    "special": "",
+    "startPersonnel": 3,
+    "startParkingLots": 1,
+    "startVehicles": [
+      "Ambulance"
+    ],
+    "schoolingTypes": [
+      "Rescue"
+    ],
+    "schools": [3],
+    "icon": "house-medical"
+  },
+  "3": {
+    "caption": "Rescue (EMS) Academy",
+    "color": "#9f9830",
+    "coins": 50,
+    "credits": 500000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [
+      {
+        "caption": "Additional classroom",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Days",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional classroom",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Days",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional classroom",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Days",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [],
+    "maxBuildings": "No limit",
+    "maxLevel": 0,
+    "special": "Finance Admins and admins can (expand) association rescue schools with the help of credits from the association's funds. Alliance Educators and admins can start training courses at association rescue schools.",
+    "startClassrooms": 1,
+    "school": "Rescue",
+    "icon": "graduation-cap"
+  },
+  "4": {
+    "caption": "Hospital",
+    "color": "#bbe944",
+    "coins": 25,
+    "credits": 200000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [
+      {
+        "caption": "General Internal",
+        "credits": 10000,
+        "coins": 10,
+        "duration": "7 Days",
+        "cannotDisable": true
+      },
+      {
+        "caption": "General Surgeon",
+        "credits": 10000,
+        "coins": 10,
+        "duration": "7 Days",
+        "cannotDisable": true
+      },
+      {
+        "caption": "Gynecology",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Days",
+        "requiredExtensions": [1],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Urology",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Days",
+        "requiredExtensions": [1],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Traumatology",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Days",
+        "requiredExtensions": [1],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Neurology",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Days",
+        "requiredExtensions": [0],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Neurosurgery",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Days",
+        "requiredExtensions": [1],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Cardiology",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Days",
+        "requiredExtensions": [0],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Cardiac Surgery",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Days",
+        "requiredExtensions": [1],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Large Hospital",
+        "credits": 200000,
+        "coins": 50,
+        "duration": "7 Days",
+        "newBeds": 10,
+        "cannotDisable": true
+      },
+      {
+        "caption": "PPCI",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Days",
+        "requiredExtensions": [9],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Stroke Center",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Days",
+        "requiredExtensions": [9],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Burns",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Days",
+        "requiredExtensions": [9],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Children",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Days",
+        "requiredExtensions": [9],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Critical Care",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Days",
+        "requiredExtensions": [9],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Central Delivery Suite",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Days",
+        "requiredExtensions": [9],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Major Trauma Centre",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Days",
+        "requiredExtensions": [16],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Major Hospital",
+        "credits": 500000,
+        "coins": 50,
+        "duration": "7 Days",
+        "newBeds": 10,
+        "requiredExtensions": [9],
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [
+      "1.-20. 19.000 Credits / 11 Coins"
+    ],
+    "maxBuildings": "No limit",
+    "maxLevel": 30,
+    "special": "Finance ministers and admins can (expand) association hospitals with the help of credits from the association treasury.",
+    "startBeds": 10,
+    "icon": "hospital"
+  },
+  "5": {
+    "caption": "Medical Helicopter station",
+    "color": "#e7ad2f",
+    "coins": 50,
+    "credits": 1000000,
+    "levelPrices": {
+      "credits": [1000000],
+      "coins": [50]
+    },
+    "extensions": [],
+    "levelcost": [
+      "1.000.000 / 50 Coins"
+    ],
+    "maxBuildings": "see specials",
+    "maxLevel": 2,
+    "special": "Up to the 125th building (of all types) a total of max. 4 landing sites can be built. After that the number increases by 1 every 25 buildings (starting at the 125th).",
+    "startPersonnel": 1,
+    "startVehicles": [],
+    "startParkingLots": 1,
+    "schoolingTypes": [
+      "Rescue"
+    ],
+    "schools": [3],
+    "icon": "circle-h"
+  },
+  "6": {
+    "caption": "Police station",
+    "color": "#007700",
+    "coins": 35,
+    "credits": 100000,
+    "levelPrices": {
+      "credits": [10000, 50000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000],
+      "coins": [10, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+    },
+    "extensions": [
+      {
+        "caption": "Prison cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Police & Public Order Extension",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [53, 54, 55, 56],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [54]
+        ]
+      },
+      {
+        "caption": "Additional Detention Van Parking Spaces",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "5 Days",
+        "givesParkingLots": 2,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [54],
+          [54]
+        ],
+        "requiredExtensions": [10]
+      },
+      {
+        "caption": "Aviation policing Extension",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [82],
+        "givesParkingLots": 0,
+        "isVehicleExtension": true
+      },
+      {
+        "caption": "Airfield Operations Extension",
+        "credits": 200000,
+        "coins": 25,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [79, 80, 81],
+        "givesParkingLots": 2,
+        "parkingLotReservations": [
+          [81, 81]
+        ],
+        "isVehicleExtension": true
+      },
+      {
+        "caption": "Large Police Station",
+        "credits": 1000000,
+        "coins": 50,
+        "duration": "7 Days",
+        "isVehicleExtension": true,
+        "givesParkingLots": 10,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Large Prison",
+        "credits": 200000,
+        "coins": 50,
+        "duration": "7 Days",
+        "newCells": 10,
+        "cannotDisable": true
+      }
+    ],
+    "storageUpgrades": {
+      "initial_containers": {
+        "caption": "Drones Initial",
+        "additionalStorage": 40,
+        "credits": 50000,
+        "coins": 15,
+        "duration": "5 Days"
+      },
+      "additional_containers_1": {
+        "caption": "Drones Additional",
+        "additionalStorage": 40,
+        "credits": 100000,
+        "coins": 15,
+        "duration": "3 Days",
+        "requiredStorageUpgrades": [
+          "initial_containers"
+        ]
+      }
+    },
+    "levelcost": [
+      "1. 10.000",
+      "2. 50.000",
+      "3.-19. 100.000"
+    ],
+    "maxBuildings": "No limit",
+    "maxLevel": 19,
+    "special": "From the 24th police station onwards, the costs for the new construction of a police station increase according to the following formula: \u003Ccode\u003E100.000+200.000*LOG\u003Csub\u003E2\u003C/sub\u003E(Number of existing police stations − 22)\u003C/code\u003E. The Coins price remains constant!",
+    "startPersonnel": 2,
+    "startVehicles": [
+      "Incident response vehicle"
+    ],
+    "schoolingTypes": [
+      "Police"
+    ],
+    "schools": [8],
+    "startParkingLots": 1,
+    "startCells": 0,
+    "icon": "building-shield"
+  },
+  "7": {
+    "caption": "Dispatch Center",
+    "color": "#24c3ae",
+    "coins": 0,
+    "credits": 0,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [],
+    "levelcost": [],
+    "maxBuildings": "For every 10 buildings, you can build one control center",
+    "maxLevel": 0,
+    "special": "The control center is the administrative center.",
+    "isDispatchCenter": true,
+    "icon": "tower-broadcast"
+  },
+  "8": {
+    "caption": "Police training centre",
+    "color": "#225522",
+    "coins": 50,
+    "credits": 500000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [
+      {
+        "caption": "Additional classroom",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Days",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional classroom",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Days",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional classroom",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Days",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [],
+    "maxBuildings": "No limit",
+    "maxLevel": 0,
+    "special": "Finance Admins and admins can (expand) association police schools with the help of credits from the association's Funds. Alliance Educators and admins can start training courses at association police schools.",
+    "startClassrooms": 1,
+    "school": "Police",
+    "icon": "graduation-cap"
+  },
+  "13": {
+    "caption": "Police Aviation",
+    "color": "#148423",
+    "coins": 50,
+    "credits": 1000000,
+    "levelPrices": {
+      "credits": [1000000, 1000000, 1000000, 1000000, 1000000],
+      "coins": [50, 50, 50, 50, 50]
+    },
+    "extensions": [],
+    "levelcost": [
+      "1-5. 1.000.000 Credits / 50 Coins"
+    ],
+    "maxBuildings": "see specials",
+    "maxLevel": 5,
+    "special": "Up to 6 landing sites can be built per station (expansion stages). Up to the 125th building (of all types) a total of max. 4 landing sites can be built. After that the number increases by 1 every 25 buildings (starting at the 125th).",
+    "startPersonnel": 3,
+    "startVehicles": [],
+    "schoolingTypes": [
+      "Police"
+    ],
+    "schools": [8],
+    "startParkingLots": 1,
+    "icon": "helicopter"
+  },
+  "14": {
+    "caption": "Staging area",
+    "color": "#c259b5",
+    "coins": 0,
+    "credits": 0,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [],
+    "levelcost": [],
+    "maxBuildings": 4,
+    "maxLevel": 0,
+    "special": "You can station as many of your own vehicles as you like at a staging area, members of the alliance can use the staging area. A staging area remains for 24 hours, but you can reset it to 24 hours at any time.With Premium Account you can have 8 staging areas at the same time",
+    "isStagingArea": true,
+    "icon": "warehouse"
+  },
+  "16": {
+    "caption": "Prison",
+    "color": "#00ff00",
+    "coins": -1,
+    "credits": 100000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [
+      {
+        "caption": "Prison cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 50000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 50000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 50000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 50000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 50000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 50000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 50000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 50000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 50000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 50000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Large Prison",
+        "credits": 200000,
+        "coins": 50,
+        "duration": "7 Days",
+        "newCells": 10,
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [],
+    "maxBuildings": "No limit",
+    "maxLevel": 0,
+    "special": "This building can only be built and developed by admins and finance ministers with credits from the association's treasury.The built Prison Cells are available to all members of the association.",
+    "startCells": 0,
+    "icon": "border-all"
+  },
+  "18": {
+    "caption": "Fire station (Small station)",
+    "color": "#aa1111",
+    "coins": 25,
+    "credits": 50000,
+    "levelPrices": {
+      "credits": [10000, 50000, 100000, 100000, 100000],
+      "coins": [10, 15, 20, 20, 20]
+    },
+    "extensions": [
+      {
+        "caption": "Ambulance extension",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [5, 10],
+        "givesParkingLots": 0,
+        "isVehicleExtension": true
+      },
+      {
+        "caption": "Aviation firefighting Extension",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [75, 76, 77, 78],
+        "givesParkingLots": 0,
+        "isVehicleExtension": true
+      },
+      {
+        "caption": "Technical Rescue",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [73, 74],
+        "givesParkingLots": 0,
+        "isVehicleExtension": true
+      },
+      {
+        "caption": "Foam Extension",
+        "credits": 150000,
+        "coins": 15,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [35, 36, 37, 38],
+        "givesParkingLots": 0,
+        "isVehicleExtension": true
+      },
+      {
+        "caption": "Swap Body Parking Space",
+        "credits": 50000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Swap Body Parking Space",
+        "credits": 50000,
+        "coins": 20,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Airfield Operations Extension",
+        "credits": 200000,
+        "coins": 25,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [79, 80, 81],
+        "givesParkingLots": 2,
+        "parkingLotReservations": [
+          [81, 81]
+        ],
+        "isVehicleExtension": true
+      },
+      {
+        "caption": "Water Damage Pump Extension",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [84],
+        "givesParkingLots": 2,
+        "parkingLotReservations": [
+          [84, 84]
+        ],
+        "isVehicleExtension": true
+      }
+    ],
+    "storageUpgrades": {
+      "initial_containers": {
+        "caption": "Drones Initial",
+        "additionalStorage": 40,
+        "credits": 50000,
+        "coins": 15,
+        "duration": "5 Days"
+      }
+    },
+    "levelcost": [
+      "1. 10.000",
+      "2. 50.000",
+      "3.-5. 100.000",
+      "Conversion to normal stations: difference price to normal stations"
+    ],
+    "maxBuildings": "No limit",
+    "maxLevel": 5,
+    "special": "From the 24th fire station onwards, the cost of building a new fire station increases according to the following formula: \u003Ccode\u003E(50.000+100.000*LOG\u003Csub\u003E2\u003C/sub\u003E(Number of existing fire stations − 22)) / 2\u003C/code\u003E. max. 1 Million Credits. The Coins price remains constant!",
+    "startPersonnel": 10,
+    "startVehicles": [
+      "Water Ladder",
+      "Light 4X4 Pump (L4P)"
+    ],
+    "schoolingTypes": [
+      "Fire Station"
+    ],
+    "schools": [1],
+    "startParkingLots": 1,
+    "icon": "fire-flame-curved"
+  },
+  "19": {
+    "caption": "Police station (Small station)",
+    "color": "#116611",
+    "coins": 25,
+    "credits": 50000,
+    "levelPrices": {
+      "credits": [10000, 50000, 100000, 100000, 100000],
+      "coins": [10, 15, 20, 20, 20]
+    },
+    "extensions": [
+      {
+        "caption": "Prison cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Police & Public Order Extension",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [53, 54, 55, 56],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [54]
+        ]
+      },
+      {
+        "caption": "Aviation policing Extension",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [82],
+        "givesParkingLots": 0,
+        "isVehicleExtension": true
+      },
+      {
+        "caption": "Airfield Operations Extension",
+        "credits": 200000,
+        "coins": 25,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [79, 80, 81],
+        "givesParkingLots": 2,
+        "parkingLotReservations": [
+          [81, 81]
+        ],
+        "isVehicleExtension": true
+      }
+    ],
+    "storageUpgrades": {
+      "initial_containers": {
+        "caption": "Drones Initial",
+        "additionalStorage": 40,
+        "credits": 50000,
+        "coins": 15,
+        "duration": "5 Days"
+      }
+    },
+    "levelcost": [
+      "1. 10.000",
+      "2. 50.000",
+      "3.-5. 100.000",
+      "Conversion to normal station: difference price to normal station"
+    ],
+    "maxBuildings": "no limit",
+    "maxLevel": 5,
+    "special": "From the 24th police station onwards, the costs for the new construction of a police station are calculated according to the following formula: \u003Ccode\u003E(50.000+100.000*LOG\u003Csub\u003E2\u003C/sub\u003E(Number of existing police stations − 22)) / 2\u003C/code\u003E. The Coins price remains constant!",
+    "startPersonnel": 2,
+    "startVehicles": [
+      "Incident response vehicle"
+    ],
+    "schoolingTypes": [
+      "Police"
+    ],
+    "schools": [8],
+    "startParkingLots": 1,
+    "startCells": 0,
+    "icon": "building-shield"
+  },
+  "20": {
+    "caption": "Ambulance station (Small station)",
+    "color": "#eeb611",
+    "coins": 25,
+    "credits": 100000,
+    "levelPrices": {
+      "credits": [10000, 50000, 100000, 100000, 100000],
+      "coins": [10, 15, 20, 20, 20]
+    },
+    "extensions": [
+      {
+        "caption": "Mass Casualty Extension",
+        "credits": 150000,
+        "coins": 20,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [33, 34],
+        "givesParkingLots": 2,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [33],
+          [34]
+        ]
+      },
+      {
+        "caption": "General Practitioner",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [95, 96],
+        "isVehicleExtension": true
+      }
+    ],
+    "levelcost": [
+      "1. 10.000",
+      "2. 50.000",
+      "3.-5. 100.000",
+      "Conversion to normal station: difference price to normal station"
+    ],
+    "maxBuildings": "No limit",
+    "maxLevel": 5,
+    "special": "",
+    "startPersonnel": 3,
+    "startVehicles": [
+      "Ambulance"
+    ],
+    "schoolingTypes": [
+      "Rescue"
+    ],
+    "schools": [3],
+    "startParkingLots": 1,
+    "icon": "house-medical"
+  },
+  "21": {
+    "caption": "Urgent Treatment Center",
+    "color": "#e2e53b",
+    "coins": 25,
+    "credits": 100000,
+    "levelPrices": {
+      "credits": [20000, 20000, 20000, 20000, 20000],
+      "coins": [20, 20, 20, 20, 20]
+    },
+    "extensions": [
+      {
+        "caption": "General Internal",
+        "credits": 10000,
+        "coins": 10,
+        "duration": "7 Days",
+        "cannotDisable": true
+      },
+      {
+        "caption": "General Practitioner (UTC)",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "5 Days",
+        "unlocksVehicleTypes": [95, 96],
+        "isVehicleExtension": true
+      }
+    ],
+    "levelcost": [
+      "1-5. 20.000"
+    ],
+    "maxBuildings": "No limit",
+    "maxLevel": 5,
+    "special": "",
+    "startPersonnel": 0,
+    "startVehicles": [
+      "None. You can buy a max of 2 Vehicles"
+    ],
+    "schoolingTypes": [
+      "Rescue"
+    ],
+    "schools": [3],
+    "startParkingLots": 2,
+    "startBeds": 5,
+    "parkingLotsPerLevel": 0,
+    "icon": "staff-snake"
+  },
+  "22": {
+    "caption": "Home Response Location",
+    "color": "#eeb611",
+    "coins": 10,
+    "credits": 10000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [],
+    "storageUpgrades": {
+      "initial_containers": {
+        "caption": "Drones Initial",
+        "additionalStorage": 40,
+        "credits": 50000,
+        "coins": 15,
+        "duration": "5 Days"
+      }
+    },
+    "levelcost": [
+      "not expandable"
+    ],
+    "maxBuildings": "No limit",
+    "maxLevel": 0,
+    "special": "It can only Store: Fire Officer, Rapid Response Vehicle, Operational Team Leader, General Practitioner, Community First Responder, Ambulance Officer and the Dog Support Unit (DSU)",
+    "startPersonnel": 1,
+    "startVehicles": [
+      ""
+    ],
+    "schoolingTypes": [
+      "Rescue",
+      "Police",
+      "Fire",
+      "Search and Rescue"
+    ],
+    "schools": [2, 3, 8, 29],
+    "startParkingLots": 1,
+    "icon": "house-flag"
+  },
+  "23": {
+    "caption": "Large complex",
+    "color": "#652d06",
+    "coins": -1,
+    "credits": -1,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [],
+    "levelcost": [
+      "Too Expensive"
+    ],
+    "maxBuildings": "No Limit",
+    "maxLevel": 5,
+    "special": "TOO EXPENSIVE, DON'T BUY IT, DON'T EXPAND IT",
+    "startPersonnel": 0,
+    "startVehicles": [
+      ""
+    ],
+    "schoolingTypes": [],
+    "schools": [],
+    "startParkingLots": 0,
+    "icon": "poo"
+  },
+  "24": {
+    "caption": "Small complex",
+    "color": "#562704",
+    "coins": -1,
+    "credits": -1,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [],
+    "levelcost": [
+      "Too Expensive"
+    ],
+    "maxBuildings": "No Limit",
+    "maxLevel": 5,
+    "special": "TOO EXPENSIVE, DON'T BUY IT, DON'T EXPAND IT",
+    "startPersonnel": 0,
+    "startVehicles": [
+      ""
+    ],
+    "schoolingTypes": [],
+    "schools": [],
+    "startParkingLots": 0,
+    "icon": "poo"
+  },
+  "25": {
+    "caption": "HART Base",
+    "color": "#eeb611",
+    "coins": 25,
+    "credits": 400000,
+    "levelPrices": {
+      "credits": [10000, 25000, 50000, 100000, 100000, 100000, 100000, 100000, 100000, 150000, 150000, 150000, 150000, 150000, 200000, 200000, 200000, 200000, 200000, 200000],
+      "coins": [10, 10, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 25, 25, 25, 25, 25]
+    },
+    "extensions": [
+      {
+        "caption": "Mass Casualty Extension",
+        "credits": 150000,
+        "coins": 20,
+        "duration": "5 Days"
+      }
+    ],
+    "levelcost": [
+      "1. 10.000",
+      "2. 25.000",
+      "3. 50.000",
+      "4.-9. 100.000",
+      "10.-14. 150.000",
+      "15.-20. 200.000"
+    ],
+    "maxBuildings": "No limit",
+    "maxLevel": 20,
+    "special": "",
+    "startPersonnel": 10,
+    "startVehicles": [],
+    "schoolingTypes": [
+      "Rescue"
+    ],
+    "schools": [3],
+    "startParkingLots": 5,
+    "icon": "biohazard"
+  },
+  "26": {
+    "caption": "Large Police Depot",
+    "color": "#116611",
+    "coins": 50,
+    "credits": 1000000,
+    "levelPrices": {
+      "credits": [20000, 50000, 100000, 150000, 200000, 200000, 200000, 200000, 200000, 300000, 300000, 300000, 300000, 300000, 400000, 400000, 400000, 400000, 400000, 400000],
+      "coins": [10, 10, 10, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 25, 25, 25, 25, 25, 25]
+    },
+    "extensions": [
+      {
+        "caption": "Prison cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional cell",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Days",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Police & Public Order Extension",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "7 Days",
+        "unlocksVehicleTypes": [53, 54, 55, 56],
+        "givesParkingLots": 1,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [54]
+        ]
+      },
+      {
+        "caption": "Additional Detention Van Parking Spaces",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "5 Days",
+        "givesParkingLots": 2,
+        "isVehicleExtension": true,
+        "parkingLotReservations": [
+          [54],
+          [54]
+        ],
+        "requiredExtensions": [40]
+      }
+    ],
+    "levelcost": [
+      "1. 20.000",
+      "2. 50.000",
+      "3. 100.000",
+      "4. 150.000",
+      "5.-9. 200.000",
+      "10.-14. 300.000",
+      "15.-20. 400.000"
+    ],
+    "maxBuildings": "no limit",
+    "maxLevel": 20,
+    "special": "You Can build every 50 Police Stations. Each level gives two more parking lots.",
+    "startPersonnel": 20,
+    "startVehicles": [],
+    "schoolingTypes": [
+      "Police"
+    ],
+    "schools": [8],
+    "startParkingLots": 10,
+    "startCells": 0,
+    "parkingLotsPerLevel": 2,
+    "icon": "city"
+  },
+  "27": {
+    "caption": "Lifeboat Station",
+    "color": "#88ecc4",
+    "coins": 35,
+    "credits": 100000,
+    "levelPrices": {
+      "credits": [20000, 20000, 20000, 20000, 20000],
+      "coins": [10, 10, 10, 10, 10]
+    },
+    "extensions": [
+      {
+        "caption": "Hovercraft Extension",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "5 Days",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [71, 72]
+      },
+      {
+        "caption": "Beach Lifeguard",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "5 Days",
+        "isVehicleExtension": true,
+        "givesParkingLots": 2,
+        "unlocksVehicleTypes": [70]
+      },
+      {
+        "caption": "Flood Rescue",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "5 Days",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [61]
+      }
+    ],
+    "levelcost": [
+      "1-5. 20.000"
+    ],
+    "maxBuildings": "No limit",
+    "maxLevel": 5,
+    "special": "",
+    "startPersonnel": 5,
+    "startVehicles": [
+      ""
+    ],
+    "schoolingTypes": [
+      "Search and Rescue"
+    ],
+    "schools": [29],
+    "startParkingLots": 1,
+    "parkingLotsPerLevel": 1,
+    "icon": "staff-snake"
+  },
+  "28": {
+    "caption": "Coastguard Rescue Station",
+    "color": "#88ecc4",
+    "coins": 35,
+    "credits": 100000,
+    "levelPrices": {
+      "credits": [20000, 20000, 20000, 20000, 20000],
+      "coins": [10, 10, 10, 10, 10]
+    },
+    "extensions": [
+      {
+        "caption": "Mud Decontamination",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "5 Days",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [58, 62]
+      },
+      {
+        "caption": "Flood Rescue",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "5 Days",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [61]
+      }
+    ],
+    "storageUpgrades": {
+      "initial_containers": {
+        "caption": "Drones Initial",
+        "additionalStorage": 40,
+        "credits": 50000,
+        "coins": 15,
+        "duration": "5 Days"
+      },
+      "additional_containers_1": {
+        "caption": "Drones Additional",
+        "additionalStorage": 40,
+        "credits": 100000,
+        "coins": 15,
+        "duration": "3 Days",
+        "requiredStorageUpgrades": [
+          "initial_containers"
+        ]
+      }
+    },
+    "levelcost": [
+      "1-5. 20.000"
+    ],
+    "maxBuildings": "No limit",
+    "maxLevel": 5,
+    "special": "",
+    "startPersonnel": 4,
+    "startVehicles": [
+      ""
+    ],
+    "schoolingTypes": [
+      "Search and Rescue"
+    ],
+    "schools": [29],
+    "startParkingLots": 1,
+    "parkingLotsPerLevel": 1,
+    "icon": "staff-snake"
+  },
+  "29": {
+    "caption": "Search and Rescue College",
+    "color": "#88ecc4",
+    "coins": 50,
+    "credits": 500000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [
+      {
+        "caption": "Additional classroom",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Days",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional classroom",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Days",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional classroom",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Days",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [],
+    "maxBuildings": "No limit",
+    "maxLevel": 0,
+    "special": "Finance Admins and admins can (expand) association Search and Rescue College with the help of credits from the association's Funds. Alliance Educators and admins can start training courses at association Search and Rescue College.",
+    "startClassrooms": 1,
+    "school": "Search and Rescue",
+    "icon": "graduation-cap"
+  },
+  "30": {
+    "caption": "Coastal Rescue Heliport",
+    "color": "#88ecc4",
+    "coins": 50,
+    "credits": 1000000,
+    "levelPrices": {
+      "credits": [1000000, 1000000, 1000000, 1000000, 1000000],
+      "coins": [50, 50, 50, 50, 50]
+    },
+    "extensions": [
+      {
+        "caption": "Helicopter Hangar",
+        "credits": 10000,
+        "coins": 1,
+        "duration": "0 Days",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [64, 65]
+      },
+      {
+        "caption": "Additional Helicopter Hangar",
+        "credits": 200000,
+        "coins": 15,
+        "duration": "4 Days",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "requiredExtensions": [0],
+        "unlocksVehicleTypes": [64, 65]
+      },
+      {
+        "caption": "Additional Helicopter Hangar",
+        "credits": 200000,
+        "coins": 15,
+        "duration": "4 Days",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "requiredExtensions": [1],
+        "unlocksVehicleTypes": [64, 65]
+      },
+      {
+        "caption": "Additional Helicopter Hangar",
+        "credits": 200000,
+        "coins": 15,
+        "duration": "4 Days",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "requiredExtensions": [2],
+        "unlocksVehicleTypes": [64, 65]
+      },
+      {
+        "caption": "Additional Helicopter Hangar",
+        "credits": 200000,
+        "coins": 15,
+        "duration": "4 Days",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "requiredExtensions": [3],
+        "unlocksVehicleTypes": [64, 65]
+      }
+    ],
+    "levelcost": [
+      "1-5. 1.000.000 Credits / 50 Coins"
+    ],
+    "maxBuildings": "see specials",
+    "maxLevel": 5,
+    "special": "Up to 6 landing sites can be built per station (expansion stages). Up to the 125th building (of all types) a total of max. 4 landing sites can be built. After that the number increases by 1 every 25 buildings (starting at the 125th).",
+    "startPersonnel": 1,
+    "startVehicles": [],
+    "schoolingTypes": [
+      "Search and Rescue"
+    ],
+    "schools": [29],
+    "startParkingLots": 1,
+    "icon": "helicopter"
+  },
+  "31": {
+    "caption": "Search and Rescue HQ",
+    "color": "#88ecc4",
+    "coins": 50,
+    "credits": 100000,
+    "levelPrices": {
+      "credits": [10000, 50000, 100000, 100000, 100000],
+      "coins": [10, 15, 20, 20, 20]
+    },
+    "extensions": [
+      {
+        "caption": "SAR Flood Rescue Extension",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "3 Days",
+        "unlocksVehicleTypes": [88],
+        "givesParkingLots": 0,
+        "isVehicleExtension": true
+      },
+      {
+        "caption": "SAR Ambulance Extension",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "3 Days",
+        "unlocksVehicleTypes": [94],
+        "givesParkingLots": 0,
+        "isVehicleExtension": true
+      }
+    ],
+    "storageUpgrades": {
+      "initial_containers": {
+        "caption": "Drones Initial",
+        "additionalStorage": 40,
+        "credits": 50000,
+        "coins": 15,
+        "duration": "5 Days"
+      },
+      "additional_containers_1": {
+        "caption": "Drones Additional",
+        "additionalStorage": 40,
+        "credits": 100000,
+        "coins": 12,
+        "duration": "3 Days",
+        "requiredStorageUpgrades": [
+          "initial_containers"
+        ]
+      },
+      "additional_containers_2": {
+        "caption": "Drones Additional",
+        "additionalStorage": 40,
+        "credits": 100000,
+        "coins": 12,
+        "duration": "3 Days",
+        "requiredStorageUpgrades": [
+          "additional_containers_1"
+        ]
+      },
+      "additional_containers_3": {
+        "caption": "Drones Additional",
+        "additionalStorage": 40,
+        "credits": 100000,
+        "coins": 15,
+        "duration": "3 Days",
+        "requiredStorageUpgrades": [
+          "additional_containers_2"
+        ]
+      }
+    },
+    "levelcost": [
+      "1. 10.000",
+      "2. 50.000",
+      "3.-5. 100.000"
+    ],
+    "maxBuildings": "No limit",
+    "maxLevel": 5,
+    "special": "!",
+    "startPersonnel": 10,
+    "startVehicles": [
+      ""
+    ],
+    "schoolingTypes": [
+      "Search and Rescue"
+    ],
+    "schools": [29],
+    "startParkingLots": 1,
+    "icon": "fire-flame-curved"
+  },
+  "32": {
+    "caption": "GP Surgery",
+    "color": "#eeb611",
+    "coins": 35,
+    "credits": 200000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [],
+    "levelcost": [
+      "not expandable"
+    ],
+    "maxBuildings": "No limit",
+    "maxLevel": 3,
+    "special": "",
+    "startPersonnel": 2,
+    "startVehicles": [
+      ""
+    ],
+    "schoolingTypes": [
+      "Rescue"
+    ],
+    "schools": [3],
+    "startParkingLots": 1,
+    "icon": "house-flag"
+  },
+  "33": {
+    "caption": "Mountain Rescue Station",
+    "color": "#e05b00",
+    "coins": 50,
+    "credits": 500000,
+    "levelPrices": {
+      "credits": [10000, 50000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000],
+      "coins": [10, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+    },
+    "extensions": [],
+    "storageUpgrades": {
+      "initial_containers": {
+        "caption": "Drones Initial",
+        "additionalStorage": 40,
+        "credits": 50000,
+        "coins": 15,
+        "duration": "5 Days"
+      }
+    },
+    "levelcost": [
+      "1. 10.000",
+      "2. 50.000",
+      "3.-14. 100.000"
+    ],
+    "maxBuildings": "No Limit",
+    "maxLevel": 14,
+    "special": "",
+    "startPersonnel": 3,
+    "startParkingLots": 1,
+    "startVehicles": [
+      ""
+    ],
+    "startParkingLotReservations": [],
+    "schoolingTypes": [
+      "Search and Rescue"
+    ],
+    "schools": [29],
+    "icon": "house-medical-flag"
+  },
+  "34": {
+    "caption": "Recovery Centre",
+    "color": "#88ecc4",
+    "coins": 30,
+    "credits": 300000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [
+      {
+        "caption": "HGV Recovery",
+        "credits": 150000,
+        "coins": 25,
+        "duration": "5 Days",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [106]
+      },
+      {
+        "caption": "Vehicle Parking Lot",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Days",
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional Vehicle Parking Lot Space",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Days",
+        "requiredExtensions": [0],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional Vehicle Parking Lot Space",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Days",
+        "requiredExtensions": [1],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional Vehicle Parking Lot Space",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Days",
+        "requiredExtensions": [2],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional Vehicle Parking Lot Space",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Days",
+        "requiredExtensions": [3],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional Vehicle Parking Lot Space",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Days",
+        "requiredExtensions": [4],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional Vehicle Parking Lot Space",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Days",
+        "requiredExtensions": [5],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional Vehicle Parking Lot Space",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Days",
+        "requiredExtensions": [6],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional Vehicle Parking Lot Space",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Days",
+        "requiredExtensions": [7],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Additional Vehicle Parking Lot Space",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Days",
+        "requiredExtensions": [8],
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [
+      "1. 10.000 / 3 Coins",
+      "2. 25.000 / 5 Coins",
+      "3. 50.000 / 5 Coins",
+      "4. 75.000 / 8 Coins",
+      "5. 100.000 / 10 Coins"
+    ],
+    "maxBuildings": "No limit",
+    "maxLevel": 5,
+    "special": "",
+    "startPersonnel": 2,
+    "startVehicles": [
+      ""
+    ],
+    "schoolingTypes": [
+      ""
+    ],
+    "schools": [],
+    "startParkingLots": 1,
+    "icon": "house-flag"
+  }
+}

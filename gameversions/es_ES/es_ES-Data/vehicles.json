@@ -1,0 +1,1648 @@
+{
+  "0": {
+    "caption": "Camión BUP",
+    "color": "#cc0000",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 6
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 18],
+    "waterTank": 3000,
+    "foamTank": 500,
+    "minPersonnel": 1,
+    "maxPersonnel": 6,
+    "wtank": 3000,
+    "ftank": 500,
+    "schooling": null
+  },
+  "1": {
+    "caption": "Camión BUL",
+    "color": "#bb0000",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 3
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 18],
+    "waterTank": 1500,
+    "foamTank": 250,
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "wtank": 1500,
+    "ftank": 250,
+    "schooling": null
+  },
+  "2": {
+    "caption": "Camión AE",
+    "color": "#d92626",
+    "credits": 10000,
+    "coins": 30,
+    "staff": {
+      "min": 1,
+      "max": 3
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 18],
+    "special": "Necesario cuando hayas construido 3 parques de bomberos",
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "schooling": null
+  },
+  "3": {
+    "caption": "Vehículo UMC",
+    "color": "#d02525",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 3
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 18],
+    "special": "Necesario cuando hayas construido 6 parques de bomberos",
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "schooling": null
+  },
+  "4": {
+    "caption": "FUV",
+    "color": "#ad1f1f",
+    "credits": 12180,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 4
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 18],
+    "special": "Necesario cuando hayas construido 4 parques de bomberos",
+    "minPersonnel": 1,
+    "maxPersonnel": 4,
+    "schooling": null
+  },
+  "5": {
+    "caption": "Ambulancia",
+    "color": "#9c6d1c",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 2, 20],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": null
+  },
+  "6": {
+    "caption": "Camión BNP",
+    "color": "#aa0000",
+    "credits": 17300,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 3
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 18],
+    "waterTank": 6000,
+    "special": "Necesario cuando hayas construido 7 parques de bomberos",
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "wtank": 6000,
+    "schooling": null
+  },
+  "7": {
+    "caption": "Camión TPP",
+    "color": "#990000",
+    "credits": 19200,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 3,
+      "training": {
+        "Parque de bomberos": {
+          "gw_gefahrgut": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 18],
+    "special": "Necesario cuando hayas construido 11 parques de bomberos",
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Parque de bomberos": {
+        "Hazmat": {
+          "all": true
+        }
+      }
+    }
+  },
+  "8": {
+    "caption": "Coche Patrulla",
+    "color": "#880000",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2
+    },
+    "icon": "car-side",
+    "possibleBuildings": [6, 19],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": null
+  },
+  "9": {
+    "caption": "HEMS",
+    "color": "#770000",
+    "credits": 300000,
+    "coins": 30,
+    "staff": {
+      "min": 1,
+      "max": 1
+    },
+    "icon": "car-side",
+    "possibleBuildings": [5],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": null
+  },
+  "10": {
+    "caption": "Vehículo aéreo",
+    "color": "#488b18",
+    "credits": 11680,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 3
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 18],
+    "special": "Necesario cuando hayas construido 5 parques de bomberos",
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "schooling": null
+  },
+  "11": {
+    "caption": "Vehículo de mando móvil",
+    "color": "#e68319",
+    "credits": 25500,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 6,
+      "training": {
+        "Parque de bomberos": {
+          "elw2": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 18],
+    "special": "Necesario cuando hayas construido 13 parques de bomberos",
+    "minPersonnel": 1,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Parque de bomberos": {
+        "Vehículo de mando móvil": {
+          "all": true
+        }
+      }
+    }
+  },
+  "12": {
+    "caption": "Vehículo de rescate",
+    "color": "#791515",
+    "credits": 19000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 6
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 18],
+    "waterTank": 3000,
+    "foamTank": 500,
+    "minPersonnel": 1,
+    "maxPersonnel": 6,
+    "wtank": 3000,
+    "ftank": 500,
+    "schooling": null
+  },
+  "13": {
+    "caption": "Helicóptero de Policía",
+    "color": "#dc1818",
+    "credits": 300000,
+    "coins": 30,
+    "staff": {
+      "min": 1,
+      "max": 3,
+      "training": {
+        "Policía": {
+          "polizeihubschrauber": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [13],
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Policía": {
+        "Piloto de Helicóptero": {
+          "all": true
+        }
+      }
+    }
+  },
+  "14": {
+    "caption": "Unidad Antidisturbios",
+    "color": "#70ca16",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 6,
+      "max": 6,
+      "training": {
+        "Policía": {
+          "swat": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [6, 19],
+    "special": "Necesario cuando hayas construido 8 comisarías de policía",
+    "minPersonnel": 6,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Policía": {
+        "Fuerzas Especiales": {
+          "all": true
+        }
+      }
+    }
+  },
+  "15": {
+    "caption": "Unidad GEO",
+    "color": "#b88f14",
+    "credits": 7000,
+    "coins": 23,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Policía": {
+          "swat": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [6, 19],
+    "special": "Necesario cuando hayas construido 8 comisarías de policía",
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Policía": {
+        "Fuerzas Especiales": {
+          "all": true
+        }
+      }
+    }
+  },
+  "16": {
+    "caption": "Unidad Canina",
+    "color": "#68a512",
+    "credits": 7000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Policía": {
+          "k9": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [6, 19],
+    "special": "Necesario cuando hayas construido 6 comisarías de policía",
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Policía": {
+        "Guía Canino": {
+          "all": true
+        }
+      }
+    }
+  },
+  "17": {
+    "caption": "Moto de Policía",
+    "color": "#cc2222",
+    "credits": 2500,
+    "coins": 18,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Policía": {
+          "police_motorcycle": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [6, 19],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Policía": {
+        "Motorista": {
+          "all": true
+        }
+      }
+    }
+  },
+  "18": {
+    "caption": "VIR",
+    "color": "#770000",
+    "credits": 4000,
+    "coins": 20,
+    "staff": {
+      "min": 2,
+      "max": 2
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 2, 20],
+    "minPersonnel": 2,
+    "maxPersonnel": 2,
+    "schooling": null
+  },
+  "19": {
+    "caption": "Unidad logística de AMV",
+    "color": "#770000",
+    "credits": 20000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 3
+    },
+    "icon": "car-side",
+    "possibleBuildings": [2, 20],
+    "special": "Necesario cuando hayas construido 6 estaciones de rescate",
+    "minPersonnel": 2,
+    "maxPersonnel": 3,
+    "schooling": null
+  },
+  "20": {
+    "caption": "Médico de cabecera",
+    "color": "#770000",
+    "credits": 4000,
+    "coins": 20,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Rescate": {
+          "critical_care": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [2],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Rescate": {
+        "Formación en cuidados intensivos": {
+          "all": true
+        }
+      }
+    }
+  },
+  "21": {
+    "caption": "Motocicleta de intervención rápida",
+    "color": "#770000",
+    "credits": 12000,
+    "coins": 15,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Rescate": {
+          "rapid_response_motorcycle": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [2, 20],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Rescate": {
+        "Motocicleta de intervención rápida": {
+          "all": true
+        }
+      }
+    }
+  },
+  "22": {
+    "caption": "Ambulancia SVB",
+    "color": "#770000",
+    "credits": 5000,
+    "coins": 12,
+    "staff": {
+      "min": 2,
+      "max": 2
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 2, 20],
+    "minPersonnel": 2,
+    "maxPersonnel": 2,
+    "schooling": null
+  },
+  "23": {
+    "caption": "Vehículo de extinción por espuma",
+    "color": "#791515",
+    "credits": 35000,
+    "coins": 15,
+    "staff": {
+      "min": 2,
+      "max": 3
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0],
+    "foamTank": 3000,
+    "minPersonnel": 2,
+    "maxPersonnel": 3,
+    "ftank": 3000,
+    "schooling": null
+  },
+  "24": {
+    "caption": "Remolque con bomba accionada por motor",
+    "color": "#791515",
+    "credits": 10000,
+    "coins": 10,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0],
+    "special": "Se necesita un vehículo de remolque (Camión BUP, Camión BUL, Camión BNP, Vehículo de extinción por espuma)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "25": {
+   "caption": "Unidad Celular",
+   "credits": 25000,
+   "coins": 15,
+   "staff": {
+     "min": 3,
+     "max": 3
+    },
+   "possibleBuildings": [6, 19],
+   "minPersonnel": 3,
+   "maxPersonnel": 3,
+   "schooling": null
+  },
+  "26": {
+   "caption": "UIP",
+   "credits": 10000,
+   "coins": 15,
+   "staff": {
+     "min": 9,
+     "max": 9,
+     "training": {
+      "Policía": {
+       "riot_police": {
+       "all": true
+       }
+     }
+    }
+   },
+   "possibleBuildings": [6, 19],
+   "minPersonnel": 9,
+   "maxPersonnel": 9,
+    "schooling": {
+      "Policía": {
+        "Educación de la policía antidisturbios": {
+          "all": true
+        }
+      }
+    }
+  },
+ "27": {
+   "caption": "GOIT",
+   "credits": 25000,
+   "coins": 10,
+   "staff": {
+     "min": 2,
+     "max": 2,
+     "training": {
+       "Policía": {
+         "riot_police_equipment": {
+           "all": true
+         }
+       }
+     }
+   },
+   "possibleBuildings": [6, 19],
+   "minPersonnel": 2,
+   "maxPersonnel": 2,
+   "schooling": {
+     "Policía": {
+       "Educación sobre el equipo de la policía antidisturbios": {
+         "all": true
+       }
+     }
+   }
+ },
+ "28": {
+   "caption": "UEC",
+   "credits": 35000,
+   "coins": 15,
+   "staff": {
+     "min": 1,
+     "max": 4,
+     "training": {
+       "Policía": {
+         "police_horse": {
+           "all": true
+         }
+       }
+     }
+   },
+   "possibleBuildings": [6, 19],
+   "minPersonnel": 1,
+   "maxPersonnel": 4,
+   "schooling": {
+     "Policía": {
+       "Entrenamiento Montado": {
+         "all": true
+       }
+     }
+   }
+ },
+ "29": {
+   "caption": "Cañon de Agua",
+   "credits": 35000,
+   "coins": 15,
+   "staff": {
+     "min": 1,
+     "max": 3,
+     "training": {
+       "Policía": {
+         "police_wasserwerfer": {
+           "all": true
+         }
+       }
+     }
+   },
+   "possibleBuildings": [6, 19],
+   "minPersonnel": 1,
+   "maxPersonnel": 3,
+   "schooling": {
+     "Policía": {
+       "Capacitación en operación de cañones de agua": {
+         "all": true
+       }
+     }
+   }
+ },
+ "30": {
+   "caption": "JUIP",
+   "credits": 25000,
+   "coins": 25,
+   "staff": {
+     "min": 9,
+     "max": 9,
+     "training": {
+       "Policía": {
+         "riot_police_command": {
+           "min": 1
+         },
+         "riot_police": {
+           "min": 8
+         }
+       }
+     }
+   },
+   "possibleBuildings": [6, 19],
+   "minPersonnel": 9,
+   "maxPersonnel": 9,
+   "schooling": {
+     "Policía": {
+       "Entrenamiento de mando de policía antidisturbios": {
+         "min": 1
+       },
+       "Educación de la policía antidisturbios": {
+         "min": 8
+       }
+     }
+   }
+ },
+ "31": {
+   "caption": "Jefe de equipo de la policía",
+   "credits": 35000,
+   "coins": 15,
+   "staff": {
+     "min": 1,
+     "max": 2,
+     "training": {
+       "Policía": {
+         "police_service_group_leader": {
+           "all": true
+         }
+       }
+     }
+   },
+   "possibleBuildings": [6, 19],
+   "minPersonnel": 1,
+   "maxPersonnel": 2,
+   "schooling": {
+     "Policía": {
+       "Entrenamiento de líder de equipo de policía": {
+         "all": true
+       }
+     }
+   }
+ },
+  "32": {
+    "caption": "UTV",
+    "credits": 20000,
+    "coins": 15,
+    "staff": {
+      "min": 1,
+      "max": 5
+    },
+    "possibleBuildings": [
+      29
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 5,
+    "schooling": null
+  },
+  "33": {
+    "caption": "Unidad de rescate en lodos",
+    "credits": 20000,
+    "coins": 15,
+    "staff": {
+      "min": 1,
+      "max": 5
+    },
+    "possibleBuildings": [
+      0,
+      18
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 5,
+    "schooling": null
+  },
+  "34": {
+    "caption": "Unidad de rescate con cuerdas",
+    "credits": 35000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 5,
+      "training": {
+        "Parque de bomberos": {
+          "gw_hoehenrettung": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      18
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 5,
+    "schooling": {
+      "Parque de bomberos": {
+        "Formación de rescate con cuerdas": {
+          "all": true
+        }
+      }
+    }
+  },
+  "35": {
+    "caption": "Furgón GEAS",
+    "credits": 40000,
+    "coins": 15,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Policía": {
+          "coastal_command": {
+            "min": 2
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      6,
+      19
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Policía": {
+        "Formación GEAS": {
+          "min": 2
+        }
+      }
+    }
+  },
+  "36": {
+    "caption": "Remolque de rescate en inundaciones",
+    "credits": 35000,
+    "coins": 20,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      0,
+      18
+    ],
+    "special": "Se necesita un vehículo de remolque (Vehículo UMC, FUV)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "37": {
+    "caption": "Remolque de descontaminación de lodos\"",
+    "credits": 35000,
+    "coins": 20,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      0,
+      18
+    ],
+    "special": "Se necesita un vehículo de remolque (Unidad de rescate en lodos)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "38": {
+    "caption": "Unidad Subacuática de Salvamento Marítimo",
+    "credits": 40000,
+    "coins": 15,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Rescate acuático": {
+          "coastal_support": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      23
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Rescate acuático": {
+        "Formación de buzos de salvamento": {
+          "all": true
+        }
+      }
+    }
+  },
+  "39": {
+    "caption": "Helicoptero de Rescate",
+    "credits": 300000,
+    "coins": 30,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Rescate acuático": {
+          "coastal_rescue_pilot": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      25
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Rescate acuático": {
+        "Formación en operaciones de rescate aéreo": {
+          "all": true
+        }
+      }
+    }
+  },
+  "40": {
+    "caption": "Avión de Salvamento Maritimo",
+    "credits": 500000,
+    "coins": 35,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Rescate acuático": {
+          "coastal_rescue_pilot": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      25
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Rescate acuático": {
+        "Formación en operaciones de rescate aéreo": {
+          "all": true
+        }
+      }
+    }
+  },
+  "41": {
+    "caption": "Todoterreno GEAS",
+    "credits": 10000,
+    "coins": 10,
+    "staff": {
+      "min": 2,
+      "max": 4
+    },
+    "possibleBuildings": [
+      6,
+      19
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": null
+  },
+  "42": {
+    "caption": "Salvamar",
+    "credits": 35000,
+    "coins": 15,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Rescate acuático": {
+          "ocean_navigation": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      23
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Rescate acuático": {
+        "Formación de Navegación en Oceáno": {
+          "all": true
+        }
+      }
+    }
+  },
+  "43": {
+    "caption": "Guardamar",
+    "credits": 75000,
+    "coins": 25,
+    "staff": {
+      "min": 5,
+      "max": 12,
+      "training": {
+        "Rescate acuático": {
+          "ocean_navigation": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      23
+    ],
+    "minPersonnel": 5,
+    "maxPersonnel": 12,
+    "schooling": {
+      "Rescate acuático": {
+        "Formación de Navegación en Oceáno": {
+          "all": true
+        }
+      }
+    }
+  },
+  "44": {
+    "caption": "Remolcador de Salvamento",
+    "credits": 75000,
+    "coins": 25,
+    "staff": {
+      "min": 5,
+      "max": 12,
+      "training": {
+        "Rescate acuático": {
+          "ocean_navigation": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      23
+    ],
+    "minPersonnel": 5,
+    "maxPersonnel": 12,
+    "schooling": {
+      "Rescate acuático": {
+        "Formación de Navegación en Oceáno": {
+          "all": true
+        }
+      }
+    }
+  },
+  "45": {
+    "caption": "Buque Polivalente",
+    "credits": 400000,
+    "coins": 30,
+    "staff": {
+      "min": 12,
+      "max": 15,
+      "training": {
+        "Rescate acuático": {
+          "ocean_navigation": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      23
+    ],
+    "minPersonnel": 12,
+    "maxPersonnel": 15,
+    "schooling": {
+      "Rescate acuático": {
+        "Formación de Navegación en Oceáno": {
+          "all": true
+        }
+      }
+    }
+  },
+  "46": {
+    "caption": "Remolque de moto acuática",
+    "credits": 10000,
+    "coins": 10,
+    "staff": {
+      "min": 0,
+      "max": 0,
+      "training": {
+        "Rescate acuático": {
+          "ocean_navigation": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      29
+    ],
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": {
+      "Rescate acuático": {
+        "Formación de Navegación en Oceáno": {
+          "all": true
+        }
+      }
+    }
+  },
+  "47": {
+    "caption": "Remolque de descontaminación de aguas sucias",
+    "credits": 35000,
+    "coins": 20,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      23
+    ],
+    "special": "Se necesita un vehículo de remolque (Unidad Subacuática de Salvamento Marítimo)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "48": {
+    "caption": "Buceador de rescate",
+    "credits": 40000,
+    "coins": 15,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Parque de bomberos": {
+          "gw_taucher": {
+            "min": 2
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      18
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Parque de bomberos": {
+        "Formación de buzo de rescate": {
+          "min": 2
+        }
+      }
+    }
+  },
+  "49": {
+    "caption": "Remolque de embarcación neumática",
+    "credits": 25000,
+    "coins": 15,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [6, 19, 29],
+    "special": "Se necesita un vehículo de remolque (Todoterreno GEAS, Buceador de rescate, Furgón GEAS, UTV, Vehículo UMC, FUV)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "50": {
+    "caption": "Avión de Policía",
+    "credits": 300000,
+    "coins": 30,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Policía": {
+          "polizei_hubschrauber": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      13
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Policía": {
+        "Piloto de Helicóptero": {
+          "all": true
+        }
+      }
+    }
+  },
+  "51": {
+    "caption": "Patrullera de Aduanas",
+    "credits": 60000,
+    "coins": 15,
+    "staff": {
+      "min": 4,
+      "max": 6,
+      "training": {
+        "Rescate acuático": {
+          "ocean_navigation": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      26
+    ],
+    "minPersonnel": 4,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Rescate acuático": {
+        "Formación de Navegación en Oceáno": {
+          "all": true
+        }
+      }
+    }
+  },
+  "52": {
+    "caption": "Patrullera rápida de Aduanas",
+    "credits": 40000,
+    "coins": 15,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Rescate acuático": {
+          "ocean_navigation": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      26
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Rescate acuático": {
+        "Formación de Navegación en Oceáno": {
+          "all": true
+        }
+      }
+    }
+  },
+  "53": {
+    "caption": "Helicoptero de Aduanas",
+    "credits": 300000,
+    "coins": 30,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Rescate acuático": {
+          "coastal_rescue_pilot": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      28
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Rescate acuático": {
+        "Formación en operaciones de rescate aéreo": {
+          "all": true
+        }
+      }
+    }
+  },
+  "54": {
+    "caption": "Patrullera de Policía",
+    "credits": 45000,
+    "coins": 15,
+    "staff": {
+      "min": 3,
+      "max": 5,
+      "training": {
+        "Rescate acuático": {
+          "coastal_navigation": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      27
+    ],
+    "minPersonnel": 3,
+    "maxPersonnel": 5,
+    "schooling": {
+      "Rescate acuático": {
+        "Formación de Navegación en Oceáno": {
+          "all": true
+        }
+      }
+    }
+  },
+  "55": {
+    "caption": "Buque de Policía",
+    "credits": 60000,
+    "coins": 15,
+    "staff": {
+      "min": 4,
+      "max": 6,
+      "training": {
+        "Rescate acuático": {
+          "coastal_navigation": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      27
+    ],
+    "minPersonnel": 4,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Rescate acuático": {
+        "Formación de Navegación en Oceáno": {
+          "all": true
+        }
+      }
+    }
+  },
+  "56": {
+    "caption": "Camión ARFF 4x4",
+    "credits": 30000,
+    "coins": 20,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Parque de bomberos": {
+          "arff": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      18
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Parque de bomberos": {
+        "Formación ARFF Aircraft Rescue and Firefighting": {
+          "all": true
+        }
+      }
+    },
+    "waterTank": 6950,
+    "wtank": 6950
+  },
+  "57": {
+    "caption": "Autoescalera de Rescate",
+    "credits": 60000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 2,
+      "training": {
+        "Parque de bomberos": {
+          "rettungstreppe": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      18
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Parque de bomberos": {
+        "Formación ARFF - Autoescalera de rescate": {
+          "all": true
+        }
+      }
+    }
+  },
+  "58": {
+    "caption": "Camión Autoextintor",
+    "credits": 20000,
+    "coins": 20,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Parque de bomberos": {
+          "arff": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      18
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Parque de bomberos": {
+        "Formación ARFF Aircraft Rescue and Firefighting": {
+          "all": true
+        }
+      }
+    },
+    "waterTank": 6100,
+    "wtank": 6100,
+    "foamTank": 750,
+    "ftank": 750
+  },
+  "59": {
+    "caption": "Camión ARFF 8x8",
+    "credits": 60000,
+    "coins": 30,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Parque de bomberos": {
+          "arff": {
+            "min": 1
+          },
+          "piercing_nozzle": {
+            "min": 1
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      18
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Parque de bomberos": {
+        "Formación ARFF Aircraft Rescue and Firefighting": {
+          "min": 1
+        },
+        "Formación ARFF - Lanza de perforación": {
+          "min": null
+        }
+      }
+    },
+    "waterTank": 19000,
+    "wtank": 19000
+  },
+  "60": {
+    "caption": "Camión de recuperación de aeronaves",
+    "credits": 20000,
+    "coins": 20,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Parque de bomberos": {
+          "arff": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      18
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Parque de bomberos": {
+        "Formación ARFF Aircraft Rescue and Firefighting": {
+          "all": true
+        }
+      }
+    }
+  },
+  "61": {
+    "caption": "Vehículo de Mando Aeroportuario",
+    "credits": 20000,
+    "coins": 20,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Parque de bomberos": {
+          "elw_airport": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      18
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Parque de bomberos": {
+        "Formación ARFF - Mando aeroportuario": {
+          "all": true
+        }
+      }
+    }
+  },
+  "62": {
+    "caption": "Remolque ALA",
+    "credits": 20000,
+    "coins": 20,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      0,
+      18
+    ],
+    "special": "Se necesita un vehículo de remolque (Camión de recuperación de aeronaves, Camión Autoextintor",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "63": {
+    "caption": "Camión ARFF 6x6",
+    "credits": 45000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Parque de bomberos": {
+          "arff": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      18
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Parque de bomberos": {
+        "Formación ARFF Aircraft Rescue and Firefighting": {
+          "all": true
+        }
+      }
+    },
+    "waterTank": 14000,
+    "wtank": 14000
+  },
+  "64": {
+    "caption": "Camión de bombeo de agua y lodos",
+    "credits": 20000,
+    "coins": 20,
+    "staff": {
+      "min": 2,
+      "max": 4
+    },
+    "possibleBuildings": [
+      0,
+      18
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": null
+  },
+  "65": {
+    "caption": "Remolque de equipos de bombeo",
+    "credits": 15000,
+    "coins": 15,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      0,
+      18
+    ],
+    "special": "Se necesita un vehículo de remolque (Camión de bombeo de agua y lodos)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "66": {
+    "caption": "Ambulancia SVB",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2
+    },
+    "possibleBuildings": [
+      0,
+      2,
+      18,
+      20
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": null
+  },
+  "67": {
+    "caption": "Camión remolcador",
+    "credits": 15000,
+    "coins": 15,
+    "staff": {
+      "min": 1,
+      "max": 2
+    },
+    "possibleBuildings": [
+      30
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": null
+  },
+  "68": {
+    "caption": "Transportista de plataforma",
+    "credits": 30000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2
+    },
+    "possibleBuildings": [
+      30
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": null
+  },
+  "69": {
+    "caption": "Camión rotatorio",
+    "credits": 28000,
+    "coins": 20,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Bomberos": {
+          "tow_trucks": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      30
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Bomberos": {
+        "Vehículo pesado": {
+          "all": true
+        }
+      }
+    }
+  },
+  "71": {
+    "caption": "Camión remolcador (Policía)",
+    "credits": 15000,
+    "coins": 15,
+    "staff": {
+      "min": 1,
+      "max": 2
+    },
+    "possibleBuildings": [
+      6,
+      19
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": null
+  }
+ }

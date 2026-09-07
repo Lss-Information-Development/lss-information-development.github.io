@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meldkamerspel (NL)</title>
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1 id="welcome-title">Welkom</h1>
+    <p id="select-info">Selecteer hieronder een knop om naar de overzichten te gaan.</p>
+</header>
+
+<ul class="language-selector">
+    <li><img src="../../images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')"></li>
+    <li><img src="../../images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')"></li>
+    <li><img src="../../images/flag_uk.gif" alt="English" onclick="changeLanguage('en')"></li>
+    <li><img src="../../images/flag_us.gif" alt="English" onclick="changeLanguage('en')"></li>
+    <li><img src="../../images/flag_au.gif" alt="English" onclick="changeLanguage('en')"></li>
+</ul>
+
+<main>
+    <div class="card">
+        <div class="button-container">
+            <a class="button" id="back-to-home" href="../../index.html">Terug naar de startpagina</a>
+            <a class="button" id="building-ids" href="../../gameversions/nl_NL/building_ids.html">Gebouw ID's</a>
+            <a class="button" id="vehicle-ids" href="../../gameversions/nl_NL/vehicle_ids.html">Voertuig ID's</a>
+            <a class="button" id="mission-ids" href="../../gameversions/nl_NL/mission_ids.html">Melding ID's</a>
+            <a class="button" id="pois" href="../../gameversions/nl_NL/pois.html">POI's</a>
+            <a class="button" id="equipments" href="../../gameversions/nl_NL/equipments.html">Uitrustingen</a>
+        </div>
+    </div>
+</main>
+
+<footer id="footer">
+    &copy; <span id="year"></span> JR04. Alle rechten voorbehouden.
+</footer>
+
+<script>
+const startYear = 2024;
+const currentYear = new Date().getFullYear();
+document.getElementById('year').textContent =
+    startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
+
+function changeLanguage(lang) {
+    let t;
+
+    if (lang === "nl") {
+        t = {
+            title: "Welkom",
+            info: "Selecteer hieronder een knop om naar de overzichten te gaan.",
+            home: "Terug naar de startpagina",
+            building: "Gebouw ID's",
+            vehicle: "Voertuig ID's",
+            mission: "Melding ID's",
+            pois: "POI's",
+            equipments: "Uitrustingen",
+            page: "Meldkamerspel (NL)"
+        };
+    } else if (lang === "de") {
+        t = {
+            title: "Willkommen",
+            info: "Wählen Sie unten eine Knopf, um zu den Übersichten zu gelangen.",
+            home: "Zurück zur Startseite",
+            building: "Gebäude-IDs",
+            vehicle: "Fahrzeug-IDs",
+            mission: "Einsatz-IDs",
+            pois: "POIs",
+            equipments: "Ausrüstung",
+            page: "Meldkamerspel (NL)"
+        };
+    } else {
+        t = {
+            title: "Welcome",
+            info: "Select a button below to go to the overviews.",
+            home: "Back to homepage",
+            building: "Building IDs",
+            vehicle: "Vehicle IDs",
+            mission: "Mission IDs",
+            pois: "POIs",
+            equipments: "Equipments",
+            page: "Meldkamerspel (NL)"
+        };
+    }
+
+    document.title = t.page;
+    document.getElementById('welcome-title').textContent = t.title;
+    document.getElementById('select-info').textContent = t.info;
+    document.getElementById('back-to-home').textContent = t.home;
+    document.getElementById('building-ids').textContent = t.building;
+    document.getElementById('vehicle-ids').textContent = t.vehicle;
+    document.getElementById('mission-ids').textContent = t.mission;
+    document.getElementById('pois').textContent = t.pois;
+    document.getElementByID('equipments').textContent = t.equipment;
+}
+    document.addEventListener("DOMContentLoaded", () => {
+    changeLanguage("nl");
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gebäude Leitstellenspiel (DE)</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e28;
+    color: #dddddd;
+    text-align: center;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    margin: 30px 0 10px;
+    font-size: 32px;
+    color: #eeeeee;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+p {
+    max-width: 800px;
+    margin: 0 auto 10px;
+    font-size: 15px;
+    color: #cccccc;
+}
+
+#last-update {
+    font-size: 13px;
+    color: #aaaaaa;
+}
+
+.language-selector {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    padding: 0;
+    width: 100%;
+}
+
+.language-selector img {
+    height: 24px;
+    width: auto;
+    cursor: pointer;
+    transition: transform 0.2s, border 0.2s;
+    border: 2px solid #555566;
+    border-radius: 4px;
+}
+
+.language-selector img:hover {
+    transform: scale(1.1);
+}
+
+.button {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #2c2c3c;
+    color: #dddddd;
+    border: 2px solid #555566;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2s, transform 0.2s, color 0.2s;
+    font-size: 12px;
+}
+
+.button:hover {
+    background-color: #444456;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 95%;
+    min-width: 700px;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #2a2a3a;
+    border-radius: 10px;
+}
+
+thead th {
+    background-color: #3a3a4a;
+    padding: 12px;
+    border-bottom: 2px solid #555566;
+    color: #eeeeee;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #444455;
+    color: #dddddd;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+tbody tr:hover {
+    background-color: #3c3c4c;
+}
+
+.button-toggle {
+    background-color: #2c2c3c;
+    color: #dddddd;
+    border: 1px solid #555566;
+    padding: 8px 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 5px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Extensions & Vehicles Rows */
+.extensions-row td,
+.vehicles-row td,
+.storage-row td {
+    background-color: #262632;
+    text-align: left;
+    font-size: 17px;
+    color: #cccccc;
+    padding: 0;
+    border-top: 1px solid #444455;
+}
+
+.extensions-content,
+.vehicles-content,
+.storage-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 0 8px;
+}
+
+.extensions-content.show,
+.vehicles-content.show,
+.storage-content.show {
+    opacity: 1;
+    padding: 6px 8px;
+}
+
+.vehicles-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.vehicle-item,
+.storage-item {
+    background-color: #33334a;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+#footer {
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 12px;
+    color: #888888;
+}
+</style>
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+
+<ul class="language-selector">
+    <li><img src="../../images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')"></li>
+    <li><img src="../../images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')"></li>
+    <li><img src="../../images/flag_uk.gif" alt="English" onclick="changeLanguage('en')"></li>
+    <li><img src="../../images/flag_us.gif" alt="English" onclick="changeLanguage('en')"></li>
+    <li><img src="../../images/flag_au.gif" alt="English" onclick="changeLanguage('en')"></li>
+
+    <li><a class="button" id="game-button" href="../../index.html">Startpagina</a></li>
+    <li><a class="button" id="contact-button" href="../../gameversions/contact.html">Contact</a></li>
+    <li><a class="button" id="back-button" href="../../gameversions/de_DE/indexDE.html">Terug</a></li>
+</ul>
+
+<h1 id="page-title"></h1>
+<p id="page-message"></p>
+<p id="last-update"></p>
+
+<div class="table-wrapper">
+    <div id="sheet-data"></div>
+</div>
+
+<footer id="footer">
+    &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
+</footer>
+
+<script>
+const buildingsFile = 'de_DE-Data/buildings.json';
+const vehiclesFile = 'de_DE-Data/Vehicles.json';
+const lastUpdateFile = 'de_DE-Data/last_update_buildings.txt';
+
+const pageTranslations = {
+    nl: {
+        title: "Gebouwen",
+        message: "Overzicht van alle gebouwen in Leitstellenspiel (DE).",
+        gameButton: "Startpagina",
+        contactButton: "Contact",
+        backButton: "Terug",
+        lastUpdate: "Laatste update",
+        tableHeaders: ["ID", "Gebouwnaam", "Credits", "Acties"],
+        toggleExtensions: { show: "Toon Uitbreidingen", hide: "Verberg Uitbreidingen" },
+        toggleVehicles: { show: "Toon Voertuigen", hide: "Verberg Voertuigen" },
+        toggleStorage: { show: "Toon Opslag", hide: "Verberg Opslag" },
+        innerLabels: {
+            credits: "Credits",
+            duration: "Bouwduur",
+            required: "Vereist",
+            none: "Geen",
+            vehicles: "Voertuigen",
+            staff: "Personeel",
+            maxStorage: "Max opslag",
+            extraStorage: "Extra opslag",
+        }
+    },
+    de: {
+        title: "Gebäude",
+        message: "Übersicht aller Gebäude (DE).",
+        gameButton: "Startseite",
+        contactButton: "Kontakt",
+        backButton: "Zurück",
+        lastUpdate: "Letzte Aktualisierung",
+        tableHeaders: ["ID", "Gebäude", "Credits", "Aktionen"],
+        toggleExtensions: { show: "Erweiterungen anzeigen", hide: "Erweiterungen verbergen" },
+        toggleVehicles: { show: "Fahrzeuge anzeigen", hide: "Fahrzeuge verbergen" },
+        toggleStorage: { show: "Speicher anzeigen", hide: "Speicher verbergen" },
+        innerLabels: {
+            credits: "Credits",
+            duration: "Bauzeit",
+            required: "Erforderlich",
+            none: "Keine",
+            vehicles: "Fahrzeuge",
+            staff: "Personal",
+            maxStorage: "Max Lager",
+            extraStorage: "Extra Lager",
+        }
+    },
+    en: {
+        title: "Buildings",
+        message: "Overview of all buildings (DE).",
+        gameButton: "Homepage",
+        contactButton: "Contact",
+        backButton: "Back",
+        lastUpdate: "Last update",
+        tableHeaders: ["ID", "Building Name", "Credits", "Actions"],
+        toggleExtensions: { show: "Show Extensions", hide: "Hide Extensions" },
+        toggleVehicles: { show: "Show Vehicles", hide: "Hide Vehicles" },
+        toggleStorage: { show: "Show Storage", hide: "Hide Storage" },
+        innerLabels: {
+            credits: "Credits",
+            duration: "Build Time",
+            required: "Required",
+            none: "None",
+            vehicles: "Vehicles",
+            staff: "Staff",
+            maxStorage: "Max Storage",
+            extraStorage: "Extra Storage",
+        }
+    }
+};
+
+let currentLang = 'de';
+
+function changeLanguage(lang) {
+    currentLang = lang;
+    const t = pageTranslations[lang];
+
+    document.title = t.title;
+    document.getElementById('page-title').textContent = t.title;
+    document.getElementById('page-message').textContent = t.message;
+    document.getElementById('game-button').textContent = t.gameButton;
+    document.getElementById('contact-button').textContent = t.contactButton;
+    document.getElementById('back-button').textContent = t.backButton;
+
+    const startYear = 2024;
+    const currentYear = new Date().getFullYear();
+    document.getElementById('footer-year').textContent =
+        startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
+
+    loadLastUpdate();
+    initBuildings();
+}
+
+async function loadLastUpdate() {
+    try {
+        const res = await fetch(lastUpdateFile);
+        const date = new Date((await res.text()).trim());
+        document.getElementById('last-update').textContent =
+            `${pageTranslations[currentLang].lastUpdate}: ${date.toLocaleString()}`;
+    } catch {
+        document.getElementById('last-update').textContent =
+            `${pageTranslations[currentLang].lastUpdate}: onbekend`;
+    }
+}
+
+async function initBuildings() {
+    const buildings = await (await fetch(buildingsFile)).json();
+    const vehicles = await (await fetch(vehiclesFile)).json();
+
+    const container = document.getElementById('sheet-data');
+    container.innerHTML = '';
+
+    const table = document.createElement('table');
+    const thead = document.createElement('thead');
+    const tr = document.createElement('tr');
+
+    pageTranslations[currentLang].tableHeaders.forEach(h => {
+        const th = document.createElement('th');
+        th.textContent = h;
+        tr.appendChild(th);
+    });
+
+    thead.appendChild(tr);
+    table.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
+
+    Object.keys(buildings).forEach(key => {
+        const b = buildings[key];
+
+        const hasExtensions = b.extensions && b.extensions.length > 0;
+        const hasVehicles = Object.values(vehicles).some(v => (v.possibleBuildings || []).includes(Number(key)));
+        const hasStorage = b.storageUpgrades && Object.keys(b.storageUpgrades).length > 0;
+
+        const row = document.createElement('tr');
+        row.innerHTML = `<td>${key}</td>
+                         <td>${b.caption}</td>
+                         <td>${b.credits}</td>
+                         <td>
+                            ${hasExtensions ? `<button class="button-toggle ext-btn">${pageTranslations[currentLang].toggleExtensions.show}</button>` : ''}
+                            ${hasVehicles ? `<button class="button-toggle veh-btn">${pageTranslations[currentLang].toggleVehicles.show}</button>` : ''}
+                            ${hasStorage ? `<button class="button-toggle stor-btn">${pageTranslations[currentLang].toggleStorage.show}</button>` : ''}
+                         </td>`;
+        tbody.appendChild(row);
+
+        const labels = pageTranslations[currentLang].innerLabels;
+
+        // Extensions
+        if (hasExtensions) {
+            const extRow = document.createElement('tr');
+            extRow.className = 'extensions-row';
+            const td = document.createElement('td');
+            td.colSpan = 4;
+
+            const div = document.createElement('div');
+            div.className = 'extensions-content';
+
+            (b.extensions || []).forEach(ext => {
+                if (!ext) return;
+                const vehicleNames = (ext?.unlocksVehicleTypes || [])
+                    .map(vID => vehicles[vID]?.caption || vID)
+                    .join(', ');
+
+                const requiredExtCaptions = (ext.requiredExtensions || [])
+                    .map(idx => b.extensions[idx]?.caption || idx)
+                    .join(', ') || labels.none;
+
+                div.innerHTML += `
+                    <div class="detail-card">
+                        <div class="detail-title">${ext.caption}</div>
+                        <div class="detail-grid">
+                            <div><strong>${labels.credits}:</strong> ${ext.credits}</div>
+                            <div><strong>${labels.duration}:</strong> ${ext.duration}</div>
+                            <div><strong>${labels.required}:</strong> ${requiredExtCaptions}</div>
+                            <div><strong>${labels.vehicles}:</strong> ${vehicleNames || labels.none}</div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            td.appendChild(div);
+            extRow.appendChild(td);
+            tbody.appendChild(extRow);
+
+            const toggleBtn = row.querySelector('.ext-btn');
+            toggleBtn.onclick = () => {
+                const open = div.classList.toggle('show');
+                extRow.classList.toggle('show-row', open);
+                div.style.maxHeight = open ? (div.scrollHeight + 60) + 'px' : null;
+                toggleBtn.textContent = open
+                    ? pageTranslations[currentLang].toggleExtensions.hide
+                    : pageTranslations[currentLang].toggleExtensions.show;
+            };
+        }
+
+        // Vehicles
+        if (hasVehicles) {
+            const vehRow = document.createElement('tr');
+            vehRow.className = 'vehicles-row';
+            const td = document.createElement('td');
+            td.colSpan = 4;
+
+            const div = document.createElement('div');
+            div.className = 'vehicles-content';
+
+            Object.keys(vehicles).forEach(vID => {
+                const v = vehicles[vID];
+                if ((v.possibleBuildings || []).includes(Number(key))) {
+                    const item = document.createElement('div');
+                    item.className = 'vehicle-item';
+                    item.innerHTML = `
+                        <strong>${v.caption}</strong> (ID: ${vID})<br>
+                        ${labels.credits}: ${v.credits}<br>
+                        ${labels.staff}: Min - Max ${v.staff?.min || 0} - ${v.staff?.max || 0}<br>
+                        ${labels.maxStorage}: ${v.equipmentCapacity || 0}
+                    `;
+                    div.appendChild(item);
+                }
+            });
+
+            td.appendChild(div);
+            vehRow.appendChild(td);
+            tbody.appendChild(vehRow);
+
+            const toggleBtn = row.querySelector('.veh-btn');
+            toggleBtn.onclick = () => {
+                const open = div.classList.toggle('show');
+                vehRow.classList.toggle('show-row', open);
+                div.style.maxHeight = open ? (div.scrollHeight + 60) + 'px' : null;
+                toggleBtn.textContent = open
+                    ? pageTranslations[currentLang].toggleVehicles.hide
+                    : pageTranslations[currentLang].toggleVehicles.show;
+            };
+        }
+
+        // Storage
+        if (hasStorage) {
+            const storRow = document.createElement('tr');
+            storRow.className = 'storage-row';
+            const td = document.createElement('td');
+            td.colSpan = 4;
+
+            const div = document.createElement('div');
+            div.className = 'storage-content';
+
+            Object.keys(b.storageUpgrades).forEach(sKey => {
+                const s = b.storageUpgrades[sKey];
+                const reqStorageNames = (s.requiredStorageUpgrades || [])
+                    .map(reqKey => b.storageUpgrades[reqKey]?.caption || reqKey)
+                    .join(', ') || labels.none;
+
+                div.innerHTML += `
+                    <div class="detail-card">
+                        <div class="detail-title">${s.caption}</div>
+                        <div class="detail-grid">
+                            <div><strong>${labels.credits}:</strong> ${s.credits}</div>
+                            <div><strong>Coins:</strong> ${s.coins || 0}</div>
+                            <div><strong>${labels.duration}:</strong> ${s.duration}</div>
+                            <div><strong>${labels.extraStorage}:</strong> ${s.additionalStorage}</div>
+                            <div><strong>${labels.required}:</strong> ${reqStorageNames}</div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            td.appendChild(div);
+            storRow.appendChild(td);
+            tbody.appendChild(storRow);
+
+            const toggleBtn = row.querySelector('.stor-btn');
+            toggleBtn.onclick = () => {
+                const open = div.classList.toggle('show');
+                storRow.classList.toggle('show-row', open);
+                div.style.maxHeight = open ? (div.scrollHeight + 60) + 'px' : null;
+                toggleBtn.textContent = open
+                    ? pageTranslations[currentLang].toggleStorage.hide
+                    : pageTranslations[currentLang].toggleStorage.show;
+            };
+        }
+    });
+
+    table.appendChild(tbody);
+    container.appendChild(table);
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    changeLanguage(currentLang);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,2038 @@
+{
+  "0": {
+    "caption": "Brandweer kazerne",
+    "color": "#bb0000",
+    "coins": 30,
+    "credits": 100000,
+    "levelPrices": {
+      "credits": [10000, 50000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000],
+      "coins": [10, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+    },
+    "extensions": [
+      {
+        "caption": "0: Ambulance standplaats",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [16, 30, 52, 63]
+      },
+      {
+        "caption": "22: Team Digitale Verkenning",
+        "credits": 100000,
+        "coins": 10,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [129]
+      },
+      {
+        "caption": "23: Industriële Brandbestrijding",
+        "credits": 150000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [130, 131, 132, 133]
+      },
+      {
+        "caption": "24: Incidentbestrijding Gevaarlijke Stoffen",
+        "credits": 200000,
+        "coins": 15,
+        "duration": "5  Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 4,
+        "unlocksVehicleTypes": [134, 135, 136, 137, 138, 139, 140, 141, 142, 143]
+      },
+      {
+        "caption": "25: Incidentenbestrijding spoor",
+        "credits": 250000,
+        "coins": 25,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 5,
+        "unlocksVehicleTypes": [144, 145, 146, 147, 148, 149, 150, 151, 152]
+      },
+      {
+        "caption": "1: Haakarmbak parkeerplaats",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [26, 27, 29, 32, 45, 51, 61],
+        "parkingLotReservations": [
+          [27, 29, 32, 45, 51, 61]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "2: Haakarmbak parkeerplaats",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [26, 27, 29, 32, 45, 51, 61],
+        "parkingLotReservations": [
+          [27, 29, 32, 45, 51, 61]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "3: Haakarmbak parkeerplaats",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [26, 27, 29, 32, 45, 51, 61],
+        "parkingLotReservations": [
+          [27, 29, 32, 45, 51, 61]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "4: Haakarmbak parkeerplaats",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [26, 27, 29, 32, 45, 51, 61],
+        "parkingLotReservations": [
+          [27, 29, 32, 45, 51, 61]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "5: Haakarmbak parkeerplaats",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [26, 27, 29, 32, 45, 51, 61],
+        "parkingLotReservations": [
+          [27, 29, 32, 45, 51, 61]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "6: Waterongevallenbestrijding",
+        "credits": 400000,
+        "coins": 25,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [33, 36, 49, 50]
+      },
+      {
+        "caption": "7: Haakarmbak parkeerplaats",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [26, 27, 29, 32, 45, 51, 61],
+        "parkingLotReservations": [
+          [27, 29, 32, 45, 51, 61]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "8: Vliegtuigbrandbestrijding",
+        "credits": 400000,
+        "coins": 25,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [41, 42, 43, 44]
+      },
+      {
+        "caption": "9: Haakarmbak parkeerplaats",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [26, 27, 29, 32, 45, 51, 61],
+        "parkingLotReservations": [
+          [27, 29, 32, 45, 51, 61]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "10: Haakarmbak parkeerplaats",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [26, 27, 29, 32, 45, 51, 61],
+        "parkingLotReservations": [
+          [27, 29, 32, 45, 51, 61]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "11: Haakarmbak parkeerplaats",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [26, 27, 29, 32, 45, 51, 61],
+        "parkingLotReservations": [
+          [27, 29, 32, 45, 51, 61]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "12: Haakarmbak parkeerplaats",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [26, 27, 29, 32, 45, 51, 61],
+        "parkingLotReservations": [
+          [27, 29, 32, 45, 51, 61]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "13: Schuimblussing",
+        "credits": 150000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [68, 69, 70]
+      },
+      {
+        "caption": "14: Signalisatie",
+        "credits": 150000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [83],
+        "cannotDisable": true
+      },
+      {
+        "caption": "15: Natuurbrandbestrijding",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [86, 87, 88, 89],
+        "cannotDisable": true
+      },
+      {
+        "caption": "16: Urban Search and Rescue",
+        "credits": 150000,
+        "coins": 15,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [92, 93, 94, 95, 96, 97]
+      },
+      {
+        "caption": "17: Specialisme Technische Hulpverlening",
+        "credits": 150000,
+        "coins": 15,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [90, 91],
+        "cannotDisable": true
+      },
+      {
+        "caption": "18: Grote brandweerkazerne",
+        "credits": 1000000,
+        "coins": 50,
+        "duration": "7 dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 10,
+        "cannotDisable": true
+      },
+      {
+        "caption": "19: Grootschalige Geneeskundige Bijstand",
+        "credits": 200000,
+        "coins": 25,
+        "duration": "5 Dagen",
+        "requiredExtensions": [0],
+        "isVehicleExtension": true,
+        "givesParkingLots": 2,
+        "unlocksVehicleTypes": [100, 101]
+      },
+      {
+        "caption": "20: Verzorgingseenheid",
+        "credits": 150000,
+        "coins": 25,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [120, 121],
+        "parkingLotReservations": [
+          [120]
+        ]
+      },
+      {
+        "caption": "21: Arbeidshygiëne",
+        "credits": 150000,
+        "coins": 25,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [122, 123],
+        "parkingLotReservations": [
+          [122]
+        ]
+      }
+    ],
+    "storageUpgrades": {
+      "initial_containers": {
+        "caption": "Brandweeruitrusting Opslagruimte",
+        "additionalStorage": 40,
+        "credits": 25000,
+        "coins": 10,
+        "duration": "5 Dagen"
+      },
+      "additional_containers_1": {
+        "caption": "Brandweeruitrusting Extra Opslagruimte",
+        "additionalStorage": 30,
+        "credits": 25000,
+        "coins": 10,
+        "duration": "3 Dagen",
+        "requiredStorageUpgrades": [
+          "initial_containers"
+        ]
+      },
+      "additional_containers_2": {
+        "caption": "Brandweeruitrusting Extra Opslagruimte",
+        "additionalStorage": 30,
+        "credits": 25000,
+        "coins": 10,
+        "duration": "3 Dagen",
+        "requiredStorageUpgrades": [
+          "additional_containers_1"
+        ]
+      },
+      "additional_containers_3": {
+        "caption": "Brandweeruitrusting Extra Opslagruimte",
+        "additionalStorage": 30,
+        "credits": 25000,
+        "coins": 10,
+        "duration": "3 Dagen",
+        "requiredStorageUpgrades": [
+          "additional_containers_2"
+        ]
+      },
+      "additional_containers_4": {
+        "caption": "Brandweeruitrusting Extra Opslagruimte",
+        "additionalStorage": 30,
+        "credits": 25000,
+        "coins": 10,
+        "duration": "3 Dagen",
+        "requiredStorageUpgrades": [
+          "additional_containers_3"
+        ]
+      }
+    },
+    "levelcost": [
+      "1. 10.000",
+      "2. 50.000",
+      "3.-24. 100.000"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 24,
+    "special": "Vanaf de 25e brandweerkazerne stijgen de kosten voor de bouw van een nieuwe brandweerkazerne volgens de volgende formule: \u003Ccode\u003E100.000+200.000*LOG\u003Csub\u003E2\u003C/sub\u003E(Aantal brandweerposten − 22)\u003C/code\u003E. De Coins prijs blijft gelijk!",
+    "startPersonnel": 10,
+    "startVehicles": [
+      "SI-2",
+      "TS 8/9",
+      "TST 8/9",
+      "TST 6/7",
+      "TST 4/5",
+      "TS 4/5",
+      "TST-NB 8/9",
+      "TST-NB 6/7",
+      "TST-NB 4/5",
+      "TS 6/7"
+    ],
+    "schoolingTypes": [
+      "Brandweer"
+    ],
+    "schools": [4],
+    "startParkingLots": 1,
+    "icon": "fire-flame-curved"
+  },
+  "1": {
+    "caption": "Meldkamer",
+    "color": "#24c3ae",
+    "coins": 0,
+    "credits": 0,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [],
+    "levelcost": [],
+    "maxBuildings": "Elke 10 gebouwen mag je 1 meldkamer bouwen",
+    "maxLevel": 0,
+    "special": "De meldkamer is het administratief centrum. Hier kan je diverse instellingen bewerken.",
+    "isDispatchCenter": true,
+    "icon": "tower-broadcast"
+  },
+  "2": {
+    "caption": "Ziekenhuis",
+    "color": "#bbe944",
+    "coins": 35,
+    "credits": 200000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [
+      {
+        "caption": "Interne Geneeskunde",
+        "credits": 10000,
+        "coins": 10,
+        "duration": "7 Dagen",
+        "cannotDisable": true
+      },
+      {
+        "caption": "Algemene Heelkunde",
+        "credits": 10000,
+        "coins": 10,
+        "duration": "7 Dagen",
+        "cannotDisable": true
+      },
+      {
+        "caption": "Gynaecologie",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Dagen",
+        "cannotDisable": true,
+        "requiredExtensions": [1]
+      },
+      {
+        "caption": "Urologie",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Dagen",
+        "cannotDisable": true,
+        "requiredExtensions": [1]
+      },
+      {
+        "caption": "Traumatologie",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Dagen",
+        "cannotDisable": true,
+        "requiredExtensions": [1]
+      },
+      {
+        "caption": "Neurologie",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Dagen",
+        "cannotDisable": true,
+        "requiredExtensions": [0]
+      },
+      {
+        "caption": "Neurochirurgie",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Dagen",
+        "cannotDisable": true,
+        "requiredExtensions": [1]
+      },
+      {
+        "caption": "Cardiologie",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Dagen",
+        "cannotDisable": true,
+        "requiredExtensions": [0]
+      },
+      {
+        "caption": "Cardiochirurgie",
+        "credits": 70000,
+        "coins": 15,
+        "duration": "7 Dagen",
+        "cannotDisable": true,
+        "requiredExtensions": [1]
+      },
+      {
+        "caption": "Groot ziekenhuis",
+        "credits": 200000,
+        "coins": 50,
+        "duration": "7 Dagen",
+        "newBeds": 10,
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [
+      "1.-20. 19.000 Credits / 11 Coins"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 20,
+    "special": "Penningmeesters en Admins kunnen de Team ziekenhuizen met behulp van de credits van de Teamkas uitbreiden.",
+    "startBeds": 10,
+    "icon": "hospital"
+  },
+  "3": {
+    "caption": "Ambulancestandplaats",
+    "color": "#ffa500",
+    "coins": 35,
+    "credits": 200000,
+    "levelPrices": {
+      "credits": [10000, 50000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000],
+      "coins": [10, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+    },
+    "extensions": [
+      {
+        "caption": "Grote ambulancepost",
+        "credits": 1000000,
+        "coins": 50,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 10,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Grootschalige Geneeskundige Bijstand",
+        "credits": 200000,
+        "coins": 25,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 2,
+        "unlocksVehicleTypes": [100, 101]
+      }
+    ],
+    "levelcost": [
+      "1. 10.000",
+      "2. 50.000",
+      "3.-19. 100.000"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 19,
+    "special": "",
+    "startPersonnel": 3,
+    "startVehicles": [
+      "Ambulance"
+    ],
+    "schoolingTypes": [
+      "Ambulance"
+    ],
+    "schools": [7],
+    "startParkingLots": 1,
+    "icon": "house-medical"
+  },
+  "4": {
+    "caption": "Brandweer academie",
+    "color": "#992222",
+    "coins": 50,
+    "credits": 500000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [
+      {
+        "caption": "Extra klaslokaal",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Dagen",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra klaslokaal",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Dagen",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra klaslokaal",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Dagen",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 0,
+    "special": "Penningmeesters en Admins kunnen de Team Brandweeracademie met behulp van de credits van de Teamkas uitbreiden.",
+    "startClassrooms": 1,
+    "school": "Brandweer",
+    "icon": "graduation-cap"
+  },
+  "5": {
+    "caption": "Politie opkomstbureau",
+    "color": "#007700",
+    "coins": 35,
+    "credits": 100000,
+    "levelPrices": {
+      "credits": [10000, 50000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000],
+      "coins": [10, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+    },
+    "extensions": [
+      {
+        "caption": "Gevangeniscel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Groot politiebureau",
+        "credits": 1000000,
+        "coins": 50,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 10,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Grote gevangenis",
+        "credits": 200000,
+        "coins": 50,
+        "duration": "7 Dagen",
+        "newCells": 10,
+        "cannotDisable": true
+      },
+      {
+        "caption": "LE - Dienst Infrastructuur",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "unlocksVehicleTypes": [98, 99]
+      },
+      {
+        "caption": "Berger-K",
+        "credits": 150000,
+        "coins": 25,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [108],
+        "parkingLotReservations": [
+          [108]
+        ]
+      },
+      {
+        "caption": "Berger-G",
+        "credits": 150000,
+        "coins": 25,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "unlocksVehicleTypes": [109],
+        "requiredExtensions": [13],
+        "parkingLotReservations": [
+          [109]
+        ]
+      },
+      {
+        "caption": "Team Explosieven Veiligheid",
+        "credits": 150000,
+        "coins": 25,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "unlocksVehicleTypes": [119],
+        "parkingLotReservations": [
+          [119]
+        ]
+      }
+    ],
+    "levelcost": [
+      "1. 10.000",
+      "2. 50.000",
+      "3.-19. 100.000"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 19,
+    "special": "Vanaf het 25e opkomstbureau stijgen de kosten voor de bouw van een nieuw opkomstbureau volgens de volgende formule: \u003Ccode\u003E100.000+200.000*LOG\u003Csub\u003E2\u003C/sub\u003E(Aantal opkomstbureaus − 22)\u003C/code\u003E. De Coins prijs blijft gelijk!",
+    "startPersonnel": 2,
+    "startVehicles": [
+      "DA Noodhulp"
+    ],
+    "schoolingTypes": [
+      "Politie"
+    ],
+    "schools": [8],
+    "startParkingLots": 1,
+    "startCells": 0,
+    "icon": "building-shield"
+  },
+  "6": {
+    "caption": "MMT Standplaats",
+    "color": "#ffd500",
+    "coins": 50,
+    "credits": 800000,
+    "levelPrices": {
+      "credits": [10000, 50000, 100000],
+      "coins": [10, 15, 20]
+    },
+    "extensions": [],
+    "levelcost": [
+      "1. 10.000",
+      "2. 50.000",
+      "3. 100.000"
+    ],
+    "maxBuildings": "Maximaal 1 gebouw per 10 ambulance gebouwen",
+    "maxLevel": 3,
+    "special": "",
+    "startPersonnel": 3,
+    "startVehicles": [],
+    "schoolingTypes": [
+      "Ambulance"
+    ],
+    "schools": [7],
+    "startParkingLots": 1,
+    "icon": "circle-h"
+  },
+  "7": {
+    "caption": "Universiteit Geneeskunde",
+    "color": "#ffc400",
+    "coins": 50,
+    "credits": 500000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [
+      {
+        "caption": "Extra klaslokaal",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Dagen",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra klaslokaal",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Dagen",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra klaslokaal",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Dagen",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 0,
+    "special": "Penningmeesters en Admins kunnen de Team Universiteiten geneeskunde met behulp van de credits van de Teamkas uitbreiden.",
+    "startClassrooms": 1,
+    "school": "Ambulance",
+    "icon": "graduation-cap"
+  },
+  "8": {
+    "caption": "Politie academie",
+    "color": "#225522",
+    "coins": 50,
+    "credits": 500000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [
+      {
+        "caption": "Extra klaslokaal",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Dagen",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra klaslokaal",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Dagen",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra klaslokaal",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Dagen",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 0,
+    "special": "Penningmeesters en Admins kunnen de Team Politieacademie met behulp van de credits van de Teamkas uitbreiden.",
+    "startClassrooms": 1,
+    "school": "Politie",
+    "icon": "graduation-cap"
+  },
+  "9": {
+    "caption": "Politiehelikopter standplaats",
+    "color": "#e7ad2f",
+    "coins": 50,
+    "credits": 1000000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [],
+    "levelcost": [],
+    "maxBuildings": "Zie bijzonderheden",
+    "maxLevel": 0,
+    "special": "Tot het 125ste gebouw (van alle soorten) kunnen maximaal 4 landingsplaatsen worden gebouwd. Dan groeit het aantal met 1 per 25 gebouwen (vanaf 125).",
+    "startPersonnel": 0,
+    "startVehicles": [],
+    "schoolingTypes": [
+      "Politie"
+    ],
+    "schools": [8],
+    "startParkingLots": 1,
+    "icon": "helicopter"
+  },
+  "10": {
+    "caption": "Uitgangsstelling (UGS)",
+    "color": "#404040",
+    "coins": 0,
+    "credits": 0,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [],
+    "levelcost": [],
+    "maxBuildings": 1,
+    "maxLevel": 0,
+    "special": "Je kan zo veel voertuigen als je wilt sturen naar een UGS, teamleden kunnen de UGS ook gebruiken om voertuigen. Een UGS blijft 24 uur bestaan, maar je kan het elk moment weer reseten naar 24 uur.",
+    "isStagingArea": true,
+    "icon": "warehouse"
+  },
+  "11": {
+    "caption": "Politie Hoofdbureau",
+    "color": "#663300",
+    "coins": 50,
+    "credits": 400000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [
+      {
+        "caption": "2e OvD-P",
+        "credits": 40000,
+        "coins": 5,
+        "duration": "3 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [35],
+        "parkingLotReservations": [35]
+      },
+      {
+        "caption": "Drone Team Politie",
+        "credits": 100000,
+        "coins": 10,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [128],
+        "parkingLotReservations": [128]
+      },
+      {
+        "caption": "Mobiele Eenheid, Sectie",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 4,
+        "unlocksVehicleTypes": [39, 40],
+        "parkingLotReservations": [39, 40, 40, 40]
+      },
+      {
+        "caption": "Hondenbrigade",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 4,
+        "unlocksVehicleTypes": [47, 48],
+        "parkingLotReservations": [47, 47, 48, 48]
+      },
+      {
+        "caption": "Arrestatieteam",
+        "credits": 200000,
+        "coins": 20,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 6,
+        "unlocksVehicleTypes": [53, 54, 55],
+        "parkingLotReservations": [53, 54, 54, 54, 54, 55]
+      },
+      {
+        "caption": "Arrestantenvervoer",
+        "credits": 100000,
+        "coins": 10,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 2,
+        "unlocksVehicleTypes": [58],
+        "parkingLotReservations": [58, 58]
+      },
+      {
+        "caption": "Mobiele Eenheid, Aanhoudingseenheid",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [64],
+        "parkingLotReservations": [64]
+      },
+      {
+        "caption": "Mobiele Eenheid, 2e Sectie",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 3,
+        "requiredExtensions": [2],
+        "unlocksVehicleTypes": [40],
+        "parkingLotReservations": [40, 40, 40]
+      },
+      {
+        "caption": "Bereden Brigade",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 6,
+        "unlocksVehicleTypes": [73, 74, 75],
+        "parkingLotReservations": [73, 73, 73, 74, 74, 74, 75, 75, 75]
+      },
+      {
+        "caption": "Waterwerper Uitbreiding",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "4 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [84],
+        "parkingLotReservations": [84]
+      }
+    ],
+    "levelcost": [],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 0,
+    "special": "",
+    "startPersonnel": 1,
+    "startVehicles": [
+      "Officier van Dienst - Politie"
+    ],
+    "schoolingTypes": [
+      "Politie"
+    ],
+    "schools": [8],
+    "startParkingLots": 1,
+    "startParkingLotReservations": [
+      [35]
+    ],
+    "icon": "shield-halved"
+  },
+  "12": {
+    "caption": "Cellencomplex",
+    "color": "#800000",
+    "coins": -1,
+    "credits": 100000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [
+      {
+        "caption": "Gevangeniscel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Grote gevangenis",
+        "credits": 200000,
+        "coins": 50,
+        "duration": "7 Dagen",
+        "newCells": 10,
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 0,
+    "special": "Penningmeesters en Admins kunnen de Team cellencomplex met behulp van de credits van de Teamkas uitbreiden.",
+    "startCells": 1,
+    "icon": "border-all"
+  },
+  "13": {
+    "caption": "Ambulance VWS-post",
+    "color": "#eeb611",
+    "coins": 25,
+    "credits": 100000,
+    "levelPrices": {
+      "credits": [10000],
+      "coins": [10]
+    },
+    "extensions": [
+      {
+        "caption": "Grootschalige Geneeskundige Bijstand",
+        "credits": 200000,
+        "coins": 25,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 2,
+        "unlocksVehicleTypes": [100, 101]
+      }
+    ],
+    "levelcost": [
+      "1. 10.000",
+      "Upgraden naar normale post: 100.000"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 1,
+    "special": "",
+    "startPersonnel": 3,
+    "startVehicles": [
+      "Ambulance"
+    ],
+    "schoolingTypes": [
+      "Ambulance"
+    ],
+    "schools": [7],
+    "startParkingLots": 1,
+    "icon": "house-medical"
+  },
+  "14": {
+    "caption": "Groot gebouwencomplex",
+    "color": "#ffffff",
+    "coins": 1000000,
+    "credits": 50,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [],
+    "levelcost": [
+      "Te duur"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 5,
+    "special": "We weten niet wat het nut is behalve dat je een hoop credits of coins kwijt bent.",
+    "startPersonnel": 0,
+    "startVehicles": [],
+    "schoolingTypes": [],
+    "schools": [],
+    "startParkingLots": 0,
+    "icon": "poo"
+  },
+  "15": {
+    "caption": "Klein gebouwencomplex",
+    "color": "#ffffff",
+    "coins": -1,
+    "credits": -1,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [],
+    "levelcost": [
+      "Te duur"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 5,
+    "special": "We weten niet wat het nut is behalve dat je een hoop credits of coins kwijt bent.",
+    "startPersonnel": 0,
+    "startVehicles": [],
+    "schoolingTypes": [],
+    "schools": [],
+    "startParkingLots": 0,
+    "icon": "poo"
+  },
+  "16": {
+    "caption": "Waterreddingspost",
+    "color": "#f5a42a",
+    "coins": 50,
+    "credits": 500000,
+    "levelPrices": {
+      "credits": [10000, 25000, 50000, 75000, 100000, 100000, 100000, 100000, 100000, 150000, 150000, 150000, 150000, 150000, 200000, 200000, 200000, 200000, 200000, 200000],
+      "coins": [10, 10, 15, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 25, 25, 25, 25, 25, 25]
+    },
+    "extensions": [
+      {
+        "caption": "Boten",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [78, 79]
+      }
+    ],
+    "levelcost": [
+      "1. 10.000",
+      "2. 25.000",
+      "3. 50.000",
+      "4. 75.000",
+      "5-9. 100.000",
+      "10-14. 150.000",
+      "15-20. 200.000"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 20,
+    "special": "",
+    "startPersonnel": 4,
+    "startVehicles": [],
+    "schoolingTypes": [
+      "Waterredding"
+    ],
+    "schools": [20],
+    "startParkingLots": 1,
+    "icon": "person-swimming"
+  },
+  "17": {
+    "caption": "Brandweer, Kazerne (klein)",
+    "color": "#bb0000",
+    "coins": 25,
+    "credits": 50000,
+    "levelPrices": {
+      "credits": [10000, 50000, 100000, 100000, 100000],
+      "coins": [10, 15, 20, 20, 20]
+    },
+    "extensions": [
+      {
+        "caption": "Ambulance standplaats",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [16, 30, 52, 63]
+      },
+      {
+        "caption": "Team Digitale Verkenning",
+        "credits": 100000,
+        "coins": 10,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [129]
+      },
+      {
+        "caption": "Industriële Brandbestrijding",
+        "credits": 150000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [130, 131, 132, 133]
+      },
+      {
+        "caption": "Incidentbestrijding Gevaarlijke Stoffen",
+        "credits": 200000,
+        "coins": 15,
+        "duration": "5  Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 4,
+        "unlocksVehicleTypes": [134, 135, 136, 137, 138, 139, 140, 141, 142, 143]
+      },
+      {
+        "caption": "Haakarmbak parkeerplaats",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [26, 27, 29, 32, 45, 51, 61],
+        "parkingLotReservations": [
+          [27, 29, 32, 45, 51, 61]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Haakarmbak parkeerplaats",
+        "credits": 100000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [26, 27, 29, 32, 45, 51, 61],
+        "parkingLotReservations": [
+          [27, 29, 32, 45, 51, 61]
+        ],
+        "cannotDisable": true
+      },
+      null, null, null, {
+        "caption": "Waterongevallenbestrijding",
+        "credits": 400000,
+        "coins": 25,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [33, 36, 49, 50]
+      },
+      null, {
+        "caption": "Vliegtuigbrandbestrijding",
+        "credits": 400000,
+        "coins": 25,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [41, 42, 43, 44]
+      },
+      null, null, null, null, {
+        "caption": "Schuimblussing",
+        "credits": 150000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [68, 69, 70]
+      },
+      {
+        "caption": "Signalisatie",
+        "credits": 150000,
+        "coins": 20,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [83],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Natuurbrandbestrijding",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [86, 87, 88, 89],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Urban Search and Rescue",
+        "credits": 150000,
+        "coins": 15,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [92, 93, 94, 95, 96, 97],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Specialisme Technische Hulpverlening",
+        "credits": 150000,
+        "coins": 15,
+        "duration": "7 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [90, 91],
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [
+      "1. 10.000",
+      "2. 50.000",
+      "3.-5. 100.000",
+      "Upgraden naar normale post : Verschil prijs naar normale post"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 6,
+    "special": "Vanaf de 25e brandweerkazerne stijgen de kosten voor de bouw van een nieuwe brandweerkazerne volgens de volgende formule: \u003Ccode\u003E50.000+100.000*LOG\u003Csub\u003E2\u003C/sub\u003E(Aantal brandweerposten − 22)\u003C/code\u003E. max. 1 miljoen credits. De Coins prijs blijft gelijk!",
+    "startPersonnel": 10,
+    "startVehicles": [
+      "SI-2",
+      "TS 8/9",
+      "TST 8/9",
+      "TST 6/7",
+      "TST 4/5",
+      "TS 4/5",
+      "TST-NB 8/9",
+      "TST-NB 6/7",
+      "TST-NB 4/5",
+      "TS 6/7"
+    ],
+    "schoolingTypes": [
+      "Brandweer"
+    ],
+    "schools": [4],
+    "startParkingLots": 1,
+    "icon": "fire-flame-curved"
+  },
+  "18": {
+    "caption": "Politie opkomstbureau (klein)",
+    "color": "#007700",
+    "coins": 25,
+    "credits": 50000,
+    "levelPrices": {
+      "credits": [10000, 50000, 100000, 100000],
+      "coins": [10, 15, 20, 20]
+    },
+    "extensions": [
+      {
+        "caption": "Gevangeniscel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra cel",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "7 Dagen",
+        "newCells": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "LE - Dienst Infrastructuur",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "cannotDisable": true
+      },
+      {
+        "caption": "Berger-K",
+        "credits": 150000,
+        "coins": 25,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [108]
+      }
+    ],
+    "levelcost": [
+      "1. 10.000",
+      "2. 50.000",
+      "3.-4. 100.000",
+      "Upgraden naar normale post : Verschil prijs naar normale post"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 4,
+    "special": "Vanaf het 25e opkomstbureau stijgen de kosten voor de bouw van een nieuw opkomstbureau volgens de volgende formule: \u003Ccode\u003E50.000+100.000*LOG\u003Csub\u003E2\u003C/sub\u003E(Aantal opkomstbureaus − 22)\u003C/code\u003E. De Coins prijs blijft gelijk!",
+    "startPersonnel": 2,
+    "startVehicles": [
+      "DA Noodhulp"
+    ],
+    "schoolingTypes": [
+      "Politie"
+    ],
+    "schools": [8],
+    "startParkingLots": 1,
+    "startCells": 0,
+    "icon": "building-shield"
+  },
+  "19": {
+    "caption": "Kustwacht haven",
+    "color": "#f5a42a",
+    "coins": 50,
+    "credits": 500000,
+    "levelPrices": {
+      "credits": [10000, 25000, 50000, 75000, 100000, 100000, 100000, 100000, 100000, 150000, 150000, 150000, 150000, 150000, 200000, 200000, 200000, 200000, 200000, 200000],
+      "coins": [10, 10, 15, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 25, 25, 25, 25, 25, 25]
+    },
+    "extensions": [],
+    "levelcost": [
+      "1. 10.000",
+      "2. 25.000",
+      "3. 50.000",
+      "4. 75.000",
+      "5-9. 100.000",
+      "10-14. 150.000",
+      "15-20. 200.000"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 20,
+    "special": "Je kan een generatiegebied instellen om meldingen op zee te krijgen.",
+    "startPersonnel": 5,
+    "startVehicles": [],
+    "schoolingTypes": [
+      "Waterredding"
+    ],
+    "schools": [20],
+    "startParkingLots": 1,
+    "icon": "person-swimming"
+  },
+  "20": {
+    "caption": "SAR academie",
+    "color": "#992222",
+    "coins": 50,
+    "credits": 500000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [
+      {
+        "caption": "Extra klaslokaal",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Dagen",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra klaslokaal",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Dagen",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra klaslokaal",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Dagen",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 0,
+    "special": "Penningmeesters en Admins kunnen de Team SAR academie met behulp van de credits van de Teamkas uitbreiden.",
+    "startClassrooms": 1,
+    "school": "Waterredding",
+    "icon": "graduation-cap"
+  },
+  "21": {
+    "caption": "SAR Helikopter platform",
+    "color": "#11858d",
+    "coins": 50,
+    "credits": 1000000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [
+      {
+        "caption": "SAR Helicopter Hangar",
+        "credits": 10000,
+        "coins": 1,
+        "duration": "0 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [80],
+        "parkingLotReservations": [
+          [80]
+        ]
+      },
+      {
+        "caption": "Extra SAR Helikopter Hangar",
+        "credits": 200000,
+        "coins": 15,
+        "duration": "4 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "requiredExtensions": [0],
+        "unlocksVehicleTypes": [80],
+        "parkingLotReservations": [
+          [80]
+        ]
+      },
+      {
+        "caption": "Extra SAR Helikopter Hangar",
+        "credits": 200000,
+        "coins": 15,
+        "duration": "4 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "requiredExtensions": [1],
+        "unlocksVehicleTypes": [80],
+        "parkingLotReservations": [
+          [80]
+        ]
+      }
+    ],
+    "levelcost": [],
+    "maxBuildings": "",
+    "maxLevel": 0,
+    "special": "",
+    "startPersonnel": 2,
+    "startVehicles": [],
+    "schoolingTypes": [
+      "Waterredding"
+    ],
+    "schools": [20],
+    "startParkingLots": 0,
+    "icon": "spaghetti-monster-flying"
+  },
+  "22": {
+    "caption": "Steunpunt Rijkswaterstaat",
+    "color": "#f5a42a",
+    "coins": 50,
+    "credits": 100000,
+    "levelPrices": {
+      "credits": [25000],
+      "coins": [10]
+    },
+    "extensions": [
+      {
+        "caption": "Berger-K",
+        "credits": 150000,
+        "coins": 25,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [106]
+      },
+      {
+        "caption": "Berger-G",
+        "credits": 150000,
+        "coins": 25,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [107],
+        "requiredExtensions": [0]
+      }
+    ],
+    "levelcost": [
+      "1. 25.000"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 10,
+    "special": "",
+    "startPersonnel": 0,
+    "startVehicles": [],
+    "schoolingTypes": [
+      "Brandweer"
+    ],
+    "schools": [4],
+    "startParkingLots": 1,
+    "icon": "fire-flame-curved"
+  },
+  "23": {
+    "caption": "Militaire hangar",
+    "color": "#af1313",
+    "coins": 50,
+    "credits": 1000000,
+    "levelPrices": {
+      "credits": [250000],
+      "coins": [10]
+    },
+    "extensions": [],
+    "levelcost": [
+      "1. 250.000"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 10,
+    "special": "",
+    "startPersonnel": 2,
+    "startVehicles": [],
+    "schoolingTypes": [
+      "Brandweer"
+    ],
+    "schools": [4],
+    "startParkingLots": 1,
+    "icon": "fire-flame-curved"
+  },
+  "24": {
+    "caption": "Berger Standplaats",
+    "color": "#af1313",
+    "coins": 30,
+    "credits": 200000,
+    "levelPrices": {
+      "credits": [10000, 25000, 50000, 75000, 100000],
+      "coins": [5, 10, 10, 15, 20]
+    },
+    "extensions": [
+      {
+        "caption": "Berger-G",
+        "credits": 150000,
+        "coins": 25,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 0,
+        "unlocksVehicleTypes": [105]
+      },
+      {
+        "caption": "Parkeerplaats voor voertuigen",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Dagen",
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra parkeerplaats voor voertuigen",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Dagen",
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra parkeerplaats voor voertuigen",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Dagen",
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra parkeerplaats voor voertuigen",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Dagen",
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra parkeerplaats voor voertuigen",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Dagen",
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra parkeerplaats voor voertuigen",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Dagen",
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra parkeerplaats voor voertuigen",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Dagen",
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra parkeerplaats voor voertuigen",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Dagen",
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra parkeerplaats voor voertuigen",
+        "credits": 25000,
+        "coins": 5,
+        "duration": "3 Dagen",
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [
+      "1. 10.000",
+      "2. 25.000",
+      "3. 50.000",
+      "4. 75.000",
+      "5. 100.000"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 5,
+    "special": "",
+    "startPersonnel": 2,
+    "startVehicles": [],
+    "schoolingTypes": [
+      "Brandweer"
+    ],
+    "schools": [4],
+    "startParkingLots": 1,
+    "icon": "fire-flame-curved"
+  },
+  "25": {
+    "caption": "Kazerne defensie",
+    "color": "#af1313",
+    "coins": 50,
+    "credits": 500000,
+    "levelPrices": {
+      "credits": [10000, 25000, 50000, 75000, 100000, 100000, 100000, 100000, 100000, 150000, 150000, 150000, 150000, 150000],
+      "coins": [10, 10, 15, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+    },
+    "extensions": [
+      {
+        "caption": "Mobiele Eenheid, Sectie",
+        "credits": 200000,
+        "coins": 25,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 4,
+        "unlocksVehicleTypes": [39, 40],
+        "parkingLotReservations": [
+          [39],
+          [40],
+          [40],
+          [40]
+        ]
+      },
+      {
+        "caption": "Explosieven Opruimingsdienst Defensie",
+        "credits": 100000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "unlocksVehicleTypes": [113, 114, 115, 116]
+      },
+      {
+        "caption": "Defensie Duikgroep",
+        "credits": 200000,
+        "coins": 25,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 3,
+        "unlocksVehicleTypes": [117, 118],
+        "parkingLotReservations": [
+          [117],
+          [117],
+          [118]
+        ]
+      }
+    ],
+    "storageUpgrades": {
+      "initial_containers": {
+        "caption": "Militaire Opslagruimte",
+        "additionalStorage": 40,
+        "credits": 25000,
+        "coins": 10,
+        "duration": "5 Dagen"
+      },
+      "additional_containers_1": {
+        "caption": "Extra Militaire Opslagruimte",
+        "additionalStorage": 20,
+        "credits": 50000,
+        "coins": 12,
+        "duration": "3 Dagen",
+        "requiredStorageUpgrades": [
+          "initial_containers"
+        ]
+      },
+      "additional_containers_2": {
+        "caption": "Extra Militaire Opslagruimte",
+        "additionalStorage": 20,
+        "credits": 50000,
+        "coins": 12,
+        "duration": "3 Dagen",
+        "requiredStorageUpgrades": [
+          "additional_containers_1"
+        ]
+      }
+    },
+    "levelcost": [
+      "1. 10.000",
+      "2. 25.000",
+      "3. 50.000",
+      "4. 75.000",
+      "5-9. 100.000",
+      "10-14. 150.000"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 14,
+    "special": "",
+    "startPersonnel": 2,
+    "startVehicles": [],
+    "schoolingTypes": [
+      "Militair"
+    ],
+    "schools": [26],
+    "startParkingLots": 1,
+    "icon": "fire-flame-curved"
+  },
+  "26": {
+    "caption": "Militaire academie",
+    "color": "#992222",
+    "coins": 50,
+    "credits": 500000,
+    "levelPrices": {
+      "credits": [],
+      "coins": []
+    },
+    "extensions": [
+      {
+        "caption": "Extra klaslokaal",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Dagen",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra klaslokaal",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Dagen",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      },
+      {
+        "caption": "Extra klaslokaal",
+        "credits": 400000,
+        "coins": 40,
+        "duration": "7 Dagen",
+        "newClassrooms": 1,
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 0,
+    "special": "Penningmeesters en Admins kunnen de Team Brandweeracademie met behulp van de credits van de Teamkas uitbreiden.",
+    "startClassrooms": 1,
+    "school": "Militair",
+    "icon": "graduation-cap"
+  },
+  "27": {
+    "caption": "Standplaats Incidentenbestrijding spoor",
+    "color": "#f5a42a",
+    "coins": 50,
+    "credits": 500000,
+    "levelPrices": {
+      "credits": [10000, 50000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000],
+      "coins": [10, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+    },
+    "extensions": [
+      {
+        "caption": "Haakarmbak parkeerplaats",
+        "credits": 25000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [149],
+        "parkingLotReservations": [
+          [149]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Haakarmbak parkeerplaats",
+        "credits": 25000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [149],
+        "parkingLotReservations": [
+          [149]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Haakarmbak parkeerplaats",
+        "credits": 25000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [149],
+        "parkingLotReservations": [
+          [149]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Haakarmbak parkeerplaats",
+        "credits": 25000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [149],
+        "parkingLotReservations": [
+          [149]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Haakarmbak parkeerplaats",
+        "credits": 25000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [149],
+        "parkingLotReservations": [
+          [149]
+        ],
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [
+      "1. 10.000",
+      "2. 50.000",
+      "3.-19. 100.000"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 19,
+    "special": "",
+    "startPersonnel": 2,
+    "schoolingTypes": [
+      "Brandweer"
+    ],
+    "schools": [4],
+    "startParkingLots": 1,
+    "icon": "building_railway"
+  }
+}

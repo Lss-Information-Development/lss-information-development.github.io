@@ -1,0 +1,88 @@
+[
+    {
+    "id": "bomb_disposal_robot",
+    "name": "RC-Explosievenrobot",
+    "size": 20,
+    "credits": 70000,
+    "coins": 25,
+    "special": "Uitrusting vereist een voertuig met vrije capaciteit om gebruikt te worden. Mogelijke voertuigen: DB-EOD, VW-EOD"
+    },
+    {
+    "id": "fire_breathing_protection",
+    "name": "RC-Adembescherming",
+    "size": 15,
+    "credits": 15000,
+    "coins": 25,
+    "special": "Uitrusting vereist een voertuig met vrije capaciteit om gebruikt te worden. Mogelijke voertuigen: DB-LOG, VW-LOG, BMH-LOG"
+    },
+    {
+    "id": "fire_water_carrier",
+    "name": "RC-Slangen",
+    "size": 15,
+    "credits": 20000,
+    "coins": 25,
+    "watert": 20,
+    "pump": 1500,
+    "special": "Uitrusting vereist een voertuig met vrije capaciteit om gebruikt te worden. Mogelijke voertuigen: DB-LOG, VW-LOG, BMH-LOG"
+    },
+    {
+    "id": "fire_water_carrier_2",
+    "name": "RC-Slangen-Klein",
+    "size": 10,
+    "credits": 15000,
+    "coins": 25,
+    "watert": 10,
+    "pump": 800,
+    "special": "Uitrusting vereist een voertuig met vrije capaciteit om gebruikt te worden. Mogelijke voertuigen: DB-LOG, VW-LOG, BMH-LOG"
+    },
+    {
+    "id": "fire_pump_and_water_carrier",
+    "name": "RC-Pomp",
+    "size": 10,
+    "credits": 12000,
+    "coins": 25,
+    "watert": 5,
+    "pump": 1000,
+    "special": "Uitrusting vereist een voertuig met vrije capaciteit om gebruikt te worden. Mogelijke voertuigen: DB-LOG, VW-LOG, BMH-LOG"
+    },
+    {
+    "id": "care_service",
+    "name": "RC-Verzorging",
+    "size": 15,
+    "credits": 15000,
+    "coins": 25,
+    "special": "Uitrusting vereist een voertuig met vrije capaciteit om gebruikt te worden. Mogelijke voertuigen: DB-LOG, VW-LOG, BMH-LOG"
+    },
+    {
+    "id": "clean_service",
+    "name": "RC-Arbeidshygiëne",
+    "size": 15, 
+    "credits": 15000,
+    "coins": 25,
+    "special": "Uitrusting vereist een voertuig met vrije capaciteit om gebruikt te worden. Mogelijke voertuigen: DB-LOG, VW-LOG, BMH-LOG"
+    },
+    {
+    "id": "hazard_response_suits_equipment",
+    "name": "RC-Gaspakken",
+    "size": 10, 
+    "credits": 15000,
+    "coins": 10,
+    "special": "Deze uitrusting vereist personeel met een opleiding in Gevaarlijke Stoffen Eenheid in het transportvoertuig om te functioneren."
+    },
+    {
+    "id": "hazard_response_material_equipment",
+    "name": "RC-Gevaarlijke Stoffen",
+    "size": 10, 
+    "credits": 15000,
+    "coins": 10,
+    "special": "Deze uitrusting vereist personeel met een opleiding in Gevaarlijke Stoffen Eenheid in het transportvoertuig om te functioneren."
+    },
+    {
+    "id": "railway_electric_equipment",
+    "name": "BU-VTHS",
+    "size": 10, 
+    "credits": 15000,
+    "coins": 10,
+    "special": "Uitrusting vereist een voertuig met vrije capaciteit om gebruikt te worden.Mogelijke voertuigen: DB-VEB, DB-LOG, VW-LOG, BMH-LOG"
+    }
+]

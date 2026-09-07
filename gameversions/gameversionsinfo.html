@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selecteer spelversie</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1 id="page-title">Selecteer spelversie</h1>
+</header>
+
+<ul class="language-selector">
+    <li><img src="../images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')" /></li>
+    <li><img src="../images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')" /></li>
+    <li><img src="../images/flag_uk.gif" alt="English (UK)" onclick="changeLanguage('en-uk')" /></li>
+    <li><img src="../images/flag_us.gif" alt="English (US)" onclick="changeLanguage('en-us')" /></li>
+    <li><img src="../images/flag_au.gif" alt="English (AU)" onclick="changeLanguage('en-au')" /></li>
+    <li><a class="back-flag" id="back-button" href="../index.html">Terug</a></li>
+</ul>
+
+<main>
+    
+    <div class="neon-box">
+        <h2 id="welcome-message">Selecteer hieronder een knop om naar de overzichten te gaan.</h2>
+        <div class="button-container">
+            <a class="button" id="button-nl" href="nl_NL/indexNL.html">Meldkamerspel (NL)</a>
+            <a class="button" id="button-de" href="de_DE/indexDE.html">Leitstellenspiel (DE)</a>
+            <a class="button" id="button-uk" href="en_UK/indexUK.html">Missionchief (UK)</a>
+            <a class="button" id="button-us" href="en_US/indexUS.html">Missionchief (US)</a>
+            <a class="button" id="button-au" href="en_AU/indexAU.html">Missionchief (AU)</a>
+            <a class="button" id="button-es" href="es_ES/indexES.html">Centro de Mando (ES)</a>
+        </div>
+    </div>
+</main>
+
+<footer id="footer">
+    &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
+</footer>
+
+<script>
+// Dynamisch jaartal
+const startYear = 2024;
+const currentYear = new Date().getFullYear();
+document.getElementById('footer-year').textContent = startYear === currentYear ? `${currentYear}` : `${startYear} - ${currentYear}`;
+
+// Taalwissel functies
+function changeLanguage(lang) {
+    let pageTitle = '';
+    let welcomeMessage = '';
+    let backText = '';
+
+    switch(lang) {
+        case "nl":
+            pageTitle = "Selecteer spelversie";
+            welcomeMessage = "Selecteer hieronder een knop om naar de overzichten te gaan.";
+            backText = "Terug";
+            break;
+        case "de":
+            pageTitle = "Wählen Sie Spielversion";
+            welcomeMessage = "Wählen Sie unten einen Knopf, um zu den Übersichten zu gelangen.";
+            backText = "Zurück";
+            break;
+        case "en-uk":
+        case "en-us":
+        case "en-au":
+            pageTitle = "Select Game Version";
+            welcomeMessage = "Select a button below to go to the overviews.";
+            backText = "Back";
+            break;
+        default:
+            pageTitle = "Selecteer spelversie";
+            welcomeMessage = "Selecteer hieronder een knop om naar de overzichten te gaan.";
+            backText = "Terug";
+    }
+
+    document.title = pageTitle;
+    document.getElementById('page-title').textContent = pageTitle;
+    document.getElementById('welcome-message').textContent = welcomeMessage;
+    document.getElementById('back-button').textContent = backText;
+}
+
+// Init default language
+document.addEventListener("DOMContentLoaded", () => {
+    changeLanguage("nl");
+});
+</script>
+
+</body>
+</html>

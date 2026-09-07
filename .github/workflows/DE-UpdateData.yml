@@ -1,0 +1,50 @@
+name: Sync DE Data
+
+on:
+  push:
+  schedule:
+    - cron: "0 0 * * *"  # Elke dag om 00:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download Vehicles.json
+        run: |
+          mkdir -p gameversions/de_DE/de_DE-Data
+          curl -f -sSL https://api.lss-manager.de/de_DE/vehicles -o gameversions/de_DE/de_DE-Data/Vehicles.json
+
+      - name: Download Buildings.json
+        run: |
+          mkdir -p gameversions/de_DE/de_DE-Data
+          curl -f -sSL https://api.lss-manager.de/de_DE/buildings -o gameversions/de_DE/de_DE-Data/buildings.json
+
+
+      - name: Download Pois.json
+        run: |
+          mkdir -p gameversions/de_DE/de_DE-Data
+          curl -f -sSL https://api.lss-manager.de/de_DE/pois -o gameversions/de_DE/de_DE-Data/pois.json
+          
+          
+      - name: Update last update timestamp
+        run: |
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > gameversions/de_DE/de_DE-Data/last_update_buildings.txt
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          git add gameversions/de_DE/de_DE-Data/*
+          git diff-index --quiet HEAD || git commit -m "Update Vehicles.json and Buildings.json"
+          git push origin main

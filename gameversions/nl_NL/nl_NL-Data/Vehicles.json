@@ -1,0 +1,3775 @@
+
+{
+  "0": {
+    "caption": "SI-2",
+    "color": "#cc0000",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [0, 17],
+    "waterTank": 500,
+    "pumpCapacity": 250,
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "wtank": 500,
+    "pumpcap": 250,
+    "schooling": null
+  },
+  "1": {
+    "caption": "TS 8/9",
+    "color": "#990000",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 9
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "equipmentCapacity": 10,
+    "waterTank": 2000,
+    "pumpCapacity": 2000,
+    "minPersonnel": 1,
+    "maxPersonnel": 9,
+    "wtank": 2000,
+    "pumpcap": 2000,
+    "schooling": null
+  },
+  "2": {
+    "caption": "Autoladder",
+    "color": "#791515",
+    "credits": 10000,
+    "coins": 30,
+    "staff": {
+      "min": 1,
+      "max": 3
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "special": "Benodigd vanaf 3 brandweerposten.",
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "schooling": null
+  },
+  "3": {
+    "caption": "DA - Officier van Dienst",
+    "color": "#a51212",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 1
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 17],
+    "special": "Benodigd vanaf 6 brandweerposten.",
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": null
+  },
+  "4": {
+    "caption": "Hulpverleningsvoertuig",
+    "color": "#aa2222",
+    "credits": 12180,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 3
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "special": "Benodigd vanaf 4 brandweerposten.",
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "schooling": null
+  },
+  "5": {
+    "caption": "Adembeschermingsvoertuig",
+    "color": "#8b1818",
+    "credits": 11680,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 3
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "special": "Benodigd vanaf 5 brandweerposten.",
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "schooling": null
+  },
+  "6": {
+    "caption": "TST 8/9",
+    "color": "#880000",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 9
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "equipmentCapacity": 10,
+    "waterTank": 3000,
+    "pumpCapacity": 2500,
+    "minPersonnel": 1,
+    "maxPersonnel": 9,
+    "wtank": 3000,
+    "pumpcap": 3000,
+    "schooling": null
+  },
+  "7": {
+    "caption": "TST 6/7",
+    "color": "#9c1c1c",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 7
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "equipmentCapacity": 10,
+    "waterTank": 3000,
+    "pumpCapacity": 1800,
+    "minPersonnel": 1,
+    "maxPersonnel": 7,
+    "wtank": 3000,
+    "pumpcap": 1800,
+    "schooling": null
+  },
+  "8": {
+    "caption": "TST 4/5",
+    "color": "#d92626",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 5
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "equipmentCapacity": 10,
+    "waterTank": 2000,
+    "pumpCapacity": 1000,
+    "minPersonnel": 1,
+    "maxPersonnel": 5,
+    "wtank": 2000,
+    "pumpcap": 1000,
+    "schooling": null
+  },
+  "9": {
+    "caption": "TS 4/5",
+    "color": "#bb0000",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 5
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "equipmentCapacity": 10,
+    "waterTank": 1500,
+    "pumpCapacity": 800,
+    "minPersonnel": 1,
+    "maxPersonnel": 5,
+    "wtank": 1500,
+    "pumpcap": 800,
+    "schooling": null
+  },
+  "10": {
+    "caption": "Slangenwagen",
+    "color": "#882222",
+    "credits": 17300,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 9
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "waterBonus": 15,
+    "special": "Benodigd vanaf 7 brandweerposten. De slangenwagen zorgt dat de aanwezige waterhoeveelheid wordt verhoogd met 15%",
+    "minPersonnel": 1,
+    "maxPersonnel": 9,
+    "schooling": null
+  },
+  "11": {
+    "caption": "Verkenningseenheid Brandweer",
+    "color": "#662222",
+    "credits": 18300,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 4,
+      "training": {
+        "Brandweer": {
+          "gw_messtechnik": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [0, 17],
+    "equipmentCapacity": 10,
+    "special": "Benodigd vanaf 10 brandweerposten.",
+    "minPersonnel": 1,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Brandweer": {
+        "Verkenningseenheid Brandweer": {
+          "all": true
+        }
+      }
+    }
+  },
+  "12": {
+    "caption": "TST-NB 8/9",
+    "color": "#770000",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 9
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "equipmentCapacity": 10,
+    "waterTank": 4000,
+    "pumpCapacity": 3500,
+    "minPersonnel": 1,
+    "maxPersonnel": 9,
+    "wtank": 4000,
+    "pumpcap": 3500,
+    "schooling": null
+  },
+  "14": {
+    "caption": "TST-NB 6/7",
+    "color": "#aa0000",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 7
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "equipmentCapacity": 10,
+    "waterTank": 4000,
+    "pumpCapacity": 2000,
+    "minPersonnel": 1,
+    "maxPersonnel": 7,
+    "wtank": 4000,
+    "pumpcap": 2000,
+    "schooling": null
+  },
+  "15": {
+    "caption": "TST-NB 4/5",
+    "color": "#d02525",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 5
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "equipmentCapacity": 10,
+    "waterTank": 4000,
+    "pumpCapacity": 1500,
+    "minPersonnel": 1,
+    "maxPersonnel": 5,
+    "wtank": 4000,
+    "pumpcap": 1500,
+    "schooling": null
+  },
+  "16": {
+    "caption": "Ambulance",
+    "color": "#f59f00",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2
+    },
+    "icon": "ambulance",
+    "possibleBuildings": [0, 3, 13, 17],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": null
+  },
+  "17": {
+    "caption": "TS 6/7",
+    "color": "#ad1f1f",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 7
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "equipmentCapacity": 10,
+    "waterTank": 2000,
+    "pumpCapacity": 1500,
+    "minPersonnel": 1,
+    "maxPersonnel": 7,
+    "wtank": 2000,
+    "pumpcap": 1500,
+    "schooling": null
+  },
+  "18": {
+    "caption": "Hoogwerker",
+    "color": "#992222",
+    "credits": 10000,
+    "coins": 30,
+    "staff": {
+      "min": 1,
+      "max": 3
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "special": "Benodigd vanaf 3 brandweerposten.",
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "schooling": null
+  },
+  "19": {
+    "caption": "DA - Hoofdofficier van Dienst",
+    "color": "#b81414",
+    "credits": 25500,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Brandweer": {
+          "elw2": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 17],
+    "special": "Benodigd vanaf 13 brandweerposten.",
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Brandweer": {
+        "Hoofd Officier van Dienst - Brandweer": {
+          "all": true
+        }
+      }
+    }
+  },
+  "20": {
+    "caption": "DA",
+    "color": "#ca1616",
+    "credits": 2000,
+    "coins": 10,
+    "staff": {
+      "min": 1,
+      "max": 4
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 1,
+    "maxPersonnel": 4,
+    "schooling": null
+  },
+  "21": {
+    "caption": "DB Klein",
+    "color": "#cc2222",
+    "credits": 2500,
+    "coins": 12,
+    "staff": {
+      "min": 1,
+      "max": 9
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 1,
+    "maxPersonnel": 9,
+    "schooling": null
+  },
+  "22": {
+    "caption": "DA Noodhulp",
+    "color": "#001bcc",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2
+    },
+    "icon": "car-side",
+    "possibleBuildings": [5, 18],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": null
+  },
+  "23": {
+    "caption": "Lifeliner",
+    "color": "#e09200",
+    "credits": 500000,
+    "coins": 30,
+    "staff": {
+      "min": 1,
+      "max": 4,
+      "training": {
+        "Ambulance": {
+          "notarzt": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "helicopter",
+    "possibleBuildings": [6],
+    "special": "Per 25 gebouwen (alle gebouwen) kan één Lifeliner gekocht worden",
+    "minPersonnel": 1,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Ambulance": {
+        "MMT-Bemanningslid": {
+          "all": true
+        }
+      }
+    }
+  },
+  "24": {
+    "caption": "DA - Adviseur Gevaarlijke stoffen",
+    "color": "#e61919",
+    "credits": 19200,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "gw_gefahrgut": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 17],
+    "special": "Benodigd vanaf 11 brandweerposten.",
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Adviseur Gevaarlijke Stoffen": {
+          "all": true
+        }
+      }
+    }
+  },
+  "25": {
+    "caption": "DB Noodhulp",
+    "color": "#142ab8",
+    "credits": 6000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [5, 18],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": null
+  },
+  "26": {
+    "caption": "Haakarmvoertuig",
+    "color": "#bb2222",
+    "credits": 5000,
+    "coins": 12,
+    "staff": {
+      "min": 1,
+      "max": 3,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-pickup",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    }
+  },
+  "27": {
+    "caption": "Adembeschermingshaakarmbak",
+    "color": "#552222",
+    "credits": 6000,
+    "coins": 12,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "square",
+    "possibleBuildings": [0, 17],
+    "special": "Haakarmvoertuig benodigd",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "28": {
+    "caption": "Politiehelikopter",
+    "color": "#3131e8",
+    "credits": 300000,
+    "coins": 30,
+    "staff": {
+      "min": 1,
+      "max": 3,
+      "training": {
+        "Politie": {
+          "polizeihubschrauber": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "helicopter",
+    "possibleBuildings": [9],
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Politie": {
+        "Politiehelikopter": {
+          "all": true
+        }
+      }
+    }
+  },
+  "29": {
+    "caption": "Watertankhaakarmbak",
+    "color": "#332222",
+    "credits": 6000,
+    "coins": 12,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "square",
+    "possibleBuildings": [0, 17],
+    "waterTank": 10000,
+    "special": "Haakarmvoertuig benodigd",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "wtank": 10000,
+    "schooling": null
+  },
+  "30": {
+    "caption": "Zorgambulance",
+    "color": "#ffb61a",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2
+    },
+    "icon": "ambulance",
+    "possibleBuildings": [0, 3, 13, 17],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": null
+  },
+  "31": {
+    "caption": "Commandovoertuig",
+    "color": "#dc1818",
+    "credits": 27500,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 3,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "special": "Benodigd vanaf 14 brandweerposten.",
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    }
+  },
+  "32": {
+    "caption": "Commandohaakarmbak",
+    "color": "#442222",
+    "credits": 6000,
+    "coins": 12,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "square",
+    "possibleBuildings": [0, 17],
+    "special": "Haakarmvoertuig benodigd",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "33": {
+    "caption": "Waterongevallenvoertuig",
+    "color": "#bf2222",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 4,
+      "max": 6,
+      "training": {
+        "Brandweer": {
+          "gw_taucher": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 4,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Brandweer": {
+        "Duiker/Duikploegleider": {
+          "all": true
+        }
+      }
+    }
+  },
+  "34": {
+    "caption": "Watertankwagen",
+    "color": "#772222",
+    "credits": 17000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 3
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "waterTank": 15000,
+    "pumpCapacity": 1000,
+    "special": "Benodigd vanaf 7 brandweerposten.",
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "wtank": 15000,
+    "pumpcap": 1000,
+    "schooling": null
+  },
+  "35": {
+    "caption": "Officier van Dienst - Politie",
+    "color": "#0006b9",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Politie": {
+          "ovd_p": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [11],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Politie": {
+        "Officier van Dienst - Politie": {
+          "all": true
+        }
+      }
+    }
+  },
+  "36": {
+    "caption": "Waterongevallenaanhanger",
+    "color": "#288f28",
+    "credits": 9000,
+    "coins": 12,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "trailer",
+    "possibleBuildings": [0, 17],
+    "special": "TS, TST, TST-NB, WO, HV, DB-K, SL, VEB, PM-OR of TS-OR benodigd",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "37": {
+    "caption": "MMT-Auto",
+    "color": "#c47f00",
+    "credits": 30000,
+    "coins": 12,
+    "staff": {
+      "min": 1,
+      "max": 4,
+      "training": {
+        "Ambulance": {
+          "notarzt": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [6],
+    "special": "Per 10 Ambulanceposten (Standplaatsen, VWS-posten en uitbreidingen) kan één MMT-Auto gekocht worden",
+    "minPersonnel": 1,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Ambulance": {
+        "MMT-Bemanningslid": {
+          "all": true
+        }
+      }
+    }
+  },
+  "38": {
+    "caption": "Officier van Dienst - Geneeskunde",
+    "color": "#b07914",
+    "credits": 25000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Ambulance": {
+          "orgl": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [3, 6, 13],
+    "special": "Benodigd vanaf de 8 gebouwen en/of uitbreiding",
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Ambulance": {
+        "Officier van Dienst Geneeskunde": {
+          "all": true
+        }
+      }
+    }
+  },
+  "39": {
+    "caption": "ME Commandovoertuig",
+    "color": "#000080",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Politie": {
+          "police_mobiele_eenheid": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [11],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Politie": {
+        "Mobiele Eenheid": {
+          "all": true
+        }
+      }
+    }
+  },
+  "40": {
+    "caption": "ME Flexbus",
+    "color": "#000073",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 4,
+      "max": 8,
+      "training": {
+        "Politie": {
+          "police_mobiele_eenheid": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [11],
+    "minPersonnel": 4,
+    "maxPersonnel": 8,
+    "schooling": {
+      "Politie": {
+        "Mobiele Eenheid": {
+          "all": true
+        }
+      }
+    }
+  },
+  "41": {
+    "caption": "Crashtender (8x8)",
+    "color": "#ad0e0e",
+    "credits": 60000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 3,
+      "training": {
+        "Brandweer": {
+          "arff": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "waterTank": 13300,
+    "pumpCapacity": 8000,
+    "foamTank": 1600,
+    "minPersonnel": 2,
+    "maxPersonnel": 3,
+    "wtank": 13300,
+    "ftank": 1600,
+    "pumpcap": 8000,
+    "schooling": {
+      "Brandweer": {
+        "Vliegtuigbrandbestrijding": {
+          "all": true
+        }
+      }
+    }
+  },
+    "42": {
+    "caption": "Crashtender (6x6)",
+    "color": "#9c0b0b",
+    "credits": 40000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 3,
+      "training": {
+        "Brandweer": {
+          "arff": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "waterTank": 10000,
+    "pumpCapacity": 6000,
+    "foamTank": 1300,
+    "minPersonnel": 2,
+    "maxPersonnel": 3,
+    "wtank": 10000,
+    "ftank": 1300,
+    "pumpcap": 6000,
+    "schooling": {
+      "Brandweer": {
+        "Vliegtuigbrandbestrijding": {
+          "all": true
+        }
+      }
+    }
+  },
+  "43": {
+    "caption": "Crashtender (4x4)",
+    "color": "#f04242",
+    "credits": 15000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 3,
+      "training": {
+        "Brandweer": {
+          "arff": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "waterTank": 6000,
+    "pumpCapacity": 3000,
+    "foamTank": 500,
+    "minPersonnel": 2,
+    "maxPersonnel": 3,
+    "wtank": 6000,
+    "ftank": 500,
+    "pumpcap": 3000,
+    "schooling": {
+      "Brandweer": {
+        "Vliegtuigbrandbestrijding": {
+          "all": true
+        }
+      }
+    }
+  },
+  "44": {
+    "caption": "Airport Fire Officer / On Scene Commander",
+    "color": "#8b0707",
+    "credits": 12000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "elw_airport": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Airport Fire Officer / On Scene Commander": {
+          "all": true
+        }
+      }
+    }
+  },
+
+  "45": {
+    "caption": "Dompelpomphaakarmbak",
+    "color": "#681212",
+    "credits": 6000,
+    "coins": 12,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "square",
+    "possibleBuildings": [0, 17],
+    "waterBonus": 25,
+    "special": "Haakarmvoertuig benodigd. Deze haakarmbak zorgt dat de aanwezige waterhoeveelheid wordt verhoogd met 25%",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "46": {
+    "caption": "DM-Politie",
+    "color": "#0008e7",
+    "credits": 15000,
+    "coins": 10,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Politie": {
+          "police_motorcycle": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "motorcycle",
+    "possibleBuildings": [5, 18],
+    "special": "Benodigd vanaf 10 politiebureaus!",
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Politie": {
+        "Motoragent": {
+          "all": true
+        }
+      }
+    }
+  },
+  "47": {
+    "caption": "DA Hondengeleider",
+    "color": "#0d0d73",
+    "credits": 8000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Politie": {
+          "hondengeleider": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [11],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Politie": {
+        "Hondengeleider": {
+          "all": true
+        }
+      }
+    }
+  },
+  "48": {
+    "caption": "DB Hondengeleider",
+    "color": "#000090",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Politie": {
+          "hondengeleider": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [11],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Politie": {
+        "Hondengeleider": {
+          "all": true
+        }
+      }
+    }
+  },
+  "49": {
+    "caption": "PM-OR | Materieelvoertuig - Oppervlakteredding",
+    "color": "#450c0c",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 4,
+      "max": 9,
+      "training": {
+        "Brandweer": {
+          "oppervlakteredder": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 4,
+    "maxPersonnel": 9,
+    "schooling": {
+      "Brandweer": {
+        "Oppervlakteredder": {
+          "all": true
+        }
+      }
+    }
+  },
+  "50": {
+    "caption": "TS-OR | Tankautospuit - Oppervlakteredding",
+    "color": "#220000",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 4,
+      "max": 9,
+      "training": {
+        "Brandweer": {
+          "oppervlakteredder": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "waterTank": 2000,
+    "pumpCapacity": 1500,
+    "minPersonnel": 4,
+    "maxPersonnel": 9,
+    "wtank": 2000,
+    "pumpcap": 1500,
+    "schooling": {
+      "Brandweer": {
+        "Oppervlakteredder": {
+          "all": true
+        }
+      }
+    }
+  },
+  "51": {
+    "caption": "HulpverleningsHaakarmbak",
+    "color": "#440000",
+    "credits": 6000,
+    "coins": 12,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "square",
+    "possibleBuildings": [0, 17],
+    "special": "Haakarmvoertuig benodigd",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "52": {
+    "caption": "Rapid Responder",
+    "color": "#b16b00",
+    "credits": 2500,
+    "coins": 18,
+    "staff": {
+      "min": 1,
+      "max": 1
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 3, 13, 17],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": null
+  },
+  "53": {
+    "caption": "AT-Commandant",
+    "color": "#0000e1",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Politie": {
+          "operator_at": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [11],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Politie": {
+        "Operator AT": {
+          "all": true
+        }
+      }
+    }
+  },
+  "54": {
+    "caption": "AT-Operator",
+    "color": "#0000b4",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Politie": {
+          "operator_at": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [11],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Politie": {
+        "Operator AT": {
+          "all": true
+        }
+      }
+    }
+  },
+  "55": {
+    "caption": "AT-Materiaalwagen",
+    "color": "#1a1aff",
+    "credits": 15000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Politie": {
+          "operator_at": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [11],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Politie": {
+        "Operator AT": {
+          "all": true
+        }
+      }
+    }
+  },
+  "56": {
+    "caption": "DA Voorlichter",
+    "color": "#570f0f",
+    "credits": 15000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Brandweer": {
+          "spokesman": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 17],
+    "special": "Benodigd vanaf 14 brandweerposten.",
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Brandweer": {
+        "Voorlichter": {
+          "all": true
+        }
+      }
+    }
+  },
+  "57": {
+    "caption": "DA Officier van Dienst - Geneeskundig / Rapid Responder",
+    "color": "#dd8600",
+    "credits": 25000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Ambulance": {
+          "orgl": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [3, 6, 13],
+    "special": "Per 10 Ambulanceposten (Standplaatsen, VWS-posten en uitbreidingen) kan één OVDG-RR gekocht worden",
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Ambulance": {
+        "Officier van Dienst Geneeskunde": {
+          "all": true
+        }
+      }
+    }
+  },
+  "58": {
+    "caption": "DB Arrestantenvervoer",
+    "color": "#0B21F7",
+    "credits": 20000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [11],
+    "special": "Dit voertuig kan 5 arrestanten tegelijk vervoeren vanaf een melding",
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": null
+  },
+  "59": {
+    "caption": "Noodhulp - Onopvallend",
+    "color": "#0A20F7",
+    "credits": 6000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2
+    },
+    "icon": "car-side",
+    "possibleBuildings": [5, 18],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": null
+  },
+  "60": {
+    "caption": "DB Biketeam",
+    "color": "#091FF7",
+    "credits": 8000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Politie": {
+          "bike_police": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [5, 18],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Politie": {
+        "Biketeam": {
+          "all": true
+        }
+      }
+    }
+  },
+  "61": {
+    "caption": "Slangenhaakarmbak",
+    "color": "#550000",
+    "credits": 6000,
+    "coins": 12,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "square",
+    "possibleBuildings": [0, 17],
+    "waterBonus": 15,
+    "special": "Haakarmvoertuig benodigd. Deze haakarmbak zorgt dat de aanwezige waterhoeveelheid wordt verhoogd met 15%",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "62": {
+    "caption": "TS-HV | Tankautospuit-Hulpverlening",
+    "color": "#881b1b",
+    "credits": 20000,
+    "coins": 25,
+    "staff": {
+      "min": 3,
+      "max": 7
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "waterTank": 2000,
+    "pumpCapacity": 1500,
+    "special": "Per 10 brandweerposten kan één TS-HV gekocht worden.",
+    "minPersonnel": 3,
+    "maxPersonnel": 7,
+    "wtank": 2000,
+    "pumpcap": 1500,
+    "schooling": null
+  },
+  "63": {
+    "caption": "DM - Rapid Responder",
+    "color": "#9f6000",
+    "credits": 2500,
+    "coins": 18,
+    "staff": {
+      "min": 1,
+      "max": 1
+    },
+    "icon": "motorcycle",
+    "possibleBuildings": [0, 3, 13, 17],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": null
+  },
+  "64": {
+    "caption": "ME Aanhoudingseenheid",
+    "color": "#00005c",
+    "credits": 20000,
+    "coins": 25,
+    "staff": {
+      "min": 6,
+      "max": 8,
+      "training": {
+        "Politie": {
+          "detention_unit": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [11],
+    "minPersonnel": 6,
+    "maxPersonnel": 8,
+    "schooling": {
+      "Politie": {
+        "ME - Aanhoudingseenheid": {
+          "all": true
+        }
+      }
+    }
+  },
+  "65": {
+    "caption": "DA Terreinwaardig - Reddingsbrigade",
+    "color": "#F49A13",
+    "credits": 7500,
+    "coins": 15,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Waterredding": {
+          "gw_wasserrettung": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [16],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Waterredding": {
+        "Waterredding": {
+          "all": true
+        }
+      }
+    }
+  },
+  "66": {
+    "caption": "Kusthulpverleningsvoertuig",
+    "color": "#F5A42A",
+    "credits": 8000,
+    "coins": 15,
+    "staff": {
+      "min": 2,
+      "max": 6,
+      "training": {
+        "Waterredding": {
+          "gw_wasserrettung": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [16],
+    "minPersonnel": 2,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Waterredding": {
+        "Waterredding": {
+          "all": true
+        }
+      }
+    }
+  },
+  "67": {
+    "caption": "Bootaanhanger Reddingsbrigade",
+    "color": "#F5A42A",
+    "credits": 5000,
+    "coins": 15,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "trailer",
+    "possibleBuildings": [16],
+    "special": "DAT-RB of KHV benodigd",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "68": {
+    "caption": "SB",
+    "color": "#770000",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 2,
+      "max": 3,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "waterTank": 10000,
+    "pumpCapacity": 1000,
+    "foamTank": 1000,
+    "minPersonnel": 2,
+    "maxPersonnel": 3,
+    "wtank": 10000,
+    "ftank": 1000,
+    "pumpcap": 1000,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    }
+  },
+  "69": {
+    "caption": "SBH",
+    "color": "#950000",
+    "credits": 10000,
+    "coins": 12,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "square",
+    "possibleBuildings": [0, 17],
+    "waterTank": 8000,
+    "pumpCapacity": 1000,
+    "foamTank": 1000,
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "wtank": 8000,
+    "ftank": 1000,
+    "pumpcap": 1000,
+    "schooling": null
+  },
+  "70": {
+    "caption": "SBA",
+    "color": "#ba0000",
+    "credits": 15000,
+    "coins": 10,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "trailer",
+    "possibleBuildings": [0, 17],
+    "pumpCapacity": 1000,
+    "foamTank": 500,
+    "special": "Het gaat hier om een aanhanger dat een trekkend voertuig nodig heeft. (SI-2, TS 8/9, TS-OR, PM-OR, TS-HV, TS 4/5, TS 6/7, HV, AB, SL, DA, DB-K, TST 4/5, TST 6/7, TST 8/9, TST-NB 4/5, TST-NB 6/7, TST-NB 8/9, DB-VEB)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "ftank": 500,
+    "pumpcap": 1000,
+    "schooling": null
+  },
+  "71": {
+    "caption": "MSA",
+    "color": "#800000",
+    "credits": 10000,
+    "coins": 10,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "trailer",
+    "possibleBuildings": [0, 17],
+    "waterBonus": 5,
+    "pumpCapacity": 1000,
+    "special": "Het gaat hier om een aanhanger dat een trekkend voertuig nodig heeft. (SI-2, TS 8/9, TS-OR, PM-OR, TS-HV, TS 4/5, TS 6/7, HV, AB, SL, DA, DB-K, TST 4/5, TST 6/7, TST 8/9, TST-NB 4/5, TST-NB 6/7, TST-NB 8/9, DB-VEB). Deze aanhanger zorgt dat de aanwezige waterhoeveelheid wordt verhoogd met 5%",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "pumpcap": 1000,
+    "schooling": null
+  },
+  "72": {
+    "caption": "DPA",
+    "color": "#a80000",
+    "credits": 15000,
+    "coins": 10,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "trailer",
+    "possibleBuildings": [0, 17],
+    "waterBonus": 10, 
+    "pumpCapacity": 2500,
+    "special": "Het gaat hier om een aanhanger dat een trekkend voertuig nodig heeft. (SI-2, TS 8/9, TS-OR, PM-OR, TS-HV, TS 4/5, TS 6/7, HV, AB, SL, DA, DB-K, TST 4/5, TST 6/7, TST 8/9, TST-NB 4/5, TST-NB 6/7, TST-NB 8/9, DB-VEB). Deze aanhanger zorgt dat de aanwezige waterhoeveelheid wordt verhoogd met 10%",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "pumpcap": 2500,
+    "schooling": null
+  },
+  "73": {
+    "caption": "Vrachtwagen - Bereden Brigade",
+    "color": "#00005c",
+    "credits": 35000,
+    "coins": 15,
+    "staff": {
+      "min": 1,
+      "max": 4,
+      "training": {
+        "Politie": {
+          "police_horse": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [11],
+    "minPersonnel": 1,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Politie": {
+        "Bereden Brigade": {
+          "all": true
+        }
+      }
+    }
+  },
+  "74": {
+    "caption": "Bereden Brigade Aanhanger",
+    "color": "#00005c",
+    "credits": 15000,
+    "coins": 15,
+    "staff": {
+      "min": 0,
+      "max": 0,
+      "training": {
+        "Politie": {
+          "police_horse": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [11],
+    "special": "Het gaat hier om een aanhanger dat een trekkend voertuig nodig heeft. (DAT-NH). Benodigd 1 persoon met een speciale opleiding in het trekkende voertuig (Bereden Brigade)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": {
+      "Politie": {
+        "Bereden Brigade": {
+          "all": true
+        }
+      }
+    }
+  },
+  "75": {
+    "caption": "Dienstauto terreinvaardig - Noodhulp",
+    "color": "#00005c",
+    "credits": 10000,
+    "coins": 10,
+    "staff": {
+      "min": 1,
+      "max": 2
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [11],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": null
+  },
+  "76": {
+    "caption": "Quad",
+    "color": "#f5c929",
+    "credits": 5000,
+    "coins": 10,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Waterredding": {
+          "gw_wasserrettung": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [16],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Waterredding": {
+        "Waterredding": {
+          "all": true
+        }
+      }
+    }
+  },
+  "77": {
+    "caption": "KW-boot",
+    "color": "#f5b829",
+    "credits": 50000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 6,
+      "training": {
+        "Waterredding": {
+          "ocean_navigation": {
+            "min": 1
+          },
+          "law_enforcement_marine": {
+            "min": 1
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [19],
+    "minPersonnel": 2,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Waterredding": {
+        "Groot vaarbewijs": {
+          "min": 1
+        },
+        "Water handhaving": {
+          "min": 1
+        }
+      }
+    }
+  },
+  "78": {
+    "caption": "RB-K",
+    "color": "#f59629",
+    "credits": 35000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Waterredding": {
+          "ocean_navigation": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [16, 19],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Waterredding": {
+        "Groot vaarbewijs": {
+          "all": true
+        }
+      }
+    }
+  },
+  "79": {
+    "caption": "RB-G",
+    "color": "#f5a329",
+    "credits": 45000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 6,
+      "training": {
+        "Waterredding": {
+          "ocean_navigation": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [16, 19],
+    "minPersonnel": 2,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Waterredding": {
+        "Groot vaarbewijs": {
+          "all": true
+        }
+      }
+    }
+  },
+  "80": {
+    "caption": "SAR-heli",
+    "color": "#fec039",
+    "credits": 300000,
+    "coins": 30,
+    "staff": {
+      "min": 2,
+      "max": 3,
+      "training": {
+        "Waterredding": {
+          "coastal_rescue_pilot": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [21],
+    "minPersonnel": 2,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Waterredding": {
+        "SAR Helicopter": {
+          "all": true
+        }
+      }
+    }
+  },
+  "81": {
+    "caption": "DA-RWS | Dienstvoertuig weginspecteur Rijkswaterstaat",
+    "color": "#450c0c",
+    "credits": 25000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "technical_aid": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [22],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Weginspecteur": {
+          "all": true
+        }
+      }
+    }
+  },
+  "82": {
+    "caption": "DM-RWS | Dienstmotor weginspecteur Rijkswaterstaat",
+    "color": "#450c0c",
+    "credits": 15000,
+    "coins": 15,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Brandweer": {
+          "technical_aid": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [22],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Brandweer": {
+        "Weginspecteur": {
+          "all": true
+        }
+      }
+    }
+  },
+  "83": {
+    "caption": "DA-SIG | Signalisatievoertuig",
+    "color": "#450c0c",
+    "credits": 25000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "technical_aid": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Weginspecteur": {
+          "all": true
+        }
+      }
+    }
+  },
+  "84": {
+    "caption": "Waterwerper",
+    "color": "#00788c",
+    "credits": 50000,
+    "coins": 25,
+    "staff": {
+      "min": 4,
+      "max": 4,
+      "training": {
+        "Politie": {
+          "police_wasserwerfer": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "shower",
+    "possibleBuildings": [11],
+    "minPersonnel": 4,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Politie": {
+        "ME - Waterwerper": {
+          "all": true
+        }
+      }
+    }
+  },
+  "85": {
+    "caption": "FBO-Heli",
+    "color": "#982132",
+    "credits": 300000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 3,
+      "training": {
+        "Brandweer": {
+          "airborne_firefighting": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "shuttle-van",
+    "possibleBuildings": [23],
+    "minPersonnel": 2,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Brandweer": {
+        "Fire Bucket Operator": {
+          "all": true
+        }
+      }
+    }
+  },
+  "86": {
+    "caption": "DB-Handcrew",
+    "color": "#220000",
+    "credits": 30000,
+    "coins": 25,
+    "staff": {
+      "min": 7,
+      "max": 9,
+      "training": {
+        "Brandweer": {
+          "wildfire": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 7,
+    "maxPersonnel": 9,
+    "schooling": {
+      "Brandweer": {
+        "Handcrew": {
+          "all": true
+        }
+      }
+    }
+  },
+  "87": {
+    "caption": "DA-LA-NB",
+    "color": "#220000",
+    "credits": 30000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Brandweer": {
+          "wildfire_command": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Brandweer": {
+        "Landelijk Adviseur Natuurbranden": {
+          "all": true
+        }
+      }
+    }
+  },
+  "88": {
+    "caption": "VW-NB",
+    "color": "#220000",
+    "credits": 12000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    }
+  },
+  "89": {
+    "caption": "NBH",
+    "color": "#220000",
+    "credits": 12000,
+    "coins": 25,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "90": {
+    "caption": "TS-STH",
+    "color": "#220000",
+    "credits": 25000,
+    "coins": 25,
+    "staff": {
+      "min": 7,
+      "max": 7,
+      "training": {
+        "Brandweer": {
+          "disaster_response_command": {
+            "min": 2
+          },
+          "disaster_response": {
+            "min": 5
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "waterTank": 2000,
+    "pumpCapacity": 2000,
+    "minPersonnel": 7,
+    "maxPersonnel": 7,
+    "wtank": 2000,
+    "pumpcap": 2000,
+    "schooling": {
+      "Brandweer": {
+        "Teamleider STH": {
+          "min": 2
+        },
+        "Teamlid STH": {
+          "min": 5
+        }
+      }
+    }
+  },
+  "91": {
+    "caption": "HVH-STH",
+    "color": "#220000",
+    "credits": 6000,
+    "coins": 12,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "92": {
+    "caption": "DB-USAR",
+    "color": "#220000",
+    "credits": 8000,
+    "coins": 25,
+    "staff": {
+      "min": 5,
+      "max": 9,
+      "training": {
+        "Brandweer": {
+          "search_and_rescue": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 5,
+    "maxPersonnel": 9,
+    "schooling": {
+      "Brandweer": {
+        "Teamlid USAR": {
+          "all": true
+        }
+      }
+    }
+  },
+  "93": {
+    "caption": "TS-USAR",
+    "color": "#220000",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 4,
+      "max": 9,
+      "training": {
+        "Brandweer": {
+          "search_and_rescue": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "waterTank": 2000,
+    "pumpCapacity": 2000,
+    "minPersonnel": 4,
+    "maxPersonnel": 9,
+    "wtank": 2000,
+    "pumpcap": 2000,
+    "schooling": {
+      "Brandweer": {
+        "Teamlid USAR": {
+          "all": true
+        }
+      }
+    }
+  },
+  "94": {
+    "caption": "VW-USAR",
+    "color": "#220000",
+    "credits": 35000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 2,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    }
+  },
+  "95": {
+    "caption": "DM-USAR",
+    "color": "#220000",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Brandweer": {
+          "search_and_rescue": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Brandweer": {
+        "Teamlid USAR": {
+          "all": true
+        }
+      }
+    }
+  },
+  "96": {
+    "caption": "Quad-USAR",
+    "color": "#220000",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "search_and_rescue": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Teamlid USAR": {
+          "all": true
+        }
+      }
+    }
+  },
+  "97": {
+    "caption": "DB–Speurhonden",
+    "color": "#220000",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Brandweer": {
+          "rescue_dogs": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Brandweer": {
+        "Hondengeleider USAR": {
+          "all": true
+        }
+      }
+    }
+  },
+  "98": {
+    "caption": "SIV-P",
+    "color": "#0d0d73",
+    "credits": 35000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Politie": {
+          "traffic_police": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [5, 18],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Politie": {
+        "Chauffeur Dienst Infra": {
+          "all": true
+        }
+      }
+    }
+  },
+  "99": {
+    "caption": "DB-VOA",
+    "color": "#0d0d73",
+    "credits": 50000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Politie": {
+          "traffic_inspector": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [5, 18],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Politie": {
+        "Verkeersongevallen Analist": {
+          "all": true
+        }
+      }
+    }
+  },
+  "100": {
+    "caption": "GGB",
+    "color": "#b16b00",
+    "credits": 45000,
+    "coins": 25,
+    "staff": {
+      "min": 6,
+      "max": 6,
+      "training": {
+        "Brandweer": {
+          "mass_casualty_and_emergency_doctor": {
+            "all": true
+          }
+        },
+        "Ambulance": {
+          "mass_casualty_and_emergency_doctor": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 3, 13],
+    "minPersonnel": 6,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Brandweer": {
+        "Geneeskundige bijstandsverlener": {
+          "all": true
+        }
+      },
+      "Ambulance": {
+        "Geneeskundige bijstandsverlener": {
+          "all": true
+        }
+      }
+    }
+  },
+  "101": {
+    "caption": "NHT",
+    "color": "#b16b00",
+    "credits": 15000,
+    "coins": 15,
+    "staff": {
+      "min": 4,
+      "max": 8,
+      "training": {
+        "Brandweer": {
+          "mass_casualty": {
+            "all": true
+          }
+        },
+        "Ambulance": {
+          "mass_casualty": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 3, 13],
+    "minPersonnel": 4,
+    "maxPersonnel": 8,
+    "schooling": {
+      "Brandweer": {
+        "Noodhulpteam": {
+          "all": true
+        }
+      },
+      "Ambulance": {
+        "Noodhulpteam": {
+          "all": true
+        }
+      }
+    }
+  },
+  "102": {
+    "caption": "MC-Ambulance",
+    "color": "#b16b00",
+    "credits": 5000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 2
+    },
+    "icon": "car-side",
+    "possibleBuildings": [3, 13],
+    "minPersonnel": 2,
+    "maxPersonnel": 2,
+    "schooling": null
+  },
+  "103": {
+    "caption": "MICU",
+    "color": "#b16b00",
+    "credits": 30000,
+    "coins": 20,
+    "staff": {
+      "min": 3,
+      "max": 3,
+      "training": {
+        "Ambulance": {
+          "intensive_care": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [3, 13],
+    "minPersonnel": 3,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Ambulance": {
+        "Intensive Care Team": {
+          "all": true
+        }
+      }
+    }
+  },
+  "104": {
+    "caption": "Berger-K",
+    "color": "#450c0c",
+    "credits": 25000,
+    "coins": 8,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "tow_trucks": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [24],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Berger Training": {
+          "all": true
+        }
+      }
+    }
+  },
+  "105": {
+    "caption": "Berger-G",
+    "color": "#450c0c",
+    "credits": 50000,
+    "coins": 13,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "tow_trucks": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [24],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Berger Training": {
+          "all": true
+        }
+      }
+    }
+  },
+  "106": {
+    "caption": "Berger-K (RWS)",
+    "color": "#450c0c",
+    "credits": 25000,
+    "coins": 8,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "tow_trucks": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [22],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Berger Training": {
+          "all": true
+        }
+      }
+    }
+  },
+  "107": {
+    "caption": "Berger-G (RWS)",
+    "color": "#450c0c",
+    "credits": 50000,
+    "coins": 13,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "tow_trucks": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [22],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Berger Training": {
+          "all": true
+        }
+      }
+    }
+  },
+  "108": {
+    "caption": "Berger-K (Politie)",
+    "color": "#0006b9",
+    "credits": 25000,
+    "coins": 8,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Politie": {
+          "tow_trucks": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [5, 18],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Politie": {
+        "Berger Training": {
+          "all": true
+        }
+      }
+    }
+  },
+  "109": {
+    "caption": "Berger-G (Politie)",
+    "color": "#0006b9",
+    "credits": 50000,
+    "coins": 13,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "tow_trucks": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "truck-moving",
+    "possibleBuildings": [5],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Berger Training": {
+          "all": true
+        }
+      }
+    }
+  },
+  "110": {
+    "caption": "DAT-KMAR",
+    "color": "#0c284f",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Militair": {
+          "military_police": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [25],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Militair": {
+        "Marechaussee": {
+          "all": true
+        }
+      }
+    }
+  },
+  "111": {
+    "caption": "DB-KMAR",
+    "color": "#0c284f",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Militair": {
+          "military_police": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [25],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Militair": {
+        "Marechaussee": {
+          "all": true
+        }
+      }
+    }
+  },
+  "112": {
+    "caption": "DM-KMAR",
+    "color": "#0c284f",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Militair": {
+          "military_police": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "motorcycle",
+    "possibleBuildings": [25],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Militair": {
+        "Marechaussee": {
+          "all": true
+        }
+      }
+    }
+  },
+  "113": {
+    "caption": "DAT-EOD",
+    "color": "#0c284f",
+    "credits": 40000,
+    "coins": 20,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Militair": {
+          "bomb_disposal": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [25],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Militair": {
+        "Bomontmanteling": {
+          "all": true
+        }
+      }
+    }
+  },
+  "114": {
+    "caption": "DB-EOD",
+    "color": "#0c284f",
+    "credits": 45000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 2,
+      "training": {
+        "Militair": {
+          "bomb_disposal": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [25],
+    "equipmentCapacity": 20,
+    "minPersonnel": 2,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Militair": {
+        "Bomontmanteling": {
+          "all": true
+        }
+      }
+    }
+  },
+  "115": {
+    "caption": "VW-EOD",
+    "color": "#0c284f",
+    "credits": 45000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 2,
+      "training": {
+        "Militair": {
+          "bomb_disposal": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [25],
+    "equipmentCapacity": 40,
+    "minPersonnel": 2,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Militair": {
+        "Bomontmanteling": {
+          "all": true
+        }
+      }
+    }
+  },
+  "116": {
+    "caption": "DB-Explosievenhonden",
+    "color": "#0c284f",
+    "credits": 40000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 2,
+      "training": {
+        "Militair": {
+          "bomb_disposal_dogs": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [25],
+    "minPersonnel": 2,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Militair": {
+        "Hondengeleider EOD": {
+          "all": true
+        }
+      }
+    }
+  },
+  "117": {
+    "caption": "DB-Explosievenduikers",
+    "color": "#0c284f",
+    "credits": 30000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 2,
+      "training": {
+        "Militair": {
+          "bomb_disposal_diver": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [25],
+    "minPersonnel": 2,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Militair": {
+        "Duiker Defensie": {
+          "all": true
+        }
+      }
+    }
+  },
+  "118": {
+    "caption": "BA-DDG",
+    "color": "#0c284f",
+    "credits": 15000,
+    "coins": 25,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "car-side",
+    "possibleBuildings": [25],
+    "special": "Het gaat hier om een aanhanger dat een trekkend voertuig nodig heeft. (DB-Explosieveduikers)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "119": {
+    "caption": "DB-TEV",
+    "color": "#0c284f",
+    "credits": 25000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Politie": {
+          "bomb_disposal_patrol": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [5, 18],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Politie": {
+        "Bomverkenner": {
+          "all": true
+        }
+      }
+    }
+  },
+  "120": {
+    "caption": "DB-VZ",
+    "color": "#791515",
+    "credits": 12000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Brandweer": {
+          "care_service": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Brandweer": {
+        "Verzorger": {
+          "all": true
+        }
+      }
+    }
+  },
+  "121": {
+    "caption": "VZH",
+    "color": "#791515",
+    "credits": 12000,
+    "coins": 6,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "square",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "122": {
+    "caption": "DB-AH",
+    "color": "#791515",
+    "credits": 12000,
+    "coins": 25,
+    "staff": {
+      "min": 2,
+      "max": 4,
+      "training": {
+        "Brandweer": {
+          "clean_service": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 2,
+    "maxPersonnel": 4,
+    "schooling": {
+      "Brandweer": {
+        "Hygiënemedewerker": {
+          "all": true
+        }
+      }
+    }
+  },
+  "123": {
+    "caption": "VZH-AH",
+    "color": "#791515",
+    "credits": 12000,
+    "coins": 6,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "square",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "124": {
+    "caption": "DB-PC-LOG",
+    "color": "#791515",
+    "credits": 40000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Brandweer": {
+          "care_service_command": {
+            "all": true
+          }
+        }
+      }
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 17],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Brandweer": {
+        "Pelotonscommandant Logistiek": {
+          "all": true
+        }
+      }
+    }
+  },
+  "125": {
+    "caption": "DB-LOG",
+    "color": "#791515",
+    "credits": 10000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 3
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 17],
+    "equipmentCapacity": 20,
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "schooling": null
+  },
+  "126": {
+    "caption": "VW-LOG",
+    "color": "#791515",
+    "credits": 15000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 3
+    },
+    "icon": "car-side",
+    "possibleBuildings": [0, 17],
+    "equipmentCapacity": 30,
+    "minPersonnel": 1,
+    "maxPersonnel": 3,
+    "schooling": null
+  },
+  "127": {
+    "caption": "BMH-LOG",
+    "color": "#791515",
+    "credits": 6000,
+    "coins": 12,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "icon": "square",
+    "possibleBuildings": [0, 17],
+    "equipmentCapacity": 30,
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "128": {
+    "caption": "DB-DRONE",
+    "credits": 60000,
+    "coins": 28,
+    "staff": {
+      "min": 3,
+      "max": 3,
+      "training": {
+        "Politie": {
+          "drone_police": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      11
+    ],
+    "minPersonnel": 3,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Politie": {
+        "Drone Flightcrew": {
+          "all": true
+        }
+      }
+    }
+  },
+  "129": {
+    "caption": "DB-TDV",
+    "credits": 60000,
+    "coins": 28,
+    "staff": {
+      "min": 3,
+      "max": 3,
+      "training": {
+        "Brandweer": {
+          "drone_fire": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "minPersonnel": 3,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Brandweer": {
+        "TDV Drone Flightcrew": {
+          "all": true
+        }
+      }
+    }
+  },
+  "130": {
+    "caption": "SB-BA",
+    "credits": 45000,
+    "coins": 15,
+    "staff": {
+      "min": 2,
+      "max": 3,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    },
+    "waterTank": 3000,
+    "wtank": 3000,
+    "foamTank": 6000,
+    "ftank": 6000
+  },
+  "131": {
+    "caption": "SB-IB",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 2,
+      "max": 3,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    },
+    "waterTank": 20000,
+    "wtank": 20000,
+    "foamTank": 2000,
+    "ftank": 2000
+  },
+  "132": {
+    "caption": "AS",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 2,
+      "max": 3,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    },
+    "foamTank": 1000,
+    "ftank": 1000
+  },
+  "133": {
+    "caption": "TS-IB",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 1,
+      "max": 7,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "equipmentCapacity": 10,
+    "minPersonnel": 1,
+    "maxPersonnel": 7,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    },
+    "waterTank": 2000,
+    "wtank": 2000,
+    "foamTank": 200,
+    "ftank": 200
+  },
+  "134": {
+    "caption": "GSH",
+    "credits": 12000,
+    "coins": 8,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "special": "Benodigd een speciale opleiding in het trekkend voertuig. (Gevaarlijke Stoffen Eenheid)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "135": {
+    "caption": "DB-GS",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 4,
+      "max": 6,
+      "training": {
+        "Brandweer": {
+          "hazard_material_response": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "minPersonnel": 4,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Brandweer": {
+        "Gevaarlijke Stoffen Eenheid": {
+          "all": true
+        }
+      }
+    }
+  },
+  "136": {
+    "caption": "GPH",
+    "credits": 12000,
+    "coins": 8,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "special": "Benodigd een speciale opleiding in het trekkend voertuig. (Gevaarlijke Stoffen Eenheid)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "137": {
+    "caption": "DB-GP",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 4,
+      "max": 6,
+      "training": {
+        "Brandweer": {
+          "hazard_material_response": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "minPersonnel": 4,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Brandweer": {
+        "Gevaarlijke Stoffen Eenheid": {
+          "all": true
+        }
+      }
+    }
+  },
+  "138": {
+    "caption": "BOH-DC",
+    "credits": 35000,
+    "coins": 8,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "special": "Benodigd een speciale opleiding in het trekkend voertuig. (Ontsmettings Eenheid)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "139": {
+    "caption": "TS-BO",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 6,
+      "max": 7,
+      "training": {
+        "Brandweer": {
+          "hazard_suits_response": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "minPersonnel": 6,
+    "maxPersonnel": 7,
+    "schooling": {
+      "Brandweer": {
+        "Ontsmettings Eenheid": {
+          "all": true
+        }
+      }
+    },
+    "waterTank": 2000,
+    "wtank": 2000
+  },
+  "140": {
+    "caption": "DB-BO",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 6,
+      "max": 8,
+      "training": {
+        "Brandweer": {
+          "hazard_suits_response": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "minPersonnel": 6,
+    "maxPersonnel": 8,
+    "schooling": {
+      "Brandweer": {
+        "Ontsmettings Eenheid": {
+          "all": true
+        }
+      }
+    }
+  },
+  "141": {
+    "caption": "GOH-DC",
+    "credits": 35000,
+    "coins": 8,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "142": {
+    "caption": "TS-GO",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 6,
+      "max": 7,
+      "training": {
+        "Brandweer": {
+          "hazard_suits_response": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "minPersonnel": 6,
+    "maxPersonnel": 7,
+    "schooling": {
+      "Brandweer": {
+        "Ontsmettings Eenheid": {
+          "all": true
+        }
+      }
+    },
+    "waterTank": 2000,
+    "wtank": 2000
+  },
+  "143": {
+    "caption": "DB-GO",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 4,
+      "max": 6,
+      "training": {
+        "Brandweer": {
+          "hazard_suits_response": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "minPersonnel": 4,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Brandweer": {
+        "Ontsmettings Eenheid": {
+          "all": true
+        }
+      }
+    }
+  },
+  "144": {
+    "caption": "DB-ICB",
+    "credits": 12000,
+    "coins": 12,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "railway_fire": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17,
+      27
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Incidentenbestrijder spoor": {
+          "all": true
+        }
+      }
+    }
+  },
+  "145": {
+    "caption": "OvD-ICB",
+    "credits": 25000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Brandweer": {
+          "railway_elw": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17,
+      27
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Brandweer": {
+        "Officier van Dienst Incidentenbestrijding spoor": {
+          "all": true
+        }
+      }
+    }
+  },
+  "146": {
+    "caption": "VW-VZ-ICB",
+    "credits": 15000,
+    "coins": 15,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17,
+      27
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    }
+  },
+  "147": {
+    "caption": "HA-ICB",
+    "credits": 6000,
+    "coins": 6,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17,
+      27
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    }
+  },
+  "148": {
+    "caption": "GM-ICB",
+    "credits": 6000,
+    "coins": 6,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17,
+      27
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    }
+  },
+  "149": {
+    "caption": "HSH-ICB",
+    "credits": 10000,
+    "coins": 10,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      0,
+      17,
+      27
+    ],
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "150": {
+    "caption": "VW-HS",
+    "credits": 15000,
+    "coins": 15,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "railway_fire": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17,
+      27
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Incidentenbestrijder spoor": {
+          "all": true
+        }
+      }
+    }
+  },
+  "151": {
+    "caption": "BM-VTHS",
+    "credits": 40000,
+    "coins": 35,
+    "staff": {
+      "min": 2,
+      "max": 8
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 8,
+    "schooling": null
+  },
+  "152": {
+    "caption": "TS-Spoor",
+    "credits": 25000,
+    "coins": 25,
+    "staff": {
+      "min": 5,
+      "max": 7,
+      "training": {
+        "Brandweer": {
+          "railway_fire": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17,
+      27
+    ],
+    "minPersonnel": 5,
+    "maxPersonnel": 7,
+    "schooling": {
+      "Brandweer": {
+        "Incidentenbestrijder spoor": {
+          "all": true
+        }
+      }
+    },
+    "waterTank": 2000,
+    "wtank": 2000,
+    "foamTank": 150,
+    "ftank": 150,
+    "pumpcap": 2000
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Overzichten JR04</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1 id="welcome-title">Welkom</h1>
+    <p id="select-info">Selecteer hieronder een knop om naar de overzichten te gaan.</p>
+</header>
+
+<ul class="language-selector">
+    <li><img src="images/flag_nl.gif" onclick="changeLanguage('nl')"></li>
+    <li><img src="images/flag_de.gif" onclick="changeLanguage('de')"></li>
+    <li><img src="images/flag_uk.gif" onclick="changeLanguage('en')"></li>
+    <li><img src="images/flag_us.gif" onclick="changeLanguage('en')"></li>
+    <li><img src="images/flag_au.gif" onclick="changeLanguage('en')"></li>
+</ul>
+
+<main>
+    <div class="shape-bg">
+        <div class="shape1"></div>
+        <div class="shape2"></div>
+    </div>
+
+    <!-- DATUM / TIJD -->
+    <div class="card">
+        <p><strong id="date-label">Datum:</strong> <span id="currentDate"></span></p>
+        <p><strong id="time-label">Tijd:</strong> <span id="currentTime"></span></p>
+
+        <a class="button" id="select-button" href="gameversions/gameversionsinfo.html">
+            Selecteer Versie
+        </a>
+    </div>
+
+    <!-- UITLEG BOX -->
+    <div class="card">
+        <h2 id="about-title">Waar is deze site voor?</h2>
+        <p id="about-text">
+            Deze website is gemaakt voor spelers die graag alle informatie op 1 website willen hebben. Wilt u helpen met het verbeteren van de data, stuur dan een bericht naar jr04. op discord. Voor overige vragen kunt u ook een bericht sturen op discord.
+        </p>
+    </div>
+</main>
+
+<footer id="footer">
+    &copy; <span id="year"></span> JR04. Alle rechten voorbehouden.
+</footer>
+<script>
+const startYear = 2024;
+const currentYear = new Date().getFullYear();
+document.getElementById('year').textContent =
+    startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
+
+function updateDateTime(locale) {
+    const now = new Date();
+    document.getElementById('currentDate').textContent =
+        now.toLocaleDateString(locale);
+    document.getElementById('currentTime').textContent =
+        now.toLocaleTimeString(locale);
+}
+
+function changeLanguage(lang) {
+    let locale = "nl-NL";
+
+    // NL
+    if (lang === "nl") {
+        document.title = "Overzichten JR04";
+        document.getElementById("welcome-title").textContent = "Welkom";
+        document.getElementById("select-info").textContent = "Selecteer hieronder een knop om naar de overzichten te gaan.";
+        document.getElementById("select-button").textContent = "Selecteer Versie";
+        document.getElementById("date-label").textContent = "Datum:";
+        document.getElementById("time-label").textContent = "Tijd:";
+        document.getElementById("about-title").textContent = "Waar is deze site voor?";
+        document.getElementById("about-text").textContent =
+            "Deze website is gemaakt voor spelers die graag alle informatie op 1 website willen hebben. Wilt u helpen met het verbeteren van de data, stuur dan een bericht naar jr04. op discord. Voor overige vragen kunt u ook een bericht sturen op discord.";
+        locale = "nl-NL";
+    }
+
+    // DE
+    if (lang === "de") {
+        document.title = "Übersichten JR04";
+        document.getElementById("welcome-title").textContent = "Willkommen";
+        document.getElementById("select-info").textContent = "Wählen Sie unten eine Schaltfläche für die Übersichten.";
+        document.getElementById("select-button").textContent = "Spielversion wählen";
+        document.getElementById("date-label").textContent = "Datum:";
+        document.getElementById("time-label").textContent = "Uhrzeit:";
+        document.getElementById("about-title").textContent = "Wofür ist diese Seite?";
+        document.getElementById("about-text").textContent =
+            "Diese Website richtet sich an Spieler, die alle Informationen an einem Ort finden möchten. Wenn du zur Verbesserung der Daten beitragen möchtest, kontaktiere bitte jr04. auf Discord. Bei weiteren Fragen kannst du uns ebenfalls über Discord kontaktieren.";
+        locale = "de-DE";
+    }
+
+    // EN
+    if (lang === "en") {
+        document.title = "Overviews JR04";
+        document.getElementById("welcome-title").textContent = "Welcome";
+        document.getElementById("select-info").textContent = "Select a button below to view the overviews.";
+        document.getElementById("select-button").textContent = "Select Game Version";
+        document.getElementById("date-label").textContent = "Date:";
+        document.getElementById("time-label").textContent = "Time:";
+        document.getElementById("about-title").textContent = "What is this site for?";
+        document.getElementById("about-text").textContent =
+            "This website is designed for players who want all the information in one place. If you'd like to help improve the data, please message jr04. on Discord. For other questions, you can also send a message on Discord.";
+        locale = "en-GB";
+    }
+
+    // Datum & Tijd updaten en live klok starten
+    updateDateTime(locale);
+    if (window.clockInterval) clearInterval(window.clockInterval);
+    window.clockInterval = setInterval(() => updateDateTime(locale), 1000);
+}
+
+// Start standaard in NL
+changeLanguage("nl");
+</script>
+
+</body>
+</html>

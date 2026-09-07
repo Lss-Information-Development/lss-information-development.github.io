@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POIs - Leitstellenspiel (DE)</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #1e1e28;
+    color: #dddddd;
+    text-align: center;
+}
+
+.language-selector {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    padding: 0;
+    width: 100%;
+}
+
+.button {
+    background-color: #2c2c3c;
+    color: #dddddd;
+    border: 2px solid #555566;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2s, transform 0.2s, color 0.2s;
+    font-size: 12px;
+}
+
+.button:hover {
+    background-color: #444456;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+h1 {
+    margin: 30px 0 10px;
+    font-size: 32px;
+    color: #eeeeee;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+p {
+    max-width: 800px;
+    margin: 0 auto 10px;
+    font-size: 15px;
+    color: #cccccc;
+}
+
+#last-update {
+    font-size: 13px;
+    color: #aaaaaa;
+}
+
+#swipe-hint {
+    display: none;
+    font-size: 12px;
+    color: #bbbbbb;
+    margin: 8px auto 5px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 95%;
+    min-width: 600px;
+    max-width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #2a2a3a;
+    border-radius: 10px;
+}
+
+thead th {
+    background-color: #3a3a4a;
+    padding: 12px;
+    border-bottom: 2px solid #555566;
+    color: #eeeeee;
+    font-size: 18px;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #444455;
+    font-size: 18px;
+}
+
+tbody tr:hover {
+    background-color: #3c3c4c;
+}
+
+.language-selector img {
+    height: 24px;
+    cursor: pointer;
+    border: 2px solid #555566;
+    border-radius: 4px;
+}
+
+#footer {
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 12px;
+    color: #888888;
+}
+</style>
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+
+<ul class="language-selector">
+    <li><img src="../../images/flag_nl.gif" onclick="changeLanguage('nl')"></li>
+    <li><img src="../../images/flag_de.gif" onclick="changeLanguage('de')"></li>
+    <li><img src="../../images/flag_uk.gif" onclick="changeLanguage('en')"></li>
+    <li><img src="../../images/flag_us.gif" onclick="changeLanguage('en')"></li>
+    <li><img src="../../images/flag_au.gif" onclick="changeLanguage('en')"></li>
+
+    <li><a class="button" id="game-button" href="../../index.html">Startpagina</a></li>
+    <li><a class="button" id="contact-button" href="../../gameversions/contact.html">Contact</a></li>
+    <li><a class="button" id="back-button" href="../../gameversions/de_DE/indexDE.html">Terug</a></li>
+</ul>
+
+<h1 id="page-title"></h1>
+<p id="page-message"></p>
+<p id="last-update"></p>
+
+<div class="table-wrapper">
+    <div id="sheet-data"></div>
+</div>
+
+<footer id="footer">
+    &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
+</footer>
+
+<script>
+const dataFile = 'de_DE-Data/pois.json';
+const lastUpdateFile = 'de_DE-Data/last_update_buildings.txt';
+
+const pageTranslations = {
+    nl: {
+        title: "POIs - Leitstellenspiel (DE)",
+        message: "Overzicht van alle Points of Interest (DE).",
+        gameButton: "Startpagina",
+        contactButton: "Contact",
+        backButton: "Terug",
+        lastUpdate: "Laatste update",
+        tableHeaders: ["POI ID", "POI Naam"]
+    },
+    de: {
+        title: "POIs - Leitstellenspiel (DE)",
+        message: "Übersicht aller Points of Interest (DE).",
+        gameButton: "Startseite",
+        contactButton: "Kontakt",
+        backButton: "Zurück",
+        lastUpdate: "Letzte Aktualisierung",
+        tableHeaders: ["POI ID", "POI Name"]
+    },
+    en: {
+        title: "POIs - Leitstellenspiel (DE)",
+        message: "Overview of all Points of Interest (DE).",
+        gameButton: "Homepage",
+        contactButton: "Contact",
+        backButton: "Back",
+        lastUpdate: "Last update",
+        tableHeaders: ["POI ID", "POI Name"]
+    }
+};
+
+let currentLang = 'de';
+
+function changeLanguage(lang) {
+    currentLang = lang;
+    const t = pageTranslations[lang];
+
+    document.title = t.title;
+    document.getElementById('page-title').textContent = t.title;
+    document.getElementById('page-message').textContent = t.message;
+    document.getElementById('game-button').textContent = t.gameButton;
+    document.getElementById('contact-button').textContent = t.contactButton;
+    document.getElementById('back-button').textContent = t.backButton;
+
+    loadLastUpdate();
+    initPOIs();
+}
+
+async function loadLastUpdate() {
+    try {
+        const res = await fetch(lastUpdateFile);
+        const date = new Date((await res.text()).trim());
+        document.getElementById('last-update').textContent =
+            `${pageTranslations[currentLang].lastUpdate}: ${date.toLocaleString()}`;
+    } catch {
+        document.getElementById('last-update').textContent =
+            `${pageTranslations[currentLang].lastUpdate}: onbekend`;
+    }
+}
+
+async function initPOIs() {
+    const pois = await (await fetch(dataFile)).json();
+    const container = document.getElementById('sheet-data');
+    container.innerHTML = '';
+
+    const table = document.createElement('table');
+    const thead = document.createElement('thead');
+    const tr = document.createElement('tr');
+
+    pageTranslations[currentLang].tableHeaders.forEach(h => {
+        const th = document.createElement('th');
+        th.textContent = h;
+        tr.appendChild(th);
+    });
+
+    thead.appendChild(tr);
+    table.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
+
+    Object.entries(pois).forEach(([id, name]) => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${id}</td>
+            <td>${name}</td>
+        `;
+        tbody.appendChild(row);
+    });
+
+    table.appendChild(tbody);
+    container.appendChild(table);
+}
+
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+window.addEventListener('DOMContentLoaded', () => changeLanguage(currentLang));
+</script>
+
+</body>
+</html>

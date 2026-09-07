@@ -1,0 +1,108 @@
+name: Sync Missionchief Data
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      # =====================
+      # DATA DOWNLOADS (NL, US, UK, AU, ES)
+      # =====================
+      - name: Download all regions data
+        run: |
+          # NL
+          mkdir -p gameversions/nl_NL/nl_NL-Data
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/Vehicles.json -o gameversions/nl_NL/nl_NL-Data/Vehicles.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/buildings.json -o gameversions/nl_NL/nl_NL-Data/buildings.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/pois.json -o gameversions/nl_NL/nl_NL-Data/pois.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/Equipments.json -o gameversions/nl_NL/nl_NL-Data/equipments.json
+
+          # US
+          mkdir -p gameversions/en_US/en_US-Data
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_US/Vehicles.json -o gameversions/en_US/en_US-Data/Vehicles.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_US/buildings.json -o gameversions/en_US/en_US-Data/buildings.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_US/pois.json -o gameversions/en_US/en_US-Data/pois.json
+
+          # UK
+          mkdir -p gameversions/en_UK/en_UK-Data
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_GB/vehicles.json -o gameversions/en_UK/en_UK-Data/vehicles.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_GB/buildings.json -o gameversions/en_UK/en_UK-Data/buildings.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_GB/pois.json -o gameversions/en_UK/en_UK-Data/pois.json
+
+          # AU
+          mkdir -p gameversions/en_AU/en_AU-Data
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_AU/vehicles.json -o gameversions/en_AU/en_AU-Data/vehicles.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_AU/buildings.json -o gameversions/en_AU/en_AU-Data/buildings.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_AU/pois.json -o gameversions/en_AU/en_AU-Data/pois.json
+
+          # ES
+          mkdir -p gameversions/es_ES/es_ES-Data
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/es_ES/vehicles.json -o gameversions/es_ES/es_ES-Data/vehicles.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/es_ES/buildings.json -o gameversions/es_ES/es_ES-Data/buildings.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/es_ES/pois.json -o gameversions/es_ES/es_ES-Data/pois.json
+
+      - name: Update buildings timestamps
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+            for lang in nl_NL en_US en_UK en_AU es_ES; do
+              echo "$TS" > "gameversions/$lang/${lang}-Data/last_update_buildings.txt"
+            done
+          fi
+
+      - name: Download einsaetze & event_types
+        run: |
+          set -e
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+          
+          download_all() {
+            URL_BASE=$1
+            DIR=$2
+            mkdir -p "$DIR"
+            curl -f -sSL -H "User-Agent: $UA" -H "Accept: application/json" "$URL_BASE/einsaetze.json" | jq '.' > "$DIR/einsaetze.json"
+            curl -f -sSL -H "User-Agent: $UA" -H "Accept: application/json" "$URL_BASE/alliance_event_types.json" | jq '.' > "$DIR/alliance_event_types.json"
+          }
+
+          download_all "https://www.meldkamerspel.com" "gameversions/nl_NL/nl_NL-Data"
+          download_all "https://www.leitstellenspiel.de" "gameversions/de_DE/de_DE-Data"
+          download_all "https://www.missionchief.co.uk" "gameversions/en_UK/en_UK-Data"
+          download_all "https://www.missionchief.com" "gameversions/en_US/en_US-Data"
+          download_all "https://www.missionchief-australia.com" "gameversions/en_AU/en_AU-Data"
+          download_all "https://www.centro-de-mando.es" "gameversions/es_ES/es_ES-Data"
+
+      - name: Update final timestamps
+        id: changes_check
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+            for lang in nl_NL en_US en_UK en_AU es_ES de_DE; do
+              echo "$TS" > "gameversions/$lang/${lang}-Data/last_update.txt"
+            done
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit if changed
+        if: steps.changes_check.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add gameversions/
+          git commit -m "Sync game data (buildings, einsaetze & events)"
+          git push origin main

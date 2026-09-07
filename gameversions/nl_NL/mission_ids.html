@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meldingen Meldkamerspel (NL)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Orbitron', sans-serif; background-color: #1e1e28; color: #dddddd; text-align: center; }
+        .language-selector { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px; margin: 20px auto; padding: 0; }
+        .button { background-color: #2c2c3c; color: #dddddd; border: 2px solid #555566; padding: 8px 16px; text-decoration: none; border-radius: 8px; transition: all 0.2s; font-size: 12px; cursor: pointer; }
+        .button:hover { background-color: #444456; color: #ffffff; transform: scale(1.05); }
+        .button.active-filter { background-color: #d32f2f; border-color: #b71c1c; }
+        h1 { margin: 30px 0 10px; font-size: 32px; color: #eeeeee; }
+        p { max-width: 800px; margin: 0 auto 10px; font-size: 15px; color: #cccccc; }
+        #last-update { font-size: 13px; color: #aaaaaa; }
+        .table-wrapper { width: 100%; overflow-x: auto; min-height: 400px; }
+        table { width: 95%; min-width: 900px; max-width: 1200px; margin: 20px auto; border-collapse: collapse; background-color: #2a2a3a; border-radius: 10px; overflow: hidden; }
+        thead th { background-color: #3a3a4a; padding: 12px; border-bottom: 2px solid #555566; color: #eeeeee; font-family: 'Roboto', sans-serif; font-size: 18px; }
+        tbody td { padding: 12px; border-bottom: 1px solid #444455; color: #dddddd; font-family: 'Roboto', sans-serif; font-size: 16px; }
+        tbody tr:hover { background-color: #3c3c4c; }
+        .button-toggle { background-color: #2c2c3c; color: #dddddd; border: 1px solid #555566; padding: 6px 12px; cursor: pointer; border-radius: 4px; }
+        .requirements-row { display: none; }
+        .requirements-row.show { display: table-row; }
+        .requirements-row td { background-color: #262632; text-align: left; padding: 15px; border-bottom: 2px solid #444455; }
+        #exportModal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); align-items: center; justify-content: center; }
+        .modal-content { background-color: #2a2a3a; padding: 25px; border-radius: 12px; border: 2px solid #555566; max-width: 600px; width: 90%; max-height: 85vh; overflow-y: auto; text-align: left; }
+        .category-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+        .category-item { display: flex; align-items: center; gap: 8px; color: #dddddd; font-size: 14px; cursor: pointer; }
+        .language-selector img { height: 24px; cursor: pointer; border: 2px solid #555566; border-radius: 4px; }
+        .event-badge { background-color: #c62828; color: white; padding: 2px 6px; border-radius: 4px; font-size: 11px; margin-left: 8px; vertical-align: middle; }
+        #loading-spinner { font-size: 20px; padding: 50px; }
+        @media (max-width: 600px) { .category-grid { grid-template-columns: 1fr; } }
+    </style>
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+
+<ul class="language-selector">
+    <li><img src="../../images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')"></li>
+    <li><img src="../../images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')"></li>
+    <li><img src="../../images/flag_uk.gif" alt="English" onclick="changeLanguage('en')"></li>
+    <li><img src="../../images/flag_us.gif" alt="English" onclick="changeLanguage('en')"></li>
+    <li><img src="../../images/flag_au.gif" alt="English" onclick="changeLanguage('en')"></li>
+
+    <li><a class="button" id="game-button" href="../../index.html">Startpagina</a></li>
+    <li><a class="button" id="contact-button" href="../../gameversions/contact.html">Contact</a></li>
+    <li><a class="button" id="back-button" href="../../gameversions/nl_NL/indexNL.html">Terug</a></li>
+</ul>
+
+<h1 id="page-title">Meldingen</h1>
+<p id="page-message"></p>
+<p id="last-update"></p>
+
+<div style="margin: 20px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+    <input type="text" id="mission-search" placeholder="Zoeken..." style="padding:10px; width:300px; border-radius:6px; border:1px solid #555566; background-color:#2c2c3c; color:white;">
+    <button id="event-filter-btn" class="button" onclick="toggleEventFilter()">Toon actieve events</button>
+</div>
+
+<div style="margin: 20px; display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+    <button class="button" onclick="exportAllToExcel()" style="background-color: #2e7d32;">Download Alles (.xlsx)</button>
+    <button class="button" onclick="openExportModal()" style="background-color: #1565c0;">Filter & Download</button>
+</div>
+
+<div style="margin: 10px; display:flex; justify-content:center; gap:10px; align-items:center; flex-wrap:wrap;">
+    <select id="compare-mission-1" style="padding:8px; background:#2c2c3c; color:white; border-radius:5px;"></select>
+    <select id="compare-mission-2" style="padding:8px; background:#2c2c3c; color:white; border-radius:5px;"></select>
+    <button class="button" id="compare-button">Vergelijk</button>
+</div>
+
+<div id="compare-result"></div>
+
+<div class="table-wrapper">
+    <div id="loading-spinner">Laden...</div>
+    <div id="sheet-data"></div>
+</div>
+
+<div id="exportModal">
+    <div class="modal-content">
+        <h2 style="font-family:'Orbitron'">Filter Categorieën</h2>
+        <div id="category-list" class="category-grid"></div>
+        <div style="display:flex; gap:10px; justify-content:flex-end; margin-top:20px;">
+            <button class="button" onclick="closeExportModal()">Annuleren</button>
+            <button class="button" onclick="processCategoryExport()" style="background-color:#2e7d32;">Export</button>
+        </div>
+    </div>
+</div>
+
+<footer style="margin: 40px; color:#888;">&copy; <span id="footer-year"></span> JR04</footer>
+
+<script>
+let missions = [];
+let translations = {};
+let currentLang = 'nl';
+let showOnlyEvents = false;
+
+const pageTranslations = {
+    nl: { title: "Meldingen", message: "Overzicht van alle meldingen.", lastUpdate: "Update", tableHeaders: ["ID", "Naam", "POI", "Credits", "Details"], toggle: ["Toon", "Verberg"], eventBtn: ["Alles tonen", "Events"] },
+    de: { title: "Einsätze", message: "Alle Einsätze im Überblick.", lastUpdate: "Aktualisierung", tableHeaders: ["ID", "Name", "POI", "Credits", "Details"], toggle: ["Anzeigen", "Verbergen"], eventBtn: ["Alle", "Events"] },
+    en: { title: "Missions", message: "Overview of all missions.", lastUpdate: "Last update", tableHeaders: ["ID", "Name", "POI", "Credits", "Details"], toggle: ["Show", "Hide"], eventBtn: ["Show All", "Events"] }
+};
+
+async function init() {
+    try {
+        const [mRes, tRes, uRes] = await Promise.all([
+            fetch('nl_NL-Data/einsaetze.json'),
+            fetch('translations.json'),
+            fetch('nl_NL-Data/last_update.txt')
+        ]);
+        missions = await mRes.json();
+        translations = await tRes.json();
+        
+        const updateText = await uRes.text();
+        document.getElementById('last-update').textContent = `Laatste update: ${new Date(updateText.trim()).toLocaleString()}`;
+        
+        fillCompareSelects();
+        changeLanguage('nl');
+        document.getElementById('loading-spinner').style.display = 'none';
+    } catch (e) { console.error("Data laadfout", e); }
+}
+
+function fillCompareSelects() {
+    const s1 = document.getElementById('compare-mission-1');
+    const s2 = document.getElementById('compare-mission-2');
+    const opts = missions.map(m => `<option value="${m.id}">${m.id} - ${m.name}</option>`).join('');
+    const placeholder = '<option value="">Selecteer melding...</option>';
+    s1.innerHTML = placeholder + opts;
+    s2.innerHTML = placeholder + opts;
+}
+
+function isMissionActive(m) {
+    if (!m.additional?.date_start) return false;
+    const now = new Date();
+    return now >= new Date(m.additional.date_start) && now <= new Date(m.additional.date_end);
+}
+
+function formatRequirements(m) {
+    let parts = [];
+    if (m.mission_categories?.length) {
+        const cats = m.mission_categories.map(c => translations['cat_'+c] || c).join(', ');
+        parts.push(`<strong>Categorie:</strong> ${cats}`);
+    }
+    
+    if (m.requirements) {
+        const reqs = Object.entries(m.requirements).map(([k, v]) => {
+            if (typeof v === 'object') return Object.entries(v).map(([sk, sv]) => `${translations[k]||k}: ${sv}x ${translations[sk]||sk}`).join('<br>');
+            return `${translations[k] || k}: ${v}`;
+        }).join('<br>');
+        parts.push(`<strong>Benodigdheden:</strong><br>${reqs}`);
+    }
+
+    if (m.chances) {
+        const chances = Object.entries(m.chances).map(([k,v]) => `• ${(translations[k]||k).replace('Benodigde ','')}: ${v}%`).join('<br>');
+        parts.push(`<strong>Kansen:</strong><br>${chances}`);
+    }
+
+    return parts.join('<br><br>');
+}
+
+function renderTable(filterText = "") {
+    const container = document.getElementById('sheet-data');
+    const t = pageTranslations[currentLang];
+    
+    const table = document.createElement('table');
+    table.innerHTML = `<thead><tr>${t.tableHeaders.map(h => `<th>${h}</th>`).join('')}</tr></thead>`;
+    const tbody = document.createElement('tbody');
+
+    const search = filterText.toLowerCase();
+    const filtered = missions.filter(m => {
+        const matchesSearch = m.name.toLowerCase().includes(search) || m.id.toString().includes(search);
+        const matchesEvent = showOnlyEvents ? isMissionActive(m) : true;
+        return matchesSearch && matchesEvent;
+    });
+
+    // Gebruik DocumentFragment voor snelheid
+    const fragment = document.createDocumentFragment();
+    
+    filtered.forEach(m => {
+        const tr = document.createElement('tr');
+        const active = isMissionActive(m);
+        tr.innerHTML = `
+            <td>${m.id}</td>
+            <td>${m.name}${active ? '<span class="event-badge">EVENT</span>' : ''}</td>
+            <td>${(m.place_array || []).join(', ')}</td>
+            <td>${m.average_credits || '-'}</td>
+            <td><button class="button-toggle" data-id="${m.id}">${t.toggle[0]}</button></td>
+        `;
+        
+        const detailTr = document.createElement('tr');
+        detailTr.className = 'requirements-row';
+        detailTr.id = `details-${m.id}`;
+        detailTr.innerHTML = `<td colspan="5"><div class="details-box">Laden...</div></td>`;
+        
+        tr.querySelector('.button-toggle').onclick = (e) => {
+            const isVisible = detailTr.classList.toggle('show');
+            e.target.textContent = isVisible ? t.toggle[1] : t.toggle[0];
+            if (isVisible) detailTr.querySelector('.details-box').innerHTML = formatRequirements(m);
+        };
+
+        fragment.appendChild(tr);
+        fragment.appendChild(detailTr);
+    });
+
+    tbody.appendChild(fragment);
+    table.appendChild(tbody);
+    container.innerHTML = '';
+    container.appendChild(table);
+}
+
+function changeLanguage(lang) {
+    currentLang = lang;
+    const t = pageTranslations[lang];
+    document.getElementById('page-title').textContent = t.title;
+    document.getElementById('page-message').textContent = t.message;
+    renderTable(document.getElementById('mission-search').value);
+}
+
+function toggleEventFilter() {
+    showOnlyEvents = !showOnlyEvents;
+    const btn = document.getElementById('event-filter-btn');
+    btn.classList.toggle('active-filter', showOnlyEvents);
+    renderTable(document.getElementById('mission-search').value);
+}
+
+// Search met Debounce voor performance
+let searchTimeout;
+document.getElementById('mission-search').oninput = (e) => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => renderTable(e.target.value), 250);
+};
+
+function openExportModal() {
+    const list = document.getElementById('category-list');
+    const cats = [...new Set(missions.flatMap(m => m.mission_categories || []))].sort();
+    list.innerHTML = cats.map(c => `
+        <label class="category-item">
+            <input type="checkbox" value="${c}" class="cat-checkbox"> ${translations['cat_'+c] || c}
+        </label>
+    `).join('');
+    document.getElementById('exportModal').style.display = 'flex';
+}
+
+function closeExportModal() { document.getElementById('exportModal').style.display = 'none'; }
+
+function generateXlsx(data, name) {
+    const exportData = data.map(m => ({
+        ID: m.id,
+        Naam: m.name,
+        Credits: m.average_credits || 0,
+        Uitleg: formatRequirements(m).replace(/<[^>]*>/g, ' ')
+    }));
+    const ws = XLSX.utils.json_to_sheet(exportData);
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, "Meldkamerspel");
+    XLSX.writeFile(wb, `${name}.xlsx`);
+}
+
+function exportAllToExcel() { generateXlsx(missions, "Alle_Meldingen"); }
+
+function processCategoryExport() {
+    const selected = Array.from(document.querySelectorAll('.cat-checkbox:checked')).map(i => i.value);
+    const filtered = missions.filter(m => m.mission_categories?.some(c => selected.includes(c)));
+    generateXlsx(filtered, "Gefilterde_Meldingen");
+    closeExportModal();
+}
+
+document.getElementById('compare-button').onclick = () => {
+    const v1 = document.getElementById('compare-mission-1').value;
+    const v2 = document.getElementById('compare-mission-2').value;
+    if(!v1 || !v2) return;
+    const m1 = missions.find(m => m.id == v1);
+    const m2 = missions.find(m => m.id == v2);
+    document.getElementById('compare-result').innerHTML = `
+        <table style="margin-top:10px">
+            <tr><th>Eigenschap</th><th>${m1.name}</th><th>${m2.name}</th></tr>
+            <tr><td>Credits</td><td>${m1.average_credits}</td><td>${m2.average_credits}</td></tr>
+            <tr><td>Benodigdheden</td><td>${formatRequirements(m1)}</td><td>${formatRequirements(m2)}</td></tr>
+        </table>`;
+};
+
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+init();
+</script>
+</body>
+</html>
