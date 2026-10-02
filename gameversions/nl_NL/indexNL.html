@@ -31,6 +31,7 @@
             <a class="button" id="mission-ids" href="../../gameversions/nl_NL/mission_ids.html">Melding ID's</a>
             <a class="button" id="pois" href="../../gameversions/nl_NL/pois.html">POI's</a>
             <a class="button" id="equipments" href="../../gameversions/nl_NL/equipments.html">Uitrustingen</a>
+            <a class="button" id="alliance-events" href="../../gameversions/nl_NL/alliance_event.html">Alliance events</a>
         </div>
     </div>
 </main>
@@ -58,6 +59,7 @@ function changeLanguage(lang) {
             mission: "Melding ID's",
             pois: "POI's",
             equipments: "Uitrustingen",
+            events: "Alliance events",
             page: "Meldkamerspel (NL)"
         };
     } else if (lang === "de") {
@@ -70,6 +72,7 @@ function changeLanguage(lang) {
             mission: "Einsatz-IDs",
             pois: "POIs",
             equipments: "Ausrüstung",
+            events: "Verbandsevents",
             page: "Meldkamerspel (NL)"
         };
     } else {
@@ -82,6 +85,7 @@ function changeLanguage(lang) {
             mission: "Mission IDs",
             pois: "POIs",
             equipments: "Equipments",
+            events: "Alliance events",
             page: "Meldkamerspel (NL)"
         };
     }
@@ -95,6 +99,7 @@ function changeLanguage(lang) {
     document.getElementById('mission-ids').textContent = t.mission;
     document.getElementById('pois').textContent = t.pois;
     document.getElementById('equipments').textContent = t.equipments;
+    document.getElementById('alliance-events').textContent = t.events;
 }
     document.addEventListener("DOMContentLoaded", () => {
     changeLanguage("nl");

@@ -164,6 +164,7 @@ tbody tr:hover {
     &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
 </footer>
 
+<script src="../common.js"></script>
 <script>
 const eventsFile = 'nl_NL-Data/alliance_event_types.json';
 const einsaetzeFile = 'nl_NL-Data/einsaetze.json';
@@ -206,12 +207,18 @@ function changeLanguage(lang) {
     initMissions();
 }
 
-async function initMissions() {
-    const events = await (await fetch(eventsFile)).json();
-    const einsaetze = await (await fetch(einsaetzeFile)).json();
+function initMissions() {
+    return runRender(initMissionsImpl);
+}
+
+async function initMissionsImpl(isCurrent) {
+    const events = await getJSON(eventsFile);
+    const einsaetze = await getJSON(einsaetzeFile);
 
     const einsaetzeMap = {};
     einsaetze.forEach(e => { einsaetzeMap[e.id] = e.name; });
+
+    if (!isCurrent()) return;
 
     const container = document.getElementById('sheet-data');
     container.innerHTML = '';
@@ -233,7 +240,7 @@ async function initMissions() {
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${ev.id}</td>
-            <td>${ev.caption}</td>
+            <td>${esc(ev.caption)}</td>
         `;
         tbody.appendChild(row);
 
@@ -279,6 +286,7 @@ async function initMissions() {
 
     table.appendChild(tbody);
     container.appendChild(table);
+    reapplySearch();
 }
 
 document.getElementById('footer-year').textContent = new Date().getFullYear();

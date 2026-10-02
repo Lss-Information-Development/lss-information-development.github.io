@@ -479,3 +479,14 @@ tr.info-row:has(.show) {
     .language-selector { gap: 8px !important; padding: 8px 14px !important; }
     .language-selector img { height: 22px !important; width: 32px !important; }
 }
+
+/* Melding als data niet geladen kan worden */
+.load-error {
+    margin: 40px auto;
+    padding: 16px 20px;
+    max-width: 600px;
+    border: 1px solid #b71c1c;
+    border-radius: 10px;
+    background: rgba(183, 28, 28, 0.15);
+    color: #ffcdd2;
+}

@@ -211,6 +211,7 @@ tbody tr:hover {
     &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
 </footer>
 
+<script src="../common.js"></script>
 <script>
 const buildingsFile = 'en_AU-Data/buildings.json';
 const vehiclesFile = 'en_AU-Data/vehicles.json';
@@ -309,19 +310,24 @@ function changeLanguage(lang) {
 
 async function loadLastUpdate() {
     try {
-        const res = await fetch(lastUpdateFile);
-        const date = new Date((await res.text()).trim());
+        const date = await fetchLastUpdate(lastUpdateFile);
         document.getElementById('last-update').textContent =
             `${pageTranslations[currentLang].lastUpdate}: ${date.toLocaleString()}`;
     } catch {
         document.getElementById('last-update').textContent =
-            `${pageTranslations[currentLang].lastUpdate}: onbekend`;
+            `${pageTranslations[currentLang].lastUpdate}: ${UNKNOWN[currentLang]}`;
     }
 }
 
-async function initBuildings() {
-    const buildings = await (await fetch(buildingsFile)).json();
-    const vehicles = await (await fetch(vehiclesFile)).json();
+function initBuildings() {
+    return runRender(initBuildingsImpl);
+}
+
+async function initBuildingsImpl(isCurrent) {
+    const buildings = await getJSON(buildingsFile);
+    const vehicles = await getJSON(vehiclesFile);
+
+    if (!isCurrent()) return;
 
     const container = document.getElementById('sheet-data');
     container.innerHTML = '';
@@ -350,7 +356,7 @@ async function initBuildings() {
 
         const row = document.createElement('tr');
         row.innerHTML = `<td>${key}</td>
-                         <td>${b.caption}</td>
+                         <td>${esc(b.caption)}</td>
                          <td>${b.credits}</td>
                          <td>
                             ${hasExtensions ? `<button class="button-toggle ext-btn">${pageTranslations[currentLang].toggleExtensions.show}</button>` : ''}
@@ -383,7 +389,7 @@ async function initBuildings() {
 
                 div.innerHTML += `
                     <div class="detail-card">
-                        <div class="detail-title">${ext.caption}</div>
+                        <div class="detail-title">${esc(ext.caption)}</div>
                         <div class="detail-grid">
                             <div><strong>${labels.credits}:</strong> ${ext.credits}</div>
                             <div><strong>${labels.duration}:</strong> ${ext.duration}</div>
@@ -425,7 +431,7 @@ async function initBuildings() {
                     const item = document.createElement('div');
                     item.className = 'vehicle-item';
                     item.innerHTML = `
-                        <strong>${v.caption}</strong> (ID: ${vID})<br>
+                        <strong>${esc(v.caption)}</strong> (ID: ${vID})<br>
                         ${labels.credits}: ${v.credits}<br>
                         ${labels.staff}: Min - Max ${v.staff?.min || 0} - ${v.staff?.max || 0}<br>
                         ${labels.maxStorage}: ${v.equipmentCapacity || 0}
@@ -467,7 +473,7 @@ async function initBuildings() {
 
                 div.innerHTML += `
                     <div class="detail-card">
-                        <div class="detail-title">${s.caption}</div>
+                        <div class="detail-title">${esc(s.caption)}</div>
                         <div class="detail-grid">
                             <div><strong>${labels.credits}:</strong> ${s.credits}</div>
                             <div><strong>Coins:</strong> ${s.coins || 0}</div>
@@ -497,6 +503,7 @@ async function initBuildings() {
 
     table.appendChild(tbody);
     container.appendChild(table);
+    reapplySearch();
 }
 
 window.addEventListener('DOMContentLoaded', () => {

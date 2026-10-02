@@ -89,16 +89,18 @@
 
 <footer style="margin: 40px; color:#888;">&copy; <span id="footer-year"></span> JR04</footer>
 
+<script src="../common.js"></script>
 <script>
 let missions = [];
 let translations = {};
 let currentLang = 'nl';
 let showOnlyEvents = false;
+let lastUpdateDate = null;
 
 const pageTranslations = {
-    nl: { title: "Meldingen", message: "Overzicht van alle meldingen.", lastUpdate: "Update", tableHeaders: ["ID", "Naam", "POI", "Credits", "Details"], toggle: ["Toon", "Verberg"], eventBtn: ["Alles tonen", "Events"] },
-    de: { title: "Einsätze", message: "Alle Einsätze im Überblick.", lastUpdate: "Aktualisierung", tableHeaders: ["ID", "Name", "POI", "Credits", "Details"], toggle: ["Anzeigen", "Verbergen"], eventBtn: ["Alle", "Events"] },
-    en: { title: "Missions", message: "Overview of all missions.", lastUpdate: "Last update", tableHeaders: ["ID", "Name", "POI", "Credits", "Details"], toggle: ["Show", "Hide"], eventBtn: ["Show All", "Events"] }
+    nl: { title: "Meldingen", message: "Overzicht van alle meldingen.", lastUpdate: "Laatste update", tableHeaders: ["ID", "Naam", "POI", "Credits", "Details"], toggle: ["Toon", "Verberg"], eventBtn: ["Toon actieve events", "Toon alle meldingen"] },
+    de: { title: "Einsätze", message: "Alle Einsätze im Überblick.", lastUpdate: "Aktualisierung", tableHeaders: ["ID", "Name", "POI", "Credits", "Details"], toggle: ["Anzeigen", "Verbergen"], eventBtn: ["Aktive Events anzeigen", "Alle Einsätze anzeigen"] },
+    en: { title: "Missions", message: "Overview of all missions.", lastUpdate: "Last update", tableHeaders: ["ID", "Name", "POI", "Credits", "Details"], toggle: ["Show", "Hide"], eventBtn: ["Show active events", "Show all missions"] }
 };
 
 async function init() {
@@ -108,22 +110,26 @@ async function init() {
             fetch('translations.json'),
             fetch('nl_NL-Data/last_update.txt')
         ]);
+        if (!mRes.ok || !tRes.ok) throw new Error(`HTTP ${mRes.status}/${tRes.status}`);
         missions = await mRes.json();
         translations = await tRes.json();
-        
-        const updateText = await uRes.text();
-        document.getElementById('last-update').textContent = `Laatste update: ${new Date(updateText.trim()).toLocaleString()}`;
-        
+
+        const updateDate = uRes.ok ? new Date((await uRes.text()).trim()) : null;
+        lastUpdateDate = updateDate && !isNaN(updateDate) ? updateDate : null;
+
         fillCompareSelects();
         changeLanguage('nl');
         document.getElementById('loading-spinner').style.display = 'none';
-    } catch (e) { console.error("Data laadfout", e); }
+    } catch (e) {
+        console.error("Data laadfout", e);
+        document.getElementById('loading-spinner').textContent = LOAD_ERROR[currentLang];
+    }
 }
 
 function fillCompareSelects() {
     const s1 = document.getElementById('compare-mission-1');
     const s2 = document.getElementById('compare-mission-2');
-    const opts = missions.map(m => `<option value="${m.id}">${m.id} - ${m.name}</option>`).join('');
+    const opts = missions.map(m => `<option value="${esc(m.id)}">${esc(m.id)} - ${esc(m.name)}</option>`).join('');
     const placeholder = '<option value="">Selecteer melding...</option>';
     s1.innerHTML = placeholder + opts;
     s2.innerHTML = placeholder + opts;
@@ -181,7 +187,7 @@ function renderTable(filterText = "") {
         const active = isMissionActive(m);
         tr.innerHTML = `
             <td>${m.id}</td>
-            <td>${m.name}${active ? '<span class="event-badge">EVENT</span>' : ''}</td>
+            <td>${esc(m.name)}${active ? '<span class="event-badge">EVENT</span>' : ''}</td>
             <td>${(m.place_array || []).join(', ')}</td>
             <td>${m.average_credits || '-'}</td>
             <td><button class="button-toggle" data-id="${m.id}">${t.toggle[0]}</button></td>
@@ -211,8 +217,12 @@ function renderTable(filterText = "") {
 function changeLanguage(lang) {
     currentLang = lang;
     const t = pageTranslations[lang];
+    document.title = `${t.title} Meldkamerspel (NL)`;
     document.getElementById('page-title').textContent = t.title;
     document.getElementById('page-message').textContent = t.message;
+    document.getElementById('last-update').textContent =
+        `${t.lastUpdate}: ${lastUpdateDate ? lastUpdateDate.toLocaleString() : UNKNOWN[lang]}`;
+    document.getElementById('event-filter-btn').textContent = t.eventBtn[showOnlyEvents ? 1 : 0];
     renderTable(document.getElementById('mission-search').value);
 }
 
@@ -220,6 +230,7 @@ function toggleEventFilter() {
     showOnlyEvents = !showOnlyEvents;
     const btn = document.getElementById('event-filter-btn');
     btn.classList.toggle('active-filter', showOnlyEvents);
+    btn.textContent = pageTranslations[currentLang].eventBtn[showOnlyEvents ? 1 : 0];
     renderTable(document.getElementById('mission-search').value);
 }
 
@@ -273,7 +284,7 @@ document.getElementById('compare-button').onclick = () => {
     const m2 = missions.find(m => m.id == v2);
     document.getElementById('compare-result').innerHTML = `
         <table style="margin-top:10px">
-            <tr><th>Eigenschap</th><th>${m1.name}</th><th>${m2.name}</th></tr>
+            <tr><th>Eigenschap</th><th>${esc(m1.name)}</th><th>${esc(m2.name)}</th></tr>
             <tr><td>Credits</td><td>${m1.average_credits}</td><td>${m2.average_credits}</td></tr>
             <tr><td>Benodigdheden</td><td>${formatRequirements(m1)}</td><td>${formatRequirements(m2)}</td></tr>
         </table>`;

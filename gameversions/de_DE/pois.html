@@ -148,6 +148,7 @@ tbody tr:hover {
     &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
 </footer>
 
+<script src="../common.js"></script>
 <script>
 const dataFile = 'de_DE-Data/pois.json';
 const lastUpdateFile = 'de_DE-Data/last_update_buildings.txt';
@@ -201,18 +202,23 @@ function changeLanguage(lang) {
 
 async function loadLastUpdate() {
     try {
-        const res = await fetch(lastUpdateFile);
-        const date = new Date((await res.text()).trim());
+        const date = await fetchLastUpdate(lastUpdateFile);
         document.getElementById('last-update').textContent =
             `${pageTranslations[currentLang].lastUpdate}: ${date.toLocaleString()}`;
     } catch {
         document.getElementById('last-update').textContent =
-            `${pageTranslations[currentLang].lastUpdate}: onbekend`;
+            `${pageTranslations[currentLang].lastUpdate}: ${UNKNOWN[currentLang]}`;
     }
 }
 
-async function initPOIs() {
-    const pois = await (await fetch(dataFile)).json();
+function initPOIs() {
+    return runRender(initPOIsImpl);
+}
+
+async function initPOIsImpl(isCurrent) {
+    const pois = await getJSON(dataFile);
+    if (!isCurrent()) return;
+
     const container = document.getElementById('sheet-data');
     container.innerHTML = '';
 
@@ -234,14 +240,15 @@ async function initPOIs() {
     Object.entries(pois).forEach(([id, name]) => {
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td>${id}</td>
-            <td>${name}</td>
+            <td>${esc(id)}</td>
+            <td>${esc(name)}</td>
         `;
         tbody.appendChild(row);
     });
 
     table.appendChild(tbody);
     container.appendChild(table);
+    reapplySearch();
 }
 
 document.getElementById('footer-year').textContent = new Date().getFullYear();

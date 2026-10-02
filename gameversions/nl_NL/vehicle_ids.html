@@ -187,10 +187,11 @@ tbody tr:hover {
     &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
 </footer>
 
+<script src="../common.js"></script>
 <script>
 const dataFile = 'nl_NL-Data/Vehicles.json';
 const buildingsFile = 'nl_NL-Data/buildings.json';
-const lastUpdateFile = 'nl_NL-Data/last_update.txt';
+const lastUpdateFile = 'nl_NL-Data/last_update_buildings.txt';
 
 const pageTranslations = {
     nl: {
@@ -276,22 +277,27 @@ function changeLanguage(lang) {
 
 async function loadLastUpdate() {
     try {
-        const res = await fetch(lastUpdateFile);
-        const date = new Date((await res.text()).trim());
+        const date = await fetchLastUpdate(lastUpdateFile);
         document.getElementById('last-update').textContent =
             `${pageTranslations[currentLang].lastUpdate}: ${date.toLocaleString()}`;
     } catch {
         document.getElementById('last-update').textContent =
-            `${pageTranslations[currentLang].lastUpdate}: onbekend`;
+            `${pageTranslations[currentLang].lastUpdate}: ${UNKNOWN[currentLang]}`;
     }
 }
 
-async function initVehicles() {
-    const vehicles = await (await fetch(dataFile)).json();
-    const buildings = await (await fetch(buildingsFile)).json();
+function initVehicles() {
+    return runRender(initVehiclesImpl);
+}
+
+async function initVehiclesImpl(isCurrent) {
+    const vehicles = await getJSON(dataFile);
+    const buildings = await getJSON(buildingsFile);
 
     const buildingMap = {};
     Object.entries(buildings).forEach(([id, b]) => buildingMap[id] = b.caption);
+
+    if (!isCurrent()) return;
 
     const container = document.getElementById('sheet-data');
     container.innerHTML = '';
@@ -320,7 +326,7 @@ async function initVehicles() {
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${id}</td>
-            <td>${v.caption}</td>
+            <td>${esc(v.caption)}</td>
             <td>${v.credits}</td>
             <td>${v.coins}</td>
             <td>${v.staff.min}-${v.staff.max}</td>
@@ -359,7 +365,7 @@ async function initVehicles() {
         if (v.waterBonus != null) detailItems.push(`<div><strong>${labels.waterBonus}:</strong> ${v.waterBonus} %</div>`);
         if (v.pumpCapacity != null) detailItems.push(`<div><strong>${labels.pumpCapacity}:</strong> ${v.pumpCapacity} l/min</div>`);
         if (v.equipmentCapacity != null) detailItems.push(`<div><strong>${labels.equipmentCapacity}:</strong> ${v.equipmentCapacity}</div>`);
-        if (v.special) detailItems.push(`<div><strong>${labels.special}:</strong> ${v.special}</div>`);
+        if (v.special) detailItems.push(`<div><strong>${labels.special}:</strong> ${esc(v.special)}</div>`);
 
         div.innerHTML = `<div class="detail-card">${detailItems.join('')}</div>`;
 
@@ -380,6 +386,7 @@ async function initVehicles() {
 
     table.appendChild(tbody);
     container.appendChild(table);
+    reapplySearch();
 }
 // Zoekfunctie
 document.addEventListener('input', function(e) {

@@ -150,10 +150,11 @@ tbody tr:hover {
     &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
 </footer>
 
+<script src="../common.js"></script>
 <script>
 const dataFile = 'en_US-Data/Vehicles.json';
 const buildingsFile = 'en_US-Data/buildings.json';
-const lastUpdateFile = 'en_US-Data/last_update.txt';
+const lastUpdateFile = 'en_US-Data/last_update_buildings.txt';
 
 const pageTranslations = {
     nl: {
@@ -204,25 +205,30 @@ function changeLanguage(lang) {
 
 async function loadLastUpdate() {
     try {
-        const res = await fetch(lastUpdateFile);
-        const date = new Date((await res.text()).trim());
+        const date = await fetchLastUpdate(lastUpdateFile);
         document.getElementById('last-update').textContent =
             `${pageTranslations[currentLang].lastUpdate}: ${date.toLocaleString()}`;
     } catch {
         document.getElementById('last-update').textContent =
-            `${pageTranslations[currentLang].lastUpdate}: onbekend`;
+            `${pageTranslations[currentLang].lastUpdate}: ${UNKNOWN[currentLang]}`;
     }
 }
 
-async function initVehicles() {
-    const vehiclesData = await (await fetch(dataFile)).json();
-    const buildingsData = await (await fetch(buildingsFile)).json();
+function initVehicles() {
+    return runRender(initVehiclesImpl);
+}
+
+async function initVehiclesImpl(isCurrent) {
+    const vehiclesData = await getJSON(dataFile);
+    const buildingsData = await getJSON(buildingsFile);
 
     // Mapping van buildingID -> caption
     const buildingMap = {};
     Object.entries(buildingsData).forEach(([id, b]) => {
         buildingMap[id] = b.caption;
     });
+
+    if (!isCurrent()) return;
 
     const container = document.getElementById('sheet-data');
     container.innerHTML = '';
@@ -248,7 +254,7 @@ async function initVehicles() {
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${id}</td>
-            <td>${v.caption}</td>
+            <td>${esc(v.caption)}</td>
             <td>${v.credits}</td>
             <td>${v.coins}</td>
             <td>${v.staff.min}-${v.staff.max}</td>
@@ -260,6 +266,7 @@ async function initVehicles() {
 
     table.appendChild(tbody);
     container.appendChild(table);
+    reapplySearch();
 }
 
 document.getElementById('footer-year').textContent = new Date().getFullYear();

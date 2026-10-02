@@ -191,6 +191,7 @@ tbody tr:hover {
     &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
 </footer>
 
+<script src="../common.js"></script>
 <script>
 const equipmentFile = 'nl_NL-Data/equipments.json';
 const lastUpdateFile = 'nl_NL-Data/last_update_buildings.txt'; // Eventueel aanpassen naar last_update_equipments.txt indien aanwezig
@@ -273,24 +274,23 @@ function changeLanguage(lang) {
 
 async function loadLastUpdate() {
     try {
-        const res = await fetch(lastUpdateFile);
-        const date = new Date((await res.text()).trim());
+        const date = await fetchLastUpdate(lastUpdateFile);
         document.getElementById('last-update').textContent =
             `${pageTranslations[currentLang].lastUpdate}: ${date.toLocaleString()}`;
     } catch {
         document.getElementById('last-update').textContent =
-            `${pageTranslations[currentLang].lastUpdate}: onbekend`;
+            `${pageTranslations[currentLang].lastUpdate}: ${UNKNOWN[currentLang]}`;
     }
 }
 
-async function initEquipment() {
-    let equipments = [];
-    try {
-        const res = await fetch(equipmentFile);
-        equipments = await res.json();
-    } catch (e) {
-        console.error("Fout bij laden van equipment JSON", e);
-    }
+function initEquipment() {
+    return runRender(initEquipmentImpl);
+}
+
+async function initEquipmentImpl(isCurrent) {
+    const equipments = await getJSON(equipmentFile);
+
+    if (!isCurrent()) return;
 
     const container = document.getElementById('sheet-data');
     container.innerHTML = '';
@@ -318,7 +318,7 @@ async function initEquipment() {
 
         const row = document.createElement('tr');
         row.innerHTML = `<td>${eq.id}</td>
-                         <td>${eq.name}</td>
+                         <td>${esc(eq.name)}</td>
                          <td>${eq.size || 0}</td>
                          <td>${eq.credits?.toLocaleString() || 0}</td>
                          <td>
@@ -338,11 +338,11 @@ async function initEquipment() {
         div.className = 'info-content';
 
         div.innerHTML = `
-            <strong>${eq.name}</strong> (ID: ${eq.id})<br>
+            <strong>${esc(eq.name)}</strong> (ID: ${eq.id})<br>
             ${labels.credits}: ${eq.credits?.toLocaleString() || 0}<br>
             ${labels.coins}: ${eq.coins || 0}<br>
             ${labels.size}: ${eq.size || 0}<br>
-            ${labels.special}: ${eq.special || labels.none}<br>
+            ${labels.special}: ${esc(eq.special || labels.none)}<br>
         `;
 
         td.appendChild(div);
@@ -361,6 +361,7 @@ async function initEquipment() {
 
     table.appendChild(tbody);
     container.appendChild(table);
+    reapplySearch();
 }
 
 window.addEventListener('DOMContentLoaded', () => {
