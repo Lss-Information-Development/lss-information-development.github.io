@@ -20,6 +20,8 @@ defaults:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    env:
+      UA: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
     steps:
       - name: Checkout repo
@@ -30,18 +32,18 @@ jobs:
       - name: Download Vehicles.json
         run: |
           mkdir -p gameversions/de_DE/de_DE-Data
-          curl -f -sSL --retry 3 https://api.lss-manager.de/de_DE/vehicles -o gameversions/de_DE/de_DE-Data/Vehicles.json
+          curl -f -sSL --retry 3 -A "$UA" https://api.lss-manager.de/de_DE/vehicles -o gameversions/de_DE/de_DE-Data/Vehicles.json
 
       - name: Download Buildings.json
         run: |
           mkdir -p gameversions/de_DE/de_DE-Data
-          curl -f -sSL --retry 3 https://api.lss-manager.de/de_DE/buildings -o gameversions/de_DE/de_DE-Data/buildings.json
+          curl -f -sSL --retry 3 -A "$UA" https://api.lss-manager.de/de_DE/buildings -o gameversions/de_DE/de_DE-Data/buildings.json
 
 
       - name: Download Pois.json
         run: |
           mkdir -p gameversions/de_DE/de_DE-Data
-          curl -f -sSL --retry 3 https://api.lss-manager.de/de_DE/pois -o gameversions/de_DE/de_DE-Data/pois.json
+          curl -f -sSL --retry 3 -A "$UA" https://api.lss-manager.de/de_DE/pois -o gameversions/de_DE/de_DE-Data/pois.json
           
           
       - name: Update last update timestamp
