@@ -7,22 +7,25 @@ import { icon } from './icons.js';
  * @param {Array<{key:string,label:string,cell:(row)=>string,value?:(row)=>any,cls?:string,sortable?:boolean}>} opts.columns
  * @param {Array} opts.rows
  * @param {(row)=>string} opts.rowKey
- * @param {(row)=>string|Node} [opts.detail]   lazy detail-inhoud
+ * @param {(row)=>string|Node} [opts.detail]   lazy detail-inhoud (één "Details"-knop)
+ * @param {Array<{key:string,label:(row)=>string,when?:(row)=>boolean,render:(row)=>string|Node}>} [opts.panels]
+ *        meerdere detailknoppen per rij, elk met een eigen paneel
  * @param {(row)=>string} [opts.rowExtra]     extra knoppen in de actiekolom
  * @param {object} [opts.state]               blijft bewaard tussen renders (sortering, open rijen)
- * @param {number} [opts.pageSize]
+ * @param {number} [opts.pageSize]                standaard: alles in één keer tonen
  */
 export function createTable(opts) {
-    const { columns, rowKey, detail, rowExtra } = opts;
-    const pageSize = opts.pageSize || 100;
+    const { columns, rowKey, rowExtra } = opts;
+    const pageSize = opts.pageSize || Infinity;
     const state = opts.state || {};
     state.sort ??= opts.initialSort || null;
-    state.open ??= new Set();
+    state.open ??= new Map(); // rij-key -> open paneel
     state.limit ??= pageSize;
     let rows = opts.rows;
 
-    const hasActions = !!detail || !!rowExtra;
     const s = ctx.s.common;
+    const panels = opts.panels || (opts.detail ? [{ key: 'details', label: () => s.details, render: opts.detail }] : []);
+    const hasActions = panels.length > 0 || !!rowExtra;
     const el = h(`
 <div class="card table-card">
   <div class="table-scroll"><table class="data"><thead><tr></tr></thead><tbody></tbody></table></div>
@@ -77,14 +80,14 @@ export function createTable(opts) {
         renderBody();
     });
 
-    function detailRow(row) {
+    function detailRow(row, panelKey) {
         const tr = document.createElement('tr');
         tr.className = 'detail';
         const td = document.createElement('td');
         td.colSpan = columns.length + (hasActions ? 1 : 0);
         const inner = document.createElement('div');
         inner.className = 'detail-inner';
-        const content = detail(row);
+        const content = panels.find(p => p.key === panelKey).render(row);
         if (typeof content === 'string') inner.innerHTML = content; else inner.appendChild(content);
         td.appendChild(inner);
         tr.appendChild(td);
@@ -99,24 +102,32 @@ export function createTable(opts) {
         tr.innerHTML = columns.map(c => {
             const label = c.cls === 'name' ? '' : ` data-label="${esc(c.label)}"`;
             return `<td${c.cls ? ` class="${c.cls}"` : ''}${label}>${c.cell(row)}</td>`;
-        }).join('') + (hasActions ? `<td class="act">${rowExtra ? rowExtra(row) : ''}${detail
-            ? `<button type="button" class="expand-btn" aria-expanded="false">${esc(s.details)}${icon('chevron')}</button>` : ''}</td>` : '');
+        }).join('') + (hasActions ? `<td class="act"><div class="act-inner">${rowExtra ? rowExtra(row) : ''}${panels
+            .filter(p => !p.when || p.when(row))
+            .map(p => `<button type="button" class="expand-btn" data-panel="${p.key}" aria-expanded="false">${esc(p.label(row))}${icon('chevron')}</button>`)
+            .join('')}</div></td>` : '');
         return tr;
     }
 
-    function toggle(tr, row) {
+    function markOpen(tr, panelKey) {
+        tr.classList.toggle('open', !!panelKey);
+        tr.querySelectorAll('.expand-btn').forEach(b =>
+            b.setAttribute('aria-expanded', String(b.dataset.panel === panelKey)));
+    }
+
+    // Klik op een knop: dat paneel openen; nogmaals klikken sluit het; een andere knop wisselt van paneel
+    function toggle(tr, row, panelKey) {
         const key = tr.dataset.key;
-        const btn = tr.querySelector('.expand-btn');
-        const open = !state.open.has(key);
-        if (open) {
-            state.open.add(key);
-            tr.after(detailRow(row));
-        } else {
+        const current = state.open.get(key);
+        if (tr.nextElementSibling?.classList.contains('detail')) tr.nextElementSibling.remove();
+        if (current === panelKey) {
             state.open.delete(key);
-            if (tr.nextElementSibling?.classList.contains('detail')) tr.nextElementSibling.remove();
+            markOpen(tr, null);
+            return;
         }
-        tr.classList.toggle('open', open);
-        btn.setAttribute('aria-expanded', String(open));
+        state.open.set(key, panelKey);
+        tr.after(detailRow(row, panelKey));
+        markOpen(tr, panelKey);
     }
 
     let visible = [];
@@ -127,10 +138,10 @@ export function createTable(opts) {
         for (const row of visible) {
             const tr = rowEl(row);
             frag.appendChild(tr);
-            if (detail && state.open.has(tr.dataset.key)) {
-                tr.classList.add('open');
-                tr.querySelector('.expand-btn').setAttribute('aria-expanded', 'true');
-                frag.appendChild(detailRow(row));
+            const panelKey = state.open.get(tr.dataset.key);
+            if (panelKey && tr.querySelector(`[data-panel="${panelKey}"]`)) {
+                markOpen(tr, panelKey);
+                frag.appendChild(detailRow(row, panelKey));
             }
         }
         tbody.replaceChildren(frag);
@@ -154,7 +165,7 @@ export function createTable(opts) {
         if (!btn) return;
         const tr = btn.closest('tr.row');
         const row = visible.find(r => rowKey(r) === tr.dataset.key);
-        if (row) toggle(tr, row);
+        if (row) toggle(tr, row, btn.dataset.panel);
     });
 
     renderHead();

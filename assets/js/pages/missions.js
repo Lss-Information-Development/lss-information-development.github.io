@@ -1,15 +1,18 @@
 import { ctx, esc, fmt, num, h, humanize, dateTime, pageHead, updatedPill, loadData, loadUpdated, loadMissionTranslations, regionLabel, hashParams, toast } from '../core.js';
 import { createTable, searchBox, normalize } from '../table.js';
 import { icon } from '../icons.js';
+import { MISSION_LABELS, HIDDEN_ADDITIONAL } from '../mission-labels.js';
 
 const XLSX_SRC = 'https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js';
 
 const state = { query: hashParams().get('q') || '', category: '', onlyEvents: false, compare: [], table: {} };
 let tr = {}; // vertalingen van de spel-sleutels (alleen NL heeft er een bestand voor)
 
-const label = key => tr[key] ? String(tr[key]).trim() : humanize(key);
+// Volgorde: translations.json van de regio -> ingebouwde labels (UI-taal, dan Engels) -> sleutelnaam
+const builtin = key => MISSION_LABELS[ctx.lang]?.[key] || MISSION_LABELS.en[key];
+const label = key => (tr[key] ? String(tr[key]).trim() : builtin(key) || humanize(key));
 const chanceLabel = key => label(key).replace(/^Benodigde\s+/i, '');
-const catLabel = c => tr[`cat_${c}`] || humanize(c);
+const catLabel = c => tr[`cat_${c}`] || builtin(`cat_${c}`) || humanize(c);
 
 function isActiveEvent(m) {
     const a = m.additional || {};
@@ -31,7 +34,7 @@ function requirementEntries(m) {
     const out = [];
     for (const [k, v] of Object.entries(m.requirements || {})) {
         if (v && typeof v === 'object') {
-            for (const [sub, n] of Object.entries(v)) out.push([`${label(k)}: ${sub}`, num(n)]);
+            for (const [sub, n] of Object.entries(v)) out.push([`${label(k)}: ${label(sub)}`, num(n)]);
         } else {
             out.push([label(k), num(v)]);
         }
@@ -81,7 +84,7 @@ function detailBlocks(m, byId) {
         other.push([s.eventPeriod, `${esc(dateTime(new Date(a.date_start)))}${a.date_end ? ` – ${esc(dateTime(new Date(a.date_end)))}` : ''}`, 'text']);
     }
     for (const [k, v] of Object.entries(a)) {
-        if (SKIP_ADDITIONAL.has(k) || v === null || typeof v === 'object') continue;
+        if (SKIP_ADDITIONAL.has(k) || HIDDEN_ADDITIONAL.has(k) || v === null || typeof v === 'object') continue;
         other.push([label(k), typeof v === 'boolean' ? esc(v ? ctx.s.common.yes : ctx.s.common.no) : esc(v), 'text']);
     }
     if (other.length) blocks.push(`<div class="dl-block"><h4>${esc(s.other)}</h4>${kvList(other)}</div>`);

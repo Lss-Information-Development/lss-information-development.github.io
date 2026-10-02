@@ -21,7 +21,6 @@ export default {
             state: state.table,
             rows: filter(),
             rowKey: p => p.id,
-            pageSize: 200,
             columns: [
                 { key: 'id', label: s.common.id, cls: 'id', value: p => Number(p.id), cell: p => esc(p.id) },
                 { key: 'name', label: s.pois.cols.name, cls: 'name', cell: p => esc(p.name) },

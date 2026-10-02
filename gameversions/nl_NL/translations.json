@@ -82,6 +82,8 @@
   "railway_material": "Benodigde GM-ICB",
   "railway_fire_equipment_container": "Benodigde HSH-ICB of VW-HS",
   "railway_electric_response": "Benodigde BM-VTHS of BU-VTHS",
+  "livestock_hoist": "Benodigde DB-VI of VIA",
+  "thatched_firefighting": "Benodigde DB-RI of RIA",
 
   "car_carrier": "Benodigde Bergingsvoertuig(en)",
 

@@ -44,6 +44,7 @@ export const STRINGS = {
         region: { lede: 'Alle overzichten voor {game} ({code}).', eyebrow: 'Spelversie', switch: 'Wissel van spelversie' },
         buildings: {
             cols: { name: 'Gebouw', credits: 'Credits', coins: 'Coins', ext: 'Uitbreidingen', veh: 'Voertuigen' },
+            info: 'Info', extensionsBtn: 'Uitbreidingen', vehiclesBtn: 'Voertuigen', storageBtn: 'Opslag',
             general: 'Algemeen', extensions: 'Uitbreidingen', vehicles: 'Te plaatsen voertuigen', storage: 'Opslaguitbreidingen',
             maxLevel: 'Max. niveau', startPersonnel: 'Start personeel', startVehicles: 'Start voertuigen', maxBuildings: 'Max. aantal',
             parkingLots: 'Parkeerplaatsen (start)', duration: 'Bouwduur', required: 'Vereist', unlocks: 'Ontgrendelt',
@@ -121,6 +122,7 @@ export const STRINGS = {
         region: { lede: 'Alle Übersichten für {game} ({code}).', eyebrow: 'Spielversion', switch: 'Spielversion wechseln' },
         buildings: {
             cols: { name: 'Gebäude', credits: 'Credits', coins: 'Coins', ext: 'Erweiterungen', veh: 'Fahrzeuge' },
+            info: 'Info', extensionsBtn: 'Erweiterungen', vehiclesBtn: 'Fahrzeuge', storageBtn: 'Lager',
             general: 'Allgemein', extensions: 'Erweiterungen', vehicles: 'Stationierbare Fahrzeuge', storage: 'Lagererweiterungen',
             maxLevel: 'Max. Stufe', startPersonnel: 'Startpersonal', startVehicles: 'Startfahrzeuge', maxBuildings: 'Max. Anzahl',
             parkingLots: 'Stellplätze (Start)', duration: 'Bauzeit', required: 'Benötigt', unlocks: 'Schaltet frei',
@@ -198,6 +200,7 @@ export const STRINGS = {
         region: { lede: 'All overviews for {game} ({code}).', eyebrow: 'Game version', switch: 'Switch game version' },
         buildings: {
             cols: { name: 'Building', credits: 'Credits', coins: 'Coins', ext: 'Extensions', veh: 'Vehicles' },
+            info: 'Info', extensionsBtn: 'Extensions', vehiclesBtn: 'Vehicles', storageBtn: 'Storage',
             general: 'General', extensions: 'Extensions', vehicles: 'Stationable vehicles', storage: 'Storage upgrades',
             maxLevel: 'Max level', startPersonnel: 'Starting staff', startVehicles: 'Starting vehicles', maxBuildings: 'Max buildings',
             parkingLots: 'Parking lots (start)', duration: 'Build time', required: 'Requires', unlocks: 'Unlocks',
