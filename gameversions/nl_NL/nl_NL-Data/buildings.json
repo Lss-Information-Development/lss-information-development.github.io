@@ -55,6 +55,24 @@
         "unlocksVehicleTypes": [144, 145, 146, 147, 148, 149, 150, 151, 152]
       },
       {
+        "caption": "26: Rietkapbrandbestrijding",
+        "credits": 150000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [153, 154]
+      },
+      {
+        "caption": "27: Veetakels",
+        "credits": 150000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [155, 156]
+      },
+      {
         "caption": "1: Haakarmbak parkeerplaats",
         "credits": 100000,
         "coins": 20,

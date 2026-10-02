@@ -108,6 +108,24 @@
     "id": 4
   },
   {
+    "caption": "Tiempo de verano",
+    "mission_type_ids": [
+      161,
+      162,
+      163,
+      164,
+      165,
+      301,
+      302,
+      566,
+      567,
+      568,
+      569,
+      570
+    ],
+    "id": 5
+  },
+  {
     "caption": "Evento deportivo",
     "mission_type_ids": [
       575,

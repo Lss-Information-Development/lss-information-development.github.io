@@ -14652,8 +14652,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         1
       ],
@@ -14698,8 +14698,8 @@
       "possible_patient": 3,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         4
       ],
@@ -14743,8 +14743,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         4
       ],
@@ -14786,8 +14786,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "police_station_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         1
       ],
@@ -14827,8 +14827,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00"
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -14866,8 +14866,8 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "pump_water_amount": 30000,
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00"
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -14907,8 +14907,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         0
       ],
@@ -14951,8 +14951,8 @@
     "additional": {
       "possible_patient": 2,
       "filter_id": "firehouse_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         4
       ],
@@ -14999,8 +14999,8 @@
     "additional": {
       "possible_patient": 1,
       "filter_id": "firehouse_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         4
       ],
@@ -15042,8 +15042,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00"
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -33855,6 +33855,136 @@
     "additive_overlays": "",
     "mission_categories": [
       "fire"
+    ]
+  },
+  {
+    "id": "736",
+    "name": "Tenista golpeado en el abdomen",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": {
+      "patient_transport": 30,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Medicina interna general"
+      ],
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 736,
+    "additive_overlays": "",
+    "mission_categories": [
+      "ambulance"
+    ]
+  },
+  {
+    "id": "737",
+    "name": "Caída de monopatín",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": {
+      "patient_transport": 30,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Medicina interna general"
+      ],
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 737,
+    "additive_overlays": "",
+    "mission_categories": [
+      "ambulance"
+    ]
+  },
+  {
+    "id": "738",
+    "name": "Pelea de aficionados",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3800,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 4,
+      "min_possible_prisoners": 8,
+      "max_possible_prisoners": 15,
+      "filter_id": "police_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Medicina interna general"
+      ],
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 3,
+      "police_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 738,
+    "additive_overlays": "",
+    "mission_categories": [
+      "police"
     ]
   }
 ]

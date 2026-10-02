@@ -3771,5 +3771,97 @@
     "foamTank": 150,
     "ftank": 150,
     "pumpcap": 2000
+  },
+  "153": {
+    "caption": "DB-RI",
+    "credits": 25000,
+    "coins": 15,
+    "staff": {
+      "min": 2,
+      "max": 6,
+      "training": {
+        "Brandweer": {
+          "thatched_roof_firefighting": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Brandweer": {
+        "Specialist Rietdakbrandbestrijding": {
+          "all": true
+        }
+      }
+    }
+  },
+  "154": {
+    "caption": "RIA",
+    "credits": 6000,
+    "coins": 6,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "special": "Benodigd een speciale opleiding in het trekkend voertuig. (Specialist Rietdakbrandbestrijding)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },  
+  "155": {
+    "caption": "DB-VI",
+    "credits": 25000,
+    "coins": 12,
+    "staff": {
+      "min": 4,
+      "max": 6,
+      "training": {
+        "Brandweer": {
+          "livestock_fire_count": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "minPersonnel": 4,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Brandweer": {
+        "Veeredder": {
+          "all": true
+        }
+      }
+    }
+  },
+  "156": {
+    "caption": "VIA",
+    "credits": 6000,
+    "coins": 6,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "special": "Benodigd een speciale opleiding in het trekkend voertuig. (Veeredder)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
   }
 }

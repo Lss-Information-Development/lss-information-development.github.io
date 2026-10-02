@@ -13708,8 +13708,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T22:00:00Z",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+11:00",
       "patient_specialization_ids": [
         7
       ],
@@ -13750,8 +13750,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T22:00:00Z",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+11:00",
       "patient_specialization_ids": [
         7
       ],
@@ -13791,8 +13791,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T22:00:00Z",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+11:00",
       "patient_specialization_ids": [
         4
       ],
@@ -13835,8 +13835,8 @@
       "possible_patient": 3,
       "possible_patient_min": 1,
       "filter_id": "police_station_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T22:00:00Z",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+11:00",
       "patient_specialization_ids": [
         4
       ],
@@ -13882,8 +13882,8 @@
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
       "patient_allow_first_responder_chance": 50,
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T22:00:00Z",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+11:00",
       "patient_specialization_ids": [
         0
       ],
@@ -13924,8 +13924,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T22:00:00Z"
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+11:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -19791,8 +19791,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T22:00:00Z",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+11:00",
       "patient_specialization_ids": [
         7
       ],
@@ -19833,8 +19833,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T22:00:00Z",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+11:00",
       "patient_specialization_ids": [
         7
       ],
@@ -19874,8 +19874,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T22:00:00Z",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+11:00",
       "patient_specialization_ids": [
         4
       ],
@@ -19918,8 +19918,8 @@
       "possible_patient": 3,
       "possible_patient_min": 1,
       "filter_id": "police_station_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T22:00:00Z",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+11:00",
       "patient_specialization_ids": [
         4
       ],
@@ -19965,8 +19965,8 @@
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
       "patient_allow_first_responder_chance": 50,
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T22:00:00Z",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+11:00",
       "patient_specialization_ids": [
         1
       ],
@@ -20007,8 +20007,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T22:00:00Z"
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+11:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -20048,8 +20048,8 @@
         481,
         482
       ],
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T22:00:00Z"
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+11:00"
     },
     "prerequisites": {
       "main_building": 6,
@@ -20084,8 +20084,8 @@
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
       "subsequent_mission_only": true,
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T22:00:00Z"
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+11:00"
     },
     "prerequisites": {
       "main_building": 6,
@@ -20124,8 +20124,8 @@
       "filter_id": "ambulance_station_missions",
       "patient_allow_first_responder_chance": 60,
       "subsequent_mission_only": true,
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T22:00:00Z",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+11:00",
       "patient_specialization_ids": [
         0
       ],
@@ -37395,6 +37395,136 @@
     "additive_overlays": "",
     "mission_categories": [
       "fire"
+    ]
+  },
+  {
+    "id": "861",
+    "name": "Tennis player hit in stomach by tennis ball",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": {
+      "patient_transport": 30,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "General Internal"
+      ],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 861,
+    "additive_overlays": "",
+    "mission_categories": [
+      "ambulance"
+    ]
+  },
+  {
+    "id": "862",
+    "name": "Skateboard accident",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": {
+      "patient_transport": 30,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "General Internal"
+      ],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 862,
+    "additive_overlays": "",
+    "mission_categories": [
+      "ambulance"
+    ]
+  },
+  {
+    "id": "863",
+    "name": "Fans fight at handball match",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3800,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 4,
+      "min_possible_prisoners": 8,
+      "max_possible_prisoners": 15,
+      "filter_id": "police_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "General Internal"
+      ],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 3,
+      "police_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 863,
+    "additive_overlays": "",
+    "mission_categories": [
+      "police"
     ]
   }
 ]

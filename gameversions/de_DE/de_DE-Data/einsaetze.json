@@ -2318,7 +2318,8 @@
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 200
+      "care_affected_people_max": 200,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -2412,7 +2413,8 @@
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 200
+      "care_affected_people_max": 200,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -2511,7 +2513,8 @@
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 200
+      "care_affected_people_max": 200,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -2562,7 +2565,8 @@
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 200
+      "care_affected_people_max": 200,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -23330,6 +23334,7 @@
       "max_police_motorcycle_replacing_police_cars": 4,
       "care_affected_people_min": 40,
       "care_affected_people_max": 80,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         4
       ],
@@ -23527,6 +23532,7 @@
       "max_police_motorcycle_replacing_police_cars": 4,
       "care_affected_people_min": 40,
       "care_affected_people_max": 80,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         4
       ],
@@ -23730,6 +23736,7 @@
       "max_police_motorcycle_replacing_police_cars": 4,
       "care_affected_people_min": 40,
       "care_affected_people_max": 80,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         4
       ],
@@ -23799,6 +23806,7 @@
       "max_police_motorcycle_replacing_police_cars": 4,
       "care_affected_people_min": 40,
       "care_affected_people_max": 80,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         4
       ],
@@ -23937,6 +23945,7 @@
       "max_police_motorcycle_replacing_police_cars": 4,
       "care_affected_people_min": 40,
       "care_affected_people_max": 80,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         4
       ],
@@ -24008,6 +24017,7 @@
       "max_police_motorcycle_replacing_police_cars": 4,
       "care_affected_people_min": 40,
       "care_affected_people_max": 80,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         4
       ],
@@ -24151,6 +24161,7 @@
       "max_police_motorcycle_replacing_police_cars": 4,
       "care_affected_people_min": 40,
       "care_affected_people_max": 80,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         4
       ],
@@ -24224,6 +24235,7 @@
       "max_police_motorcycle_replacing_police_cars": 4,
       "care_affected_people_min": 40,
       "care_affected_people_max": 80,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         4
       ],
@@ -27217,7 +27229,8 @@
       "guard_mission": true,
       "filter_id": "firehouse_missions",
       "care_affected_people_min": 25,
-      "care_affected_people_max": 100
+      "care_affected_people_max": 100,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -27338,7 +27351,8 @@
       "guard_mission": true,
       "filter_id": "firehouse_missions",
       "care_affected_people_min": 25,
-      "care_affected_people_max": 100
+      "care_affected_people_max": 100,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -27421,7 +27435,8 @@
       "guard_mission": true,
       "filter_id": "firehouse_missions",
       "care_affected_people_min": 25,
-      "care_affected_people_max": 100
+      "care_affected_people_max": 100,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -27504,7 +27519,8 @@
       "guard_mission": true,
       "filter_id": "firehouse_missions",
       "care_affected_people_min": 25,
-      "care_affected_people_max": 100
+      "care_affected_people_max": 100,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -27547,7 +27563,8 @@
       "guard_mission": true,
       "filter_id": "firehouse_missions",
       "care_affected_people_min": 25,
-      "care_affected_people_max": 100
+      "care_affected_people_max": 100,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -27634,7 +27651,8 @@
       "guard_mission": true,
       "filter_id": "firehouse_missions",
       "care_affected_people_min": 25,
-      "care_affected_people_max": 100
+      "care_affected_people_max": 100,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -27678,7 +27696,8 @@
       "guard_mission": true,
       "filter_id": "firehouse_missions",
       "care_affected_people_min": 25,
-      "care_affected_people_max": 100
+      "care_affected_people_max": 100,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -27723,7 +27742,8 @@
       "guard_mission": true,
       "filter_id": "firehouse_missions",
       "care_affected_people_min": 25,
-      "care_affected_people_max": 100
+      "care_affected_people_max": 100,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -43793,6 +43813,7 @@
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -44081,6 +44102,7 @@
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -44300,6 +44322,7 @@
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -44447,6 +44470,7 @@
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -44596,6 +44620,7 @@
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -44744,6 +44769,7 @@
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -44895,6 +44921,7 @@
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -45048,6 +45075,7 @@
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -45123,6 +45151,7 @@
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -45276,6 +45305,7 @@
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -45353,6 +45383,7 @@
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -45429,6 +45460,7 @@
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -45586,6 +45618,7 @@
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -45665,6 +45698,7 @@
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -45744,6 +45778,7 @@
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -45824,6 +45859,7 @@
       "fire_alarm_system_possible": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -51811,6 +51847,7 @@
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -52037,6 +52074,7 @@
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -52211,6 +52249,7 @@
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -52385,6 +52424,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -52445,6 +52485,7 @@
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -52563,6 +52604,7 @@
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -52743,6 +52785,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -52805,6 +52848,7 @@
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -52926,6 +52970,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -52988,6 +53033,7 @@
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -53111,6 +53157,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -53172,6 +53219,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -53236,6 +53284,7 @@
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -53363,6 +53412,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -53427,6 +53477,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -53492,6 +53543,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -78707,6 +78759,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 250,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -78888,6 +78941,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 250,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -79012,6 +79066,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 250,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -79138,6 +79193,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 250,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -79201,6 +79257,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 250,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -79331,6 +79388,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 250,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -79397,6 +79455,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 250,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -79464,6 +79523,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 250,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -79637,6 +79697,7 @@
       "filter_id": "ambulance_station_missions",
       "care_affected_people_min": 70,
       "care_affected_people_max": 140,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -79755,6 +79816,7 @@
       "filter_id": "ambulance_station_missions",
       "care_affected_people_min": 70,
       "care_affected_people_max": 140,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -79878,6 +79940,7 @@
       "filter_id": "ambulance_station_missions",
       "care_affected_people_min": 70,
       "care_affected_people_max": 140,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -79941,6 +80004,7 @@
       "filter_id": "ambulance_station_missions",
       "care_affected_people_min": 70,
       "care_affected_people_max": 140,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -81920,6 +81984,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -82029,6 +82094,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -82143,6 +82209,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -82202,6 +82269,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 25,
       "care_affected_people_max": 150,
+      "care_education_per_affected_people": true,
       "patient_specialization_ids": [
         0
       ],
@@ -82436,7 +82504,8 @@
       "filter_id": "technical_aid_organization_missions",
       "pump_water_amount": 100000,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 500
+      "care_affected_people_max": 500,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 9,
@@ -82678,7 +82747,8 @@
       "filter_id": "technical_aid_organization_missions",
       "pump_water_amount": 100000,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 500
+      "care_affected_people_max": 500,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 9,
@@ -82865,7 +82935,8 @@
       "filter_id": "technical_aid_organization_missions",
       "pump_water_amount": 100000,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 500
+      "care_affected_people_max": 500,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 9,
@@ -83056,7 +83127,8 @@
       "filter_id": "technical_aid_organization_missions",
       "pump_water_amount": 100000,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 500
+      "care_affected_people_max": 500,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 9,
@@ -83119,7 +83191,8 @@
       "filter_id": "technical_aid_organization_missions",
       "pump_water_amount": 100000,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 500
+      "care_affected_people_max": 500,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 9,
@@ -83247,7 +83320,8 @@
       "filter_id": "technical_aid_organization_missions",
       "pump_water_amount": 100000,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 500
+      "care_affected_people_max": 500,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 9,
@@ -83444,7 +83518,8 @@
       "filter_id": "technical_aid_organization_missions",
       "pump_water_amount": 100000,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 500
+      "care_affected_people_max": 500,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 9,
@@ -83509,7 +83584,8 @@
       "filter_id": "technical_aid_organization_missions",
       "pump_water_amount": 100000,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 500
+      "care_affected_people_max": 500,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 9,
@@ -83644,7 +83720,8 @@
       "filter_id": "technical_aid_organization_missions",
       "pump_water_amount": 100000,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 500
+      "care_affected_people_max": 500,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 9,
@@ -83709,7 +83786,8 @@
       "filter_id": "technical_aid_organization_missions",
       "pump_water_amount": 100000,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 500
+      "care_affected_people_max": 500,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 9,
@@ -83846,7 +83924,8 @@
       "filter_id": "technical_aid_organization_missions",
       "pump_water_amount": 100000,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 500
+      "care_affected_people_max": 500,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 9,
@@ -83914,7 +83993,8 @@
       "filter_id": "technical_aid_organization_missions",
       "pump_water_amount": 100000,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 500
+      "care_affected_people_max": 500,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 9,
@@ -83981,7 +84061,8 @@
       "filter_id": "technical_aid_organization_missions",
       "pump_water_amount": 100000,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 500
+      "care_affected_people_max": 500,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 9,
@@ -84122,7 +84203,8 @@
       "filter_id": "technical_aid_organization_missions",
       "pump_water_amount": 100000,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 500
+      "care_affected_people_max": 500,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 9,
@@ -84193,7 +84275,8 @@
       "filter_id": "technical_aid_organization_missions",
       "pump_water_amount": 100000,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 500
+      "care_affected_people_max": 500,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 9,
@@ -84265,7 +84348,8 @@
       "filter_id": "technical_aid_organization_missions",
       "pump_water_amount": 100000,
       "care_affected_people_min": 100,
-      "care_affected_people_max": 500
+      "care_affected_people_max": 500,
+      "care_education_per_affected_people": true
     },
     "prerequisites": {
       "main_building": 9,
@@ -84443,6 +84527,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "unavailable_in_normal_missions": true
     },
     "prerequisites": {
@@ -84564,6 +84649,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "unavailable_in_normal_missions": true
     },
     "prerequisites": {
@@ -84690,6 +84776,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "unavailable_in_normal_missions": true
     },
     "prerequisites": {
@@ -84755,6 +84842,7 @@
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
       "care_affected_people_max": 500,
+      "care_education_per_affected_people": true,
       "unavailable_in_normal_missions": true
     },
     "prerequisites": {
@@ -131072,8 +131160,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         1
       ],
@@ -131118,8 +131206,8 @@
       "possible_patient": 3,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         4
       ],
@@ -131161,8 +131249,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         4
       ],
@@ -131205,8 +131293,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "police_station_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         1
       ],
@@ -131246,8 +131334,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00"
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -131283,8 +131371,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         0
       ],
@@ -131327,8 +131415,8 @@
     "additional": {
       "possible_patient": 2,
       "filter_id": "firehouse_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         4
       ],
@@ -131373,8 +131461,8 @@
     "additional": {
       "possible_patient": 1,
       "filter_id": "firehouse_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         4
       ],
@@ -131414,8 +131502,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00"
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -195493,8 +195581,8 @@
       "min_possible_prisoners": 0,
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions",
-      "date_start": "2025-11-07T10:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00"
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00"
     },
     "prerequisites": {
       "main_building": 6,
@@ -195531,8 +195619,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-11-14T10:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         0,
         1
@@ -195585,8 +195673,8 @@
         25
       ],
       "patient_at_end_of_mission": true,
-      "date_start": "2025-11-14T10:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         0,
         1
@@ -195642,8 +195730,8 @@
         25
       ],
       "patient_at_end_of_mission": true,
-      "date_start": "2025-11-14T10:00:00Z",
-      "date_end": "2025-11-28T23:59:59+01:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
       "patient_specialization_ids": [
         0,
         1
@@ -235395,6 +235483,278 @@
     "additive_overlays": "abcd",
     "mission_categories": [
       "highway_police"
+    ]
+  },
+  {
+    "id": "1033",
+    "name": "Einsturz Tunnelbaustelle",
+    "place": "Tunnel",
+    "place_array": [
+      "Tunnel"
+    ],
+    "average_credits": 8940,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "height_rescue_units": 1,
+      "heavy_rescue_vehicles": 3,
+      "thw_brmg_r": 2,
+      "thw_dle": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "firetrucks": 6,
+      "police_cars": 5
+    },
+    "chances": {
+      "platform_trucks": 30,
+      "mobile_command_vehicles": 50,
+      "fwk": 50,
+      "nef": 30,
+      "patient_transport": 75,
+      "helicopter": 25
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [
+        4
+      ],
+      "patient_specialization_captions": [
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 1033,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1033/a",
+    "name": "Einsturz Tunnelbaustelle",
+    "place": "Tunnel",
+    "place_array": [
+      "Tunnel"
+    ],
+    "average_credits": 9340,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "height_rescue_units": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 3,
+      "thw_brmg_r": 2,
+      "thw_dle": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "firetrucks": 6,
+      "police_cars": 5
+    },
+    "chances": {
+      "platform_trucks": 30,
+      "mobile_command_vehicles": 50,
+      "fwk": 50,
+      "nef": 30,
+      "patient_transport": 75,
+      "helicopter": 25
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [
+        4
+      ],
+      "patient_specialization_captions": [
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "police_service_group_leader": 5,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 1033,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1033/b",
+    "name": "Einsturz Tunnelbaustelle",
+    "place": "Tunnel",
+    "place_array": [
+      "Tunnel"
+    ],
+    "average_credits": 9340,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "height_rescue_units": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 3,
+      "thw_brmg_r": 2,
+      "thw_dle": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "firetrucks": 6,
+      "police_cars": 5
+    },
+    "chances": {
+      "platform_trucks": 30,
+      "mobile_command_vehicles": 50,
+      "fwk": 50,
+      "nef": 30,
+      "patient_transport": 75,
+      "helicopter": 25
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [
+        4
+      ],
+      "patient_specialization_captions": [
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 1033,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1033/ab",
+    "name": "Einsturz Tunnelbaustelle",
+    "place": "Tunnel",
+    "place_array": [
+      "Tunnel"
+    ],
+    "average_credits": 9740,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "height_rescue_units": 1,
+      "police_service_group_leader": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 3,
+      "thw_brmg_r": 2,
+      "thw_dle": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "firetrucks": 6,
+      "police_cars": 5
+    },
+    "chances": {
+      "platform_trucks": 30,
+      "mobile_command_vehicles": 50,
+      "fwk": 50,
+      "nef": 30,
+      "patient_transport": 75,
+      "helicopter": 25
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [
+        4
+      ],
+      "patient_specialization_captions": [
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "police_service_group_leader": 5,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 1033,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire"
     ]
   }
 ]
