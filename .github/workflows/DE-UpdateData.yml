@@ -9,6 +9,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: data-sync
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -22,23 +30,24 @@ jobs:
       - name: Download Vehicles.json
         run: |
           mkdir -p gameversions/de_DE/de_DE-Data
-          curl -f -sSL https://api.lss-manager.de/de_DE/vehicles -o gameversions/de_DE/de_DE-Data/Vehicles.json
+          curl -f -sSL --retry 3 https://api.lss-manager.de/de_DE/vehicles -o gameversions/de_DE/de_DE-Data/Vehicles.json
 
       - name: Download Buildings.json
         run: |
           mkdir -p gameversions/de_DE/de_DE-Data
-          curl -f -sSL https://api.lss-manager.de/de_DE/buildings -o gameversions/de_DE/de_DE-Data/buildings.json
+          curl -f -sSL --retry 3 https://api.lss-manager.de/de_DE/buildings -o gameversions/de_DE/de_DE-Data/buildings.json
 
 
       - name: Download Pois.json
         run: |
           mkdir -p gameversions/de_DE/de_DE-Data
-          curl -f -sSL https://api.lss-manager.de/de_DE/pois -o gameversions/de_DE/de_DE-Data/pois.json
+          curl -f -sSL --retry 3 https://api.lss-manager.de/de_DE/pois -o gameversions/de_DE/de_DE-Data/pois.json
           
           
       - name: Update last update timestamp
         run: |
-          date -u +"%Y-%m-%dT%H:%M:%SZ" > gameversions/de_DE/de_DE-Data/last_update_buildings.txt
+          # Alleen bijwerken als de data echt veranderd is, anders elke run een lege commit
+          git diff --quiet -- gameversions/de_DE/de_DE-Data || date -u +"%Y-%m-%dT%H:%M:%SZ" > gameversions/de_DE/de_DE-Data/last_update_buildings.txt
 
       - name: Commit if changed
         run: |
@@ -46,5 +55,7 @@ jobs:
           git config user.email "actions@github.com"
 
           git add gameversions/de_DE/de_DE-Data/*
-          git diff-index --quiet HEAD || git commit -m "Update Vehicles.json and Buildings.json"
+          if git diff --cached --quiet; then echo "Nothing to commit"; exit 0; fi
+          git commit -m "Update DE vehicles, buildings & pois"
+          git pull --rebase origin main
           git push origin main

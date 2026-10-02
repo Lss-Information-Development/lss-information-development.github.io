@@ -344,7 +344,7 @@ async function initBuildings() {
         const b = buildings[key];
 
         const hasExtensions = b.extensions && b.extensions.length > 0;
-        const hasVehicles = Object.values(vehicles).some(v => (v.possibleBuildings || []).includes(Number(key)));
+        const hasVehicles = Object.values(vehicles).some(v => (v.possibleBuildings || []).map(Number).includes(Number(key)));
         const hasStorage = b.storageUpgrades && Object.keys(b.storageUpgrades).length > 0;
 
         const row = document.createElement('tr');
@@ -401,7 +401,7 @@ async function initBuildings() {
             toggleBtn.onclick = () => {
                 const open = div.classList.toggle('show');
                 extRow.classList.toggle('show-row', open);
-                div.style.maxHeight = open ? (div.scrollHeight + 60) + 'px' : null;
+                div.style.maxHeight = open ? 'none' : null;
                 toggleBtn.textContent = open
                     ? pageTranslations[currentLang].toggleExtensions.hide
                     : pageTranslations[currentLang].toggleExtensions.show;
@@ -420,7 +420,7 @@ async function initBuildings() {
 
             Object.keys(vehicles).forEach(vID => {
                 const v = vehicles[vID];
-                if ((v.possibleBuildings || []).includes(Number(key))) {
+                if ((v.possibleBuildings || []).map(Number).includes(Number(key))) {
                     const item = document.createElement('div');
                     item.className = 'vehicle-item';
                     item.innerHTML = `
@@ -441,7 +441,7 @@ async function initBuildings() {
             toggleBtn.onclick = () => {
                 const open = div.classList.toggle('show');
                 vehRow.classList.toggle('show-row', open);
-                div.style.maxHeight = open ? (div.scrollHeight + 60) + 'px' : null;
+                div.style.maxHeight = open ? 'none' : null;
                 toggleBtn.textContent = open
                     ? pageTranslations[currentLang].toggleVehicles.hide
                     : pageTranslations[currentLang].toggleVehicles.show;
@@ -486,7 +486,7 @@ async function initBuildings() {
             toggleBtn.onclick = () => {
                 const open = div.classList.toggle('show');
                 storRow.classList.toggle('show-row', open);
-                div.style.maxHeight = open ? (div.scrollHeight + 60) + 'px' : null;
+                div.style.maxHeight = open ? 'none' : null;
                 toggleBtn.textContent = open
                     ? pageTranslations[currentLang].toggleStorage.hide
                     : pageTranslations[currentLang].toggleStorage.show;

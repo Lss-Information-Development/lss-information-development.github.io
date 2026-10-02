@@ -7,6 +7,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: data-sync
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -67,7 +75,6 @@ jobs:
 
       - name: Download einsaetze & event_types
         run: |
-          set -e
           UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
           
           download_all() {
@@ -105,4 +112,5 @@ jobs:
           git config user.email "actions@github.com"
           git add gameversions/
           git commit -m "Sync game data (buildings, einsaetze & events)"
+          git pull --rebase origin main
           git push origin main

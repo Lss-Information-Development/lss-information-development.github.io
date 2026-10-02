@@ -398,7 +398,7 @@ tr.info-row:has(.show) {
 .requirements-content.show,
 .info-content.show {
     opacity: 1 !important;
-    max-height: 2000px !important;
+    max-height: none !important;
     padding: 4px 0 10px 0 !important;
 }
 

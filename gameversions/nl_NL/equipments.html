@@ -352,7 +352,7 @@ async function initEquipment() {
         const toggleBtn = row.querySelector('.info-btn');
         toggleBtn.onclick = () => {
             const open = div.classList.toggle('show');
-            div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
+            div.style.maxHeight = open ? 'none' : null;
             toggleBtn.textContent = open
                 ? pageTranslations[currentLang].toggleInfo.hide
                 : pageTranslations[currentLang].toggleInfo.show;

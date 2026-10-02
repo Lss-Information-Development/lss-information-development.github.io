@@ -371,7 +371,7 @@ async function initVehicles() {
         btn.onclick = () => {
             const open = div.classList.toggle('show');
             detailsRow.classList.toggle('show-row', open);
-            div.style.maxHeight = open ? (div.scrollHeight + 100) + 'px' : null;
+            div.style.maxHeight = open ? 'none' : null;
             btn.textContent = open
                 ? pageTranslations[currentLang].toggle.hide
                 : pageTranslations[currentLang].toggle.show;
